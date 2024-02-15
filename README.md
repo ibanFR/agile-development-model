@@ -13,7 +13,7 @@ used in modern software development.
 ## Pre-requisites
 Install docker on your machine.
 
-## Folder structure structure
+## Folder structure
 
 ├── workspace.dsl          # Primary Structurizr DSL script defining the system architecture
 ├── views/                 # Additional Structurizr DSL scripts for specific views or perspectives

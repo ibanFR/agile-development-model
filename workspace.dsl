@@ -12,6 +12,10 @@ workspace "Agile Software Development Model for efficient Product Feature delive
             !adrs adrs
 
 
+            allComponents = container "All Components" "All Components and relationships" "All Components"{
+                tags "product"
+            }
+
             alignAndUnderstand = container "Align and Understand Product Requirements" "Align our focus with the organisation's business model, the needs of its users, and its short, medium, and long-term goals." "Align & Understand"{
                 tags "product"
                 productBrief = component "Product Brief" "Short product or feature brief to frame and constrain the project. Identifies key capabilities and high level goals and objectives of the project" "Opportunity Canvas, slideck, etc"{
@@ -32,7 +36,7 @@ workspace "Agile Software Development Model for efficient Product Feature delive
                 formulation = component "Acceptance Tests" "Once we have identified our rules and examples from our discovery sessions, we can now formulate each example as structured documentation." "Executable specifications of the system behavior"{
 
                 }
-                automation = component "Feature files" "Automate the acceptance criteria to ensure that the system behaves as expected" "Cucumber, etc"{
+                automation = component "Feature files" "Groups related scenarios that demostrates how a feature works " "Cucumber, etc"{
 
                 }
             }
@@ -50,6 +54,22 @@ workspace "Agile Software Development Model for efficient Product Feature delive
 
                 }
 
+            }
+
+            agile = container "Agile Product Management" "Agile projects are broken down into two-week iterations which result in a potentially shippable product increment" "Agile Manifesto"{
+
+                tags "agile"
+                informationRadiators = component "Information Radiators" "Project progress and potential issues are visible to all team members with information radiators" "Scrum and Kanban boards Jira, Miro, etc"{
+
+                }
+
+                ceremonies = component "Agile Ceremonies" "Agile ceremonies, metrics and feedback loops to help the team make informed decisions" "Jira, Knowledge Base, etc"{
+
+                }
+
+                customerSupport = component "Customer Support" "The process of providing assistance to the end users of the product" "Jira"{
+
+                }
             }
 
             tdd = container "Test Driven Development " "Acceptance Tests guide our code implementation using lower-level examples of the behavior of internal system components. " ""{
@@ -73,22 +93,6 @@ workspace "Agile Software Development Model for efficient Product Feature delive
 
                 }
 
-            }
-
-            agile = container "Agile Product Management" "Agile projects are broken down into two-week iterations which result in a potentially shippable product increment" "Agile Manifesto"{
-
-                tags "agile"
-                informationRadiators = component "Information Radiators" "Project progress and potential issues are visible to all team members with information radiators" "Scrum and Kanban boards Jira, Miro, etc"{
-
-                }
-
-                ceremonies = component "Agile Ceremonies" "Agile ceremonies, metrics and feedback loops to help the team make informed decisions" "Jira, Knowledge Base, etc"{
-
-                }
-
-                customerSupport = component "Customer Support" "The process of providing assistance to the end users of the product" "Jira"{
-
-                }
             }
 
         }
@@ -139,7 +143,7 @@ workspace "Agile Software Development Model for efficient Product Feature delive
 
         //knowledge base
         knowledgeBase -> customerSupport "referenced by"
-        knowledgeBase -> development "reference for"
+//        knowledgeBase -> development "reference for"
     }
 
     views {
@@ -152,7 +156,7 @@ workspace "Agile Software Development Model for efficient Product Feature delive
             exclude documentation->tdd agile->alignAndUnderstand
         }
 
-        component alignAndUnderstand "Components" "All Components and relationships" {
+        component allComponents "Components" "All Components and relationships" {
             include productBrief storyMap discovery formulation automation decompose strategize design backlog ceremonies informationRadiators customerSupport knowledgeBase development continuousIntegration livingDocumentation
        }
 

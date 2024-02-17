@@ -15,6 +15,7 @@ Install docker on your machine.
 
 ## Folder structure
 
+```
 ├── workspace.dsl          # Primary Structurizr DSL script defining the system architecture
 ├── views/                 # Additional Structurizr DSL scripts for specific views or perspectives
 │   ├── context_view.dsl   # DSL script for the system context view
@@ -26,7 +27,7 @@ Install docker on your machine.
 ├── README.md              # Project documentation
 ├── .gitignore             # Git ignore file
 └── ...
-
+```
 ## Getting started
 To start structurizr-lite run the following command:
 

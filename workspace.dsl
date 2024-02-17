@@ -130,7 +130,6 @@ workspace "Agile Software Development Model for efficient Product Feature delive
         formulation -> automation "automate acceptance tests" "Cucumber"
         automation -> development "guides development" "Cucumber"
 
-
         //ddd
         decompose -> strategize "collaborative modelling" "Miro"
         strategize -> design "visualize software architecture" "draw.io, structurizr"
@@ -169,10 +168,16 @@ workspace "Agile Software Development Model for efficient Product Feature delive
 
         component alignAndUnderstand "AlignAndUnderstand" {
             include product developer productBrief storyMap backlog bdd ddd
+            exclude product->bdd developer->bdd
         }
 
         component bdd "BehaviorDrivenDevelopment" {
             include *
+            exclude *->alignAndUnderstand
+        }
+
+        component ddd "DomainDrivenDesign" {
+            include * product developer
             exclude *->alignAndUnderstand
         }
 

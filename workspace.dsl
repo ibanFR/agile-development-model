@@ -13,7 +13,7 @@ workspace "Agile Software Development Model for efficient Product Feature delive
 
 
             allComponents = container "All Components" "All Components and relationships" "All Components"{
-                tags "product"
+
             }
 
             alignAndUnderstand = container "Align and Understand Product Requirements" "Align our focus with the organisation's business model, the needs of its users, and its short, medium, and long-term goals." "Align & Understand"{
@@ -41,12 +41,13 @@ workspace "Agile Software Development Model for efficient Product Feature delive
                 }
             }
 
-            ddd = container "Strategic Architecture and Domain Driven Design" "Decompose software systems into cohesive modules and achieve loose coupling between them to keep the application scalable and maintainable" "Sotware Architecture and Design"{
-                decompose = component "Domain Decomposition" "Decompose a large problem domain into sub-domains, so that we can identify stragically significant key focus areas" "Core Domain Charts"{
+            ddd = container "Strategic Architecture and Domain Driven Design" "Decompose a large problem domain into cohesive modules. Explore models in a creative collaboration of domain experts and software engineers." "Sotware Architecture and Design"{
+
+                decompose = component "Domain Decomposition" "Decompose a large problem domain into cohesive modules, so that we can identify stragically significant key focus areas" "Core Domain Charts"{
                     tags "product"
                 }
 
-                strategize = component "Strategic Architecture" "Explore models in a creative collaboration of domain experts and software engineers" "Document Bounded Contexts, from naming to responsibilities alongside its public interface and dependencies"{
+                strategize = component "Strategic Architecture" "Document Bounded Contexts, from naming to responsibilities alongside its public interface and dependencies" "Bounded Context Canvas"{
 
                 }
 
@@ -58,7 +59,7 @@ workspace "Agile Software Development Model for efficient Product Feature delive
 
             agile = container "Agile Product Management" "Agile projects are broken down into two-week iterations which result in a potentially shippable product increment" "Agile Manifesto"{
 
-                tags "agile"
+                tags "product"
                 informationRadiators = component "Information Radiators" "Project progress and potential issues are visible to all team members with information radiators" "Scrum and Kanban boards Jira, Miro, etc"{
 
                 }
@@ -83,7 +84,9 @@ workspace "Agile Software Development Model for efficient Product Feature delive
                 }
             }
 
-            documentation = container "Knowledge Base" "Centralized repository of information and best practices that the team can refer to for guidance, problem-solving, and knowledge sharing." "Confluence, etc"{
+            documentation = container "Knowledge Base" "Centralized repository of information and best practices that the team can refer to for guidance, problem-solving, and knowledge sharing." "Google Drive, Jira, Miro"{
+
+                tags "product"
 
                 knowledgeBase = component "Knowledge Base" "A centralised repository for all the project documentation" "Confluence, etc"{
 
@@ -102,10 +105,11 @@ workspace "Agile Software Development Model for efficient Product Feature delive
         product -> productBrief "presents"
         developer -> storyMap "collaborates on"
 
-        alignAndUnderstand -> bdd "requirement specification
-        alignAndUnderstand -> ddd "Collaborative domain modelling"
 
         // container relationships
+        alignAndUnderstand -> bdd "collaborative requirement specification
+        alignAndUnderstand -> ddd "collaborative domain modelling"
+
         bdd -> tdd "guides code implementation"
         ddd -> documentation "generate documentation"
 //        tdd -> documentation "updates"
@@ -122,9 +126,10 @@ workspace "Agile Software Development Model for efficient Product Feature delive
 
 
         //bdd
-        automation -> development "guides development" "Cucumber"
         discovery -> formulation "formulate acceptance criteria" "Gherkin"
         formulation -> automation "automate acceptance tests" "Cucumber"
+        automation -> development "guides development" "Cucumber"
+
 
         //ddd
         decompose -> strategize "collaborative modelling" "Miro"
@@ -153,11 +158,12 @@ workspace "Agile Software Development Model for efficient Product Feature delive
 
         container process "Containers" {
             include *
-            exclude documentation->tdd agile->alignAndUnderstand
+            exclude documentation->tdd agile->alignAndUnderstand allComponents
+
         }
 
         component allComponents "Components" "All Components and relationships" {
-            include productBrief storyMap discovery formulation automation decompose strategize design backlog ceremonies informationRadiators customerSupport knowledgeBase development continuousIntegration livingDocumentation
+            include product developer productBrief storyMap discovery formulation automation decompose strategize design backlog ceremonies informationRadiators customerSupport knowledgeBase development continuousIntegration livingDocumentation
        }
 
         component alignAndUnderstand "AlignAndUnderstand" {

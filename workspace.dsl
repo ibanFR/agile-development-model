@@ -112,11 +112,9 @@ workspace "Agile Software Development Model for efficient Product Feature delive
 
         bdd -> tdd "guides code implementation"
         ddd -> documentation "generate documentation"
-//        tdd -> documentation "updates"
         bdd -> agile "supports"
         tdd -> agile "updates progress"
         ddd -> agile "enhances agility"
-//        documentation -> agile "supports"
 
         //align and understand
         productBrief -> storyMap "collaborative domain discovery" "Miro"
@@ -126,6 +124,8 @@ workspace "Agile Software Development Model for efficient Product Feature delive
 
 
         //bdd
+        product -> discovery "presents rules and examples"
+        developer -> discovery "identifies functional gaps or inconsistencies"
         discovery -> formulation "formulate acceptance criteria" "Gherkin"
         formulation -> automation "automate acceptance tests" "Cucumber"
         automation -> development "guides development" "Cucumber"
@@ -158,12 +158,13 @@ workspace "Agile Software Development Model for efficient Product Feature delive
 
         container process "Containers" {
             include *
-            exclude documentation->tdd agile->alignAndUnderstand allComponents
+            exclude documentation->tdd agile->alignAndUnderstand product->bdd developer->bdd allComponents
 
         }
 
         component allComponents "Components" "All Components and relationships" {
             include product developer productBrief storyMap discovery formulation automation decompose strategize design backlog ceremonies informationRadiators customerSupport knowledgeBase development continuousIntegration livingDocumentation
+            exclude product->discovery
        }
 
         component alignAndUnderstand "AlignAndUnderstand" {
@@ -172,6 +173,7 @@ workspace "Agile Software Development Model for efficient Product Feature delive
 
         component bdd "BehaviorDrivenDevelopment" {
             include *
+            exclude *->alignAndUnderstand
         }
 
         component agile "AgileProjectManagement" "Agile projects are broken down into two-week iterations which result in a potentially shippable product increment" {

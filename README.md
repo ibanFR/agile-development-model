@@ -11,7 +11,10 @@ and collaboration around system architecture documentation, aligning it more clo
 used in modern software development.
 
 ## Pre-requisites
-Install docker on your machine.
+1 Install docker on your machine.
+2 Pull the structurizr-lite image from docker hub.
+
+See [Structurizr Lite - Quickstart](https://docs.structurizr.com/lite/quickstart/) for more information.
 
 ## Folder structure
 
@@ -36,3 +39,8 @@ To start structurizr-lite run the following command:
 docker run -it --rm -p 8080:8080 -v $(pwd):/usr/local/structurizr structurizr/lite
 ```
 Access the Structurizr Lite web application at http://localhost:8080
+
+## Resources
+- [The C4 model for visualising software architecture](https://c4model.com/)
+- [Structurizr DSL](https://docs.structurizr.com/dsl)
+- [Structurizr examples](https://github.com/structurizr/examples/tree/main)

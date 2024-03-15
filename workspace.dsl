@@ -21,7 +21,7 @@ workspace "Agile Software Development Model for efficient Product Feature delive
                 productBrief = component "Product Brief" "Short product or feature brief to frame and constrain the project. Identifies key capabilities and high level goals and objectives of the project" "Opportunity Canvas, slideck, etc"{
                     tags "product"
                 }
-                storyMap = component "User Story Map" "Describe the User journey through the Product telling a story from the perspective of the end user" "Spreading domain knowledge through the whole team will create a shared understanding of the system to build."{
+                storyMap = component "Map the Big Picture" "Describe the User journey through the Product telling a story from the perspective of the end user" "Spreading domain knowledge through the whole team will create a shared understanding of the system to build."{
                     tags "product"
                 }
                 backlog = component "Product Backlog" "Prioritised list of User Stories that need to be completed or addressed during the project" "They typically follow the template: As a [user type/role], I want [a capability] so that [benefit or goal]"{
@@ -64,12 +64,12 @@ workspace "Agile Software Development Model for efficient Product Feature delive
 
                 }
 
-                ceremonies = component "Agile Ceremonies" "Agile ceremonies, metrics and feedback loops to help the team make informed decisions" "Jira, Knowledge Base, etc"{
+                ceremonies = component "Agile Iterations" "Agile ceremonies, metrics and feedback loops to help the team make informed decisions" "Jira, Knowledge Base, etc"{
 
                 }
 
                 customerSupport = component "Customer Support" "The process of providing assistance to the end users of the product" "Jira"{
-
+                    tags "product"
                 }
             }
 
@@ -133,7 +133,11 @@ workspace "Agile Software Development Model for efficient Product Feature delive
         //ddd
         decompose -> strategize "collaborative modelling" "Miro"
         strategize -> design "visualize software architecture" "draw.io, structurizr"
-        design -> knowledgeBase "document the software design" "Google "
+        design -> knowledgeBase "document the software design" "Google Drive"
+//        design -> development "guides development"
+        developer -> decompose "identifies strategic focus areas"
+        product -> decompose "validates and categorizes subdomains"
+
 
         //tdd
         development -> ceremonies "updates progress on"
@@ -144,10 +148,13 @@ workspace "Agile Software Development Model for efficient Product Feature delive
         //agile
         ceremonies -> informationRadiators "visualize progress on"
         ceremonies -> backlog "delivers on"
+        customerSupport -> informationRadiators "raises issues on"
+//        ceremonies -> knowledgeBase "incrementally updates"
 
         //knowledge base
         knowledgeBase -> customerSupport "referenced by"
 //        knowledgeBase -> development "reference for"
+//        knowledgeBase -> ceremonies "is reviewed"
     }
 
     views {
@@ -158,17 +165,19 @@ workspace "Agile Software Development Model for efficient Product Feature delive
         container process "Containers" {
             include *
             exclude documentation->tdd agile->alignAndUnderstand product->bdd developer->bdd allComponents
-
+            exclude product->ddd developer->ddd
         }
 
         component allComponents "Components" "All Components and relationships" {
             include product developer productBrief storyMap discovery formulation automation decompose strategize design backlog ceremonies informationRadiators customerSupport knowledgeBase development continuousIntegration livingDocumentation
             exclude product->discovery
+            exclude developer->decompose
        }
 
         component alignAndUnderstand "AlignAndUnderstand" {
             include product developer productBrief storyMap backlog bdd ddd
             exclude product->bdd developer->bdd
+            exclude product->ddd developer->ddd
         }
 
         component bdd "BehaviorDrivenDevelopment" {
@@ -176,14 +185,14 @@ workspace "Agile Software Development Model for efficient Product Feature delive
             exclude *->alignAndUnderstand
         }
 
-        component ddd "DomainDrivenDesign" {
+        component ddd "DomainDrivenDesign" "" {
             include * product developer
             exclude *->alignAndUnderstand
         }
 
         component agile "AgileProjectManagement" "Agile projects are broken down into two-week iterations which result in a potentially shippable product increment" {
-            include *
-            autoLayout lr
+            include * product developer
+            exclude product->alignAndUnderstand developer->alignAndUnderstand
         }
 
         theme default

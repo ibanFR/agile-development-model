@@ -7,7 +7,7 @@ workspace "Agile Software Development Model for efficient Product Feature delive
         }
         developer = person "Engineering stakeholder" "Engineering Team member who follows the software development process to become more efficient"
 
-        process = softwareSystem "Agile Software Development Model for efficient Product Feature delivery" "The process used to develop and deliver product features" "Software Development Process"{
+        process = softwareSystem "Agile Software Development Model for Product Feature delivery" "The process used to develop and deliver product features" "Software Development Process"{
             !docs docs
             !adrs adrs
 
@@ -21,7 +21,7 @@ workspace "Agile Software Development Model for efficient Product Feature delive
                 productBrief = component "Product Brief" "Short product or feature brief to frame and constrain the project. Identifies key capabilities and high level goals and objectives of the project" "Opportunity Canvas, slideck, etc"{
                     tags "product"
                 }
-                storyMap = component "Map the Big Picture" "Describe the User journey through the Product telling a story from the perspective of the end user" "Spreading domain knowledge through the whole team will create a shared understanding of the system to build."{
+                storyMap = component "Domain Discovery" "Map the Big Picture by describing the User journey through the Product telling a story from the perspective of the end user" "Spreading domain knowledge through the whole team will create a shared understanding of the system to build."{
                     tags "product"
                 }
                 backlog = component "Product Backlog" "Prioritised list of User Stories that need to be completed or addressed during the project" "They typically follow the template: As a [user type/role], I want [a capability] so that [benefit or goal]"{
@@ -30,7 +30,7 @@ workspace "Agile Software Development Model for efficient Product Feature delive
             }
 
             bdd = container "Behavior Driven Development" "Define and understand the desired system behavior before writting any code. It encourages collaboration and a shared understanding of the project's objectives" "BDD"{
-                discovery = component "Specification Workshop" "Concrete rules and examples help us explore the problem domain and makes a great basis for our acceptance tests" "Example Mapping sessions to clarify and confirm the acceptance criteria"{
+                discovery = component "Requirement Workshop" "Concrete rules and examples help us explore the problem domain and makes a great basis for our acceptance tests" "Example Mapping sessions to clarify and confirm the acceptance criteria"{
                     tags "product"
                 }
                 formulation = component "Acceptance Tests" "Once we have identified our rules and examples from our discovery sessions, we can now formulate each example as structured documentation." "Executable specifications of the system behavior"{
@@ -41,7 +41,7 @@ workspace "Agile Software Development Model for efficient Product Feature delive
                 }
             }
 
-            ddd = container "Strategic Architecture and Domain Driven Design" "Decompose a large problem domain into cohesive modules. Explore models in a creative collaboration of domain experts and software engineers." "Sotware Architecture and Design"{
+            ddd = container "Strategic Architecture and Domain Driven Design" "Explore models in a creative collaboration of domain experts and software engineers." "Sotware Architecture and Design"{
 
                 decompose = component "Domain Decomposition" "Decompose a large problem domain into cohesive modules, so that we can identify stragically significant key focus areas" "Core Domain Charts"{
                     tags "product"
@@ -102,17 +102,17 @@ workspace "Agile Software Development Model for efficient Product Feature delive
 
         product -> process "contributes to"
         developer -> process "follows"
-        product -> productBrief "presents"
+        product -> productBrief "presents next Product Feature"
         developer -> storyMap "collaborates on"
 
 
         // container relationships
         alignAndUnderstand -> bdd "collaborative requirement specification
         alignAndUnderstand -> ddd "collaborative domain modelling"
+        bdd -> documentation "generate living documentation"
 
         bdd -> tdd "guides code implementation"
-        ddd -> documentation "generate documentation"
-        bdd -> agile "supports"
+        bdd -> agile "improves collaboration"
         tdd -> agile "updates progress"
         ddd -> agile "enhances agility"
 
@@ -142,7 +142,7 @@ workspace "Agile Software Development Model for efficient Product Feature delive
         //tdd
         development -> ceremonies "updates progress on"
         development -> continuousIntegration "push code to version control"
-        continuousIntegration -> livingDocumentation "updates"
+//        continuousIntegration -> livingDocumentation "updates"
 
 
         //agile

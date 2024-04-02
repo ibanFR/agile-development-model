@@ -64,7 +64,7 @@ workspace "Agile Software Development Model for efficient Product Feature delive
 
                 }
 
-                ceremonies = component "Agile Iterations" "Agile ceremonies, metrics and feedback loops to help the team make informed decisions" "Jira, Knowledge Base, etc"{
+                ceremonies = component "Agile Ceremonies" "Agile iterations, metrics and feedback loops to help the team make informed decisions" "Jira, Knowledge Base, etc"{
 
                 }
 
@@ -103,7 +103,7 @@ workspace "Agile Software Development Model for efficient Product Feature delive
         product -> process "contributes to"
         developer -> process "follows"
         product -> productBrief "presents next Product Feature"
-        developer -> storyMap "collaborates on"
+        developer -> productBrief "obtains domain knowledge"
 
 
         // container relationships
@@ -112,8 +112,8 @@ workspace "Agile Software Development Model for efficient Product Feature delive
         bdd -> documentation "generate living documentation"
 
         bdd -> tdd "guides code implementation"
-        bdd -> agile "improves collaboration"
-        tdd -> agile "updates progress"
+        bdd -> agile "creates a shared understanding"
+        tdd -> agile "delivers product increment"
         ddd -> agile "enhances agility"
 
         //align and understand
@@ -134,25 +134,25 @@ workspace "Agile Software Development Model for efficient Product Feature delive
         decompose -> strategize "collaborative modelling" "Miro"
         strategize -> design "visualize software architecture" "draw.io, structurizr"
         design -> knowledgeBase "document the software design" "Google Drive"
-//        design -> development "guides development"
         developer -> decompose "identifies strategic focus areas"
         product -> decompose "validates and categorizes subdomains"
 
 
         //tdd
-        development -> ceremonies "updates progress on"
+        developer -> development "implements high-quality software"
+        development -> informationRadiators "updates progress on"
         development -> continuousIntegration "push code to version control"
-//        continuousIntegration -> livingDocumentation "updates"
-
 
         //agile
+        product -> ceremonies "prioritize the backlog"
+//        product -> ceremonies "validates product increments"
+        developer -> ceremonies "updates work progress"
         ceremonies -> informationRadiators "visualize progress on"
         ceremonies -> backlog "delivers on"
         customerSupport -> informationRadiators "raises issues on"
-//        ceremonies -> knowledgeBase "incrementally updates"
 
         //knowledge base
-        knowledgeBase -> customerSupport "referenced by"
+        knowledgeBase -> customerSupport "is referenced by"
 //        knowledgeBase -> development "reference for"
 //        knowledgeBase -> ceremonies "is reviewed"
     }
@@ -165,13 +165,14 @@ workspace "Agile Software Development Model for efficient Product Feature delive
         container process "Containers" {
             include *
             exclude documentation->tdd agile->alignAndUnderstand product->bdd developer->bdd allComponents
-            exclude product->ddd developer->ddd
+            exclude product->ddd product->agile
+            exclude developer->agile developer->ddd developer->tdd
         }
 
         component allComponents "Components" "All Components and relationships" {
             include product developer productBrief storyMap discovery formulation automation decompose strategize design backlog ceremonies informationRadiators customerSupport knowledgeBase development continuousIntegration livingDocumentation
-            exclude product->discovery
-            exclude developer->decompose
+            exclude product->discovery product->ceremonies
+            exclude developer->decompose developer->development developer->ceremonies
        }
 
         component alignAndUnderstand "AlignAndUnderstand" {
@@ -183,6 +184,7 @@ workspace "Agile Software Development Model for efficient Product Feature delive
         component bdd "BehaviorDrivenDevelopment" {
             include *
             exclude *->alignAndUnderstand
+            exclude developer->tdd
         }
 
         component ddd "DomainDrivenDesign" "" {
@@ -190,10 +192,18 @@ workspace "Agile Software Development Model for efficient Product Feature delive
             exclude *->alignAndUnderstand
         }
 
+        component tdd "TestDrivenDevelopment" {
+            include * product developer
+            exclude developer->agile bdd->agile *->bdd
+        }
+
         component agile "AgileProjectManagement" "Agile projects are broken down into two-week iterations which result in a potentially shippable product increment" {
             include * product developer
-            exclude product->alignAndUnderstand developer->alignAndUnderstand
+            exclude product->alignAndUnderstand
+            exclude developer->tdd developer->alignAndUnderstand
         }
+
+
 
         theme default
 

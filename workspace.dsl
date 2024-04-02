@@ -140,12 +140,12 @@ workspace "Agile Software Development Model for efficient Product Feature delive
 
         //tdd
         developer -> development "implements high-quality software"
-        development -> informationRadiators "updates progress on"
+        development -> ceremonies "updates progress on"
         development -> continuousIntegration "push code to version control"
 
         //agile
-        product -> ceremonies "prioritize the backlog"
-//        product -> ceremonies "validates product increments"
+//        product -> ceremonies "prioritize the backlog"
+        product -> ceremonies "validates product increments"
         developer -> ceremonies "updates work progress"
         ceremonies -> informationRadiators "visualize progress on"
         ceremonies -> backlog "delivers on"

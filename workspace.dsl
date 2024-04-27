@@ -7,7 +7,7 @@ workspace "Agile Software Development Model for efficient Product Feature delive
         }
         developer = person "Engineering stakeholder" "Engineering Team member who follows the software development process to become more efficient"
 
-        process = softwareSystem "Agile Software Development Model for Product Feature delivery" "The process used to develop and deliver product features" "Software Development Process"{
+        process = softwareSystem "Agile Software Development Model for Product feature delivery" "The process used to develop and deliver product features" "Software Development Process"{
             !docs docs
             !adrs adrs
 
@@ -99,21 +99,20 @@ workspace "Agile Software Development Model for efficient Product Feature delive
 
         product -> process "contributes to"
         developer -> process "follows"
-        product -> productBrief "presents next Product Feature"
+        product -> productBrief "presents Product Feature"
         developer -> productBrief "obtains domain knowledge"
 
         // container relationships
         alignAndUnderstand -> bdd "collaborative requirement specification
         alignAndUnderstand -> ddd "collaborative domain modelling"
-
-        bdd -> tdd "guides code implementation"
         bdd -> agile "creates a shared understanding"
         tdd -> agile "delivers product increment"
         ddd -> agile "enhances agility"
+        ddd -> tdd "guides code implementation"
 
         //align and understand
         productBrief -> storyMap "spread domain knowledge" "Miro"
-        storyMap -> backlog "formulate user stories and create" "Jira"
+        storyMap -> backlog "formulate user stories" "Jira"
         storyMap -> discovery "identify rules and examples" "Miro"
         storyMap -> decompose "problem decomposition" "Core Domain Charts"
 
@@ -122,7 +121,7 @@ workspace "Agile Software Development Model for efficient Product Feature delive
         developer -> discovery "identifies functional gaps or inconsistencies"
         discovery -> formulation "formulate acceptance criteria" "Gherkin"
         formulation -> automation "automate acceptance tests" "Cucumber"
-        automation -> development "guides development" "Cucumber"
+        automation -> development "guides code implementation"
 
         //ddd
         decompose -> strategize "collaborative modelling" "Miro"
@@ -131,7 +130,6 @@ workspace "Agile Software Development Model for efficient Product Feature delive
         developer -> decompose "identifies strategic focus areas"
         product -> decompose "validates and categorizes subdomains"
 
-
         //tdd
         developer -> development "implements high-quality software"
         development -> ceremonies "updates progress on"
@@ -139,16 +137,12 @@ workspace "Agile Software Development Model for efficient Product Feature delive
         continuousIntegration -> livingDocumentation "generates"
 
         //agile
-//        product -> ceremonies "prioritize the backlog"
         product -> ceremonies "validates product increments"
         developer -> ceremonies "updates work progress"
         ceremonies -> informationRadiators "visualize progress on"
-//        ceremonies -> backlog "delivers on"
         customerSupport -> informationRadiators "raises issues on"
         customerSupport -> knowledgeBase "references"
-
-        //knowledge base
-//        knowledgeBase -> development "reference for"
+        knowledgeBase -> development "reference for"
 
     }
 
@@ -197,6 +191,7 @@ workspace "Agile Software Development Model for efficient Product Feature delive
         component agile "AgileProjectManagement" "Agile projects are broken down into two-week iterations which result in a potentially shippable product increment" {
             include *
             exclude *->ddd
+            exclude *->tdd
             exclude developer->tdd developer->alignAndUnderstand
         }
 

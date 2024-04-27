@@ -21,9 +21,11 @@ workspace "Agile Software Development Model for efficient Product Feature delive
                 productBrief = component "Product Brief" "Short product or feature brief to frame and constrain the project. Identifies key capabilities and high level goals and objectives of the project" "Opportunity Canvas, slideck, etc"{
                     tags "product"
                 }
+
                 storyMap = component "Domain Discovery" "Map the Big Picture by describing the User journey through the Product telling a story from the perspective of the end user" "Spreading domain knowledge through the whole team will create a shared understanding of the system to build."{
                     tags "product"
                 }
+
                 backlog = component "Product Backlog" "Prioritised list of User Stories that need to be completed or addressed during the project" "They typically follow the template: As a [user type/role], I want [a capability] so that [benefit or goal]"{
                     tags "product"
                 }
@@ -33,10 +35,10 @@ workspace "Agile Software Development Model for efficient Product Feature delive
                 discovery = component "Requirement Workshop" "Concrete rules and examples help us explore the problem domain and makes a great basis for our acceptance tests" "Example Mapping sessions to clarify and confirm the acceptance criteria"{
                     tags "product"
                 }
-                formulation = component "Acceptance Tests" "Once we have identified our rules and examples from our discovery sessions, we can now formulate each example as structured documentation." "Executable specifications of the system behavior"{
+                formulation = component "Acceptance Test" "Once we have identified our rules and examples, we can now formulate each example as structured documentation." "Executable specifications of the system behavior"{
 
                 }
-                automation = component "Feature files" "Groups related scenarios that demostrates how a feature works " "Cucumber, etc"{
+                automation = component "Features" "Groups related scenarios that demostrates how a feature works " "Cucumber Features, etc"{
 
                 }
             }
@@ -60,11 +62,16 @@ workspace "Agile Software Development Model for efficient Product Feature delive
             agile = container "Agile Product Management" "Agile projects are broken down into two-week iterations which result in a potentially shippable product increment" "Agile Manifesto"{
 
                 tags "product"
-                informationRadiators = component "Information Radiators" "Project progress and potential issues are visible to all team members with information radiators" "Scrum and Kanban boards Jira, Miro, etc"{
+
+                informationRadiators = component "Information Radiators" "Project progress and potential issues are visible to all team members with information radiators" "Scrum and Kanban boards, Metric Dashboards etc"{
 
                 }
 
-                ceremonies = component "Agile Ceremonies" "Agile iterations, metrics and feedback loops to help the team make informed decisions" "Jira, Knowledge Base, etc"{
+                ceremonies = component "Agile Ceremonies" "Agile iterations, metrics and feedback loops to help the team make informed decisions" "Jira, Trello, Miro, etc"{
+
+                }
+
+                knowledgeBase = component "Knowledge Base" "Centralized repository of information and best practices that the team can refer to for guidance, problem-solving, and knowledge sharing." "Google Drive, Confluence, etc"{
 
                 }
 
@@ -82,20 +89,10 @@ workspace "Agile Software Development Model for efficient Product Feature delive
                 continuousIntegration = component "Continuous Integration" "Automated build scripts are used to run tests and provide immediate feedback to developers about the status of their code changes" "Jenkins, etc"{
 
                 }
-            }
-
-            documentation = container "Knowledge Base" "Centralized repository of information and best practices that the team can refer to for guidance, problem-solving, and knowledge sharing." "Google Drive, Jira, Miro"{
-
-                tags "product"
-
-                knowledgeBase = component "Knowledge Base" "A centralised repository for all the project documentation" "Confluence, etc"{
-
-                }
 
                 livingDocumentation = component "Living Documentation" "Documentation that is co-located with the code and is updated as the code changes" "Confluence, etc"{
 
                 }
-
             }
 
         }
@@ -105,11 +102,9 @@ workspace "Agile Software Development Model for efficient Product Feature delive
         product -> productBrief "presents next Product Feature"
         developer -> productBrief "obtains domain knowledge"
 
-
         // container relationships
         alignAndUnderstand -> bdd "collaborative requirement specification
         alignAndUnderstand -> ddd "collaborative domain modelling"
-        bdd -> documentation "generate living documentation"
 
         bdd -> tdd "guides code implementation"
         bdd -> agile "creates a shared understanding"
@@ -117,11 +112,10 @@ workspace "Agile Software Development Model for efficient Product Feature delive
         ddd -> agile "enhances agility"
 
         //align and understand
-        productBrief -> storyMap "collaborative domain discovery" "Miro"
-        storyMap -> backlog "formulate user stories and create the project backlog" "Jira"
+        productBrief -> storyMap "spread domain knowledge" "Miro"
+        storyMap -> backlog "formulate user stories and create" "Jira"
         storyMap -> discovery "identify rules and examples" "Miro"
         storyMap -> decompose "problem decomposition" "Core Domain Charts"
-
 
         //bdd
         product -> discovery "presents rules and examples"
@@ -142,19 +136,20 @@ workspace "Agile Software Development Model for efficient Product Feature delive
         developer -> development "implements high-quality software"
         development -> ceremonies "updates progress on"
         development -> continuousIntegration "push code to version control"
+        continuousIntegration -> livingDocumentation "generates"
 
         //agile
 //        product -> ceremonies "prioritize the backlog"
         product -> ceremonies "validates product increments"
         developer -> ceremonies "updates work progress"
         ceremonies -> informationRadiators "visualize progress on"
-        ceremonies -> backlog "delivers on"
+//        ceremonies -> backlog "delivers on"
         customerSupport -> informationRadiators "raises issues on"
+        customerSupport -> knowledgeBase "references"
 
         //knowledge base
-        knowledgeBase -> customerSupport "is referenced by"
 //        knowledgeBase -> development "reference for"
-//        knowledgeBase -> ceremonies "is reviewed"
+
     }
 
     views {
@@ -164,13 +159,14 @@ workspace "Agile Software Development Model for efficient Product Feature delive
 
         container process "Containers" {
             include *
-            exclude documentation->tdd agile->alignAndUnderstand product->bdd developer->bdd allComponents
-            exclude product->ddd product->agile
-            exclude developer->agile developer->ddd developer->tdd
+            exclude allComponents
+            exclude product->ddd product->agile product->bdd
+            exclude developer->agile developer->ddd developer->bdd developer->tdd
         }
 
         component allComponents "Components" "All Components and relationships" {
             include product developer productBrief storyMap discovery formulation automation decompose strategize design backlog ceremonies informationRadiators customerSupport knowledgeBase development continuousIntegration livingDocumentation
+//            include *
             exclude product->discovery product->ceremonies
             exclude developer->decompose developer->development developer->ceremonies
        }
@@ -188,8 +184,9 @@ workspace "Agile Software Development Model for efficient Product Feature delive
         }
 
         component ddd "DomainDrivenDesign" "" {
-            include * product developer
+            include *
             exclude *->alignAndUnderstand
+            exclude product->agile developer->agile
         }
 
         component tdd "TestDrivenDevelopment" {
@@ -198,8 +195,8 @@ workspace "Agile Software Development Model for efficient Product Feature delive
         }
 
         component agile "AgileProjectManagement" "Agile projects are broken down into two-week iterations which result in a potentially shippable product increment" {
-            include * product developer
-            exclude product->alignAndUnderstand
+            include *
+            exclude *->ddd
             exclude developer->tdd developer->alignAndUnderstand
         }
 

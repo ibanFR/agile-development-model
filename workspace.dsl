@@ -1,4 +1,4 @@
-workspace "Agile Software Development Model for efficient Product Feature delivery"{
+workspace "Agile Software Development Model for efficient Product feature delivery"{
 
     model {
 
@@ -22,7 +22,7 @@ workspace "Agile Software Development Model for efficient Product Feature delive
                     tags "product"
                 }
 
-                storyMap = component "Domain Discovery" "Map the Big Picture by describing the User journey through the Product telling a story from the perspective of the end user" "Spreading domain knowledge through the whole team will create a shared understanding of the system to build."{
+                storyMap = component "Domain Discovery" "Map the Big Picture by describing the User journey through the Product telling a story from the perspective of the end user" "User Story Map, Event Storming, etc"{
                     tags "product"
                 }
 
@@ -38,7 +38,7 @@ workspace "Agile Software Development Model for efficient Product Feature delive
                 formulation = component "Acceptance Test" "Once we have identified our rules and examples, we can now formulate each example as structured documentation." "Executable specifications of the system behavior"{
 
                 }
-                automation = component "Features" "Groups related scenarios that demostrates how a feature works " "Cucumber Features, etc"{
+                automation = component "Features" "Groups related scenarios that demostrates how a feature works " "Cucumber, Selenium etc"{
 
                 }
             }
@@ -111,8 +111,8 @@ workspace "Agile Software Development Model for efficient Product Feature delive
         ddd -> tdd "guides code implementation"
 
         //align and understand
-        productBrief -> storyMap "spread domain knowledge" "Miro"
-        storyMap -> backlog "formulate user stories" "Jira"
+        productBrief -> storyMap "spread domain knowledge"
+        storyMap -> backlog "formulate user stories"
         storyMap -> discovery "identify rules and examples" "Miro"
         storyMap -> decompose "problem decomposition" "Core Domain Charts"
 
@@ -156,6 +156,7 @@ workspace "Agile Software Development Model for efficient Product Feature delive
             exclude allComponents
             exclude product->ddd product->agile product->bdd
             exclude developer->agile developer->ddd developer->bdd developer->tdd
+            exclude agile->tdd
         }
 
         component allComponents "Components" "All Components and relationships" {
@@ -186,9 +187,10 @@ workspace "Agile Software Development Model for efficient Product Feature delive
         component tdd "TestDrivenDevelopment" {
             include * product developer
             exclude developer->agile bdd->agile *->bdd
+            exclude agile->development
         }
 
-        component agile "AgileProjectManagement" "Agile projects are broken down into two-week iterations which result in a potentially shippable product increment" {
+        component agile "AgileProductManagement" "Agile projects are broken down into two-week iterations which result in a potentially shippable product increment" {
             include *
             exclude *->ddd
             exclude *->tdd

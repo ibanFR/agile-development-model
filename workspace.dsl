@@ -18,7 +18,7 @@ workspace "Agile Software Development Model for efficient Product feature delive
 
             alignAndUnderstand = container "Align and Understand Product Requirements" "Align our focus with the organisation's business model, the needs of its users, and its short, medium, and long-term goals." "Align & Understand"{
                 tags "product"
-                productBrief = component "Product Brief" "Short product or feature brief to frame and constrain the project. Identifies key capabilities and high level goals and objectives of the project" "Opportunity Canvas, slideck, etc"{
+                productBrief = component "Product Brief" "Short product or feature brief to frame and constrain the project. Identifies key capabilities and high level goals and objectives of the product feature" "Opportunity Canvas, Slideck, etc"{
                     tags "product"
                 }
 

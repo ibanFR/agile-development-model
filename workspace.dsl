@@ -5,7 +5,7 @@ workspace "Agile Software Development Model for efficient Product feature delive
         product = person "Product stakeholder" "Product Team member who owns and drives the product vision"{
             tags "product"
         }
-        developer = person "Engineering stakeholder" "Engineering Team member who follows the software development process to become more efficient"
+        developer = person "Software Engineer" "Engineering Team member who follows the software development process to become more efficient"
 
         process = softwareSystem "Agile Software Development Model for Product feature delivery" "The process used to develop and deliver product features" "Software Development Process"{
             !docs docs

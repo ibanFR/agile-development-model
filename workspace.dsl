@@ -63,6 +63,7 @@ workspace "Agile Software Development Model for efficient Product feature delive
                 backlog = component "Product Backlog" "Prioritised list of User Stories that need to be completed or addressed during the project" "They typically follow the template: As a [user type/role], I want [a capability] so that [benefit or goal]" {
                     tags "product"
                 }
+
                 informationRadiators = component "Information Radiators" "Project progress and potential issues are visible to all team members with information radiators" "Scrum and Kanban boards, Metric Dashboards etc"{
 
                 }
@@ -105,14 +106,12 @@ workspace "Agile Software Development Model for efficient Product feature delive
         // container relationships
         alignAndUnderstand -> bdd "collaborative requirement specification
         alignAndUnderstand -> ddd "collaborative domain modelling"
-        bdd -> agile "creates a shared understanding" "bdd-agile"
-        tdd -> agile "delivers product increment"
-        ddd -> agile "enhances agility" "ddd-agile"
+        bdd -> agile "creates a shared understanding"
+        ddd -> agile "enhances agility"
         ddd -> tdd "guides code implementation"
 
         //align and understand
         productBrief -> storyMap "spread domain knowledge"
-//        storyMap -> backlog "formulate user stories"
         storyMap -> discovery "identify rules and examples" "Miro"
         storyMap -> decompose "problem decomposition" "Core Domain Charts"
 
@@ -120,6 +119,7 @@ workspace "Agile Software Development Model for efficient Product feature delive
         product -> discovery "presents rules and examples"
         developer -> discovery "identifies functional gaps or inconsistencies"
         discovery -> formulation "formulate acceptance criteria" "Gherkin"
+        discovery -> backlog "formulate user stories"
         formulation -> automation "automate acceptance tests" "Cucumber"
         automation -> development "guides code implementation"
 
@@ -132,15 +132,14 @@ workspace "Agile Software Development Model for efficient Product feature delive
 
         //tdd
         developer -> development "implements high-quality software"
-        development -> ceremonies "updates progress on"
         development -> continuousIntegration "push code to version control"
+        continuousIntegration -> backlog "deliver product increment"
         continuousIntegration -> livingDocumentation "generates"
 
         //agile
-        product -> ceremonies "validates product increments"
+        product -> ceremonies "validates product increment"
         developer -> ceremonies "updates work progress"
         ceremonies -> informationRadiators "visualize progress on"
-        customerSupport -> informationRadiators "raises issues on"
         customerSupport -> knowledgeBase "references"
         knowledgeBase -> development "reference for"
 
@@ -195,7 +194,9 @@ workspace "Agile Software Development Model for efficient Product feature delive
             include *
             exclude *->ddd
             exclude *->tdd
-            exclude developer->tdd developer->alignAndUnderstand
+            exclude *->bdd
+            exclude developer->alignAndUnderstand
+            autoLayout tb
         }
 
 

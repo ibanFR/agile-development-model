@@ -26,9 +26,9 @@ workspace "Agile Software Development Model for efficient Product feature delive
                     tags "product"
                 }
 
-                backlog = component "Product Backlog" "Prioritised list of User Stories that need to be completed or addressed during the project" "They typically follow the template: As a [user type/role], I want [a capability] so that [benefit or goal]"{
-                    tags "product"
-                }
+//                backlog = component "Product Backlog" "Prioritised list of User Stories that need to be completed or addressed during the project" "They typically follow the template: As a [user type/role], I want [a capability] so that [benefit or goal]"{
+//                    tags "product"
+//                }
             }
 
             bdd = container "Behavior Driven Development" "Define and understand the desired system behavior before writting any code. It encourages collaboration and a shared understanding of the project's objectives" "BDD"{
@@ -112,7 +112,7 @@ workspace "Agile Software Development Model for efficient Product feature delive
 
         //align and understand
         productBrief -> storyMap "spread domain knowledge"
-        storyMap -> backlog "formulate user stories"
+//        storyMap -> backlog "formulate user stories"
         storyMap -> discovery "identify rules and examples" "Miro"
         storyMap -> decompose "problem decomposition" "Core Domain Charts"
 
@@ -161,14 +161,14 @@ workspace "Agile Software Development Model for efficient Product feature delive
         }
 
         component allComponents "Components" "All Components and relationships" {
-            include product developer productBrief storyMap discovery formulation automation decompose strategize design backlog ceremonies informationRadiators customerSupport knowledgeBase development continuousIntegration livingDocumentation
-//            include *
+//            include product developer productBrief storyMap discovery formulation automation decompose strategize design backlog ceremonies informationRadiators customerSupport knowledgeBase development continuousIntegration livingDocumentation
+            include *
             exclude product->discovery product->ceremonies
             exclude developer->decompose developer->development developer->ceremonies
        }
 
         component alignAndUnderstand "AlignAndUnderstand" {
-            include product developer productBrief storyMap backlog bdd ddd
+            include *
             exclude product->bdd developer->bdd
             exclude product->ddd developer->ddd
         }

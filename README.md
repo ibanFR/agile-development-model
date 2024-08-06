@@ -40,6 +40,24 @@ docker run -it --rm -p 8080:8080 -v $(pwd):/usr/local/structurizr structurizr/li
 ```
 Access the Structurizr Lite web application at http://localhost:8080
 
+## Rendering tools
+
+This projects uses [Structurizr Site Generatr]() to Generates a HTML microsite with diagrams, documentation, and a UI to
+explore the model.
+
+To generate the HTML microsite, run the following command:
+
+```shell
+structurizr-site-generatr generate-site -w workspace.dsl
+```
+Start a development web server around the generated website:
+
+```shell 
+structurizr-site-generatr serve -w workspace.dsl
+```
+
+
+
 ## Resources
 - [The C4 model for visualising software architecture](https://c4model.com/)
 - [Structurizr DSL](https://docs.structurizr.com/dsl)

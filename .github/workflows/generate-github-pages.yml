@@ -2,7 +2,7 @@ name: Deploy static content to Github Pages
 
 on:
   push:
-    branches: ["move-product-backlog"]
+    branches: ["main"]
 
 permissions:
   contents: read

@@ -25,10 +25,6 @@ workspace "Agile Software Development Model for efficient Product feature delive
                 storyMap = component "Domain Discovery" "Map the Big Picture by describing the User journey through the Product telling a story from the perspective of the end user" "User Story Map, Event Storming, etc"{
                     tags "product"
                 }
-
-//                backlog = component "Product Backlog" "Prioritised list of User Stories that need to be completed or addressed during the project" "They typically follow the template: As a [user type/role], I want [a capability] so that [benefit or goal]"{
-//                    tags "product"
-//                }
             }
 
             bdd = container "Behavior Driven Development" "Define and understand the desired system behavior before writting any code. It encourages collaboration and a shared understanding of the project's objectives" "BDD"{
@@ -63,6 +59,10 @@ workspace "Agile Software Development Model for efficient Product feature delive
 
                 tags "product"
 
+
+                backlog = component "Product Backlog" "Prioritised list of User Stories that need to be completed or addressed during the project" "They typically follow the template: As a [user type/role], I want [a capability] so that [benefit or goal]" {
+                    tags "product"
+                }
                 informationRadiators = component "Information Radiators" "Project progress and potential issues are visible to all team members with information radiators" "Scrum and Kanban boards, Metric Dashboards etc"{
 
                 }

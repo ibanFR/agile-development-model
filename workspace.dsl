@@ -5,7 +5,7 @@ workspace "Agile Software Development Model for efficient Product feature delive
         product = person "Product stakeholder" "Product Team member who owns and drives the product vision"{
             tags "product"
         }
-        developer = person "Software Engineer" "Engineering Team member who follows the software development process to become more efficient"
+        developer = person "Software Engineer" "Engineering Team member who follows the software development model to become more efficient"
 
         process = softwareSystem "Agile Software Development Model for Product feature delivery" "The process used to develop and deliver product features" "Software Development Process"{
             !docs docs
@@ -105,9 +105,9 @@ workspace "Agile Software Development Model for efficient Product feature delive
         // container relationships
         alignAndUnderstand -> bdd "collaborative requirement specification
         alignAndUnderstand -> ddd "collaborative domain modelling"
-        bdd -> agile "creates a shared understanding"
+        bdd -> agile "creates a shared understanding" "bdd-agile"
         tdd -> agile "delivers product increment"
-        ddd -> agile "enhances agility"
+        ddd -> agile "enhances agility" "ddd-agile"
         ddd -> tdd "guides code implementation"
 
         //align and understand
@@ -153,6 +153,7 @@ workspace "Agile Software Development Model for efficient Product feature delive
 
         container process "Containers" {
             include *
+            autoLayout tb
             exclude allComponents
             exclude product->ddd product->agile product->bdd
             exclude developer->agile developer->ddd developer->bdd developer->tdd
@@ -206,6 +207,43 @@ workspace "Agile Software Development Model for efficient Product feature delive
                 background grey
                 color #ffffff
             }
+            relationship "bdd-agile" {
+                routing Curved
+            }
+
+//            element <tag> {
+//                shape <Box|RoundedBox|Circle|Ellipse|Hexagon|Cylinder|Pipe|Person|Robot|Folder|WebBrowser|MobileDevicePortrait|MobileDeviceLandscape|Component>
+//                icon <file|url>
+//                width <integer>
+//                height <integer>
+//                background <#rrggbb|color name>
+//                color <#rrggbb|color name>
+//                colour <#rrggbb|color name>
+//                stroke <#rrggbb|color name>
+//                strokeWidth <integer: 1-10>
+//                fontSize <integer>
+//                border <solid|dashed|dotted>
+//                opacity <integer: 0-100>
+//                metadata <true|false>
+//                description <true|false>
+//                properties {
+//                    name value
+//                }
+//            }
+//            relationship <tag> {
+//                thickness <integer>
+//                color <#rrggbb|color name>
+//                colour <#rrggbb|color name>
+//                style <solid|dashed|dotted>
+//                routing <Direct|Orthogonal|Curved>
+//                fontSize <integer>
+//                width <integer>
+//                position <integer: 0-100>
+//                opacity <integer: 0-100>
+//                properties {
+//                    name value
+//                }
+//            }
         }
     }
 

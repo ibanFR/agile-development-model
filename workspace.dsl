@@ -31,7 +31,7 @@ workspace "Agile Software Development Model for efficient Product feature delive
                 discovery = component "Requirement Workshop" "Concrete rules and examples help us explore the problem domain and makes a great basis for our acceptance tests" "Example Mapping sessions to clarify and confirm the acceptance criteria"{
                     tags "product"
                 }
-                formulation = component "Acceptance Test" "Once we have identified our rules and examples, we can now formulate each example as structured documentation." "Executable specifications of the system behavior"{
+                formulation = component "Acceptance" "Once we have identified our rules and examples, we can now formulate each example as structured documentation." "Executable specifications of the system behavior"{
 
                 }
                 automation = component "Features" "Groups related scenarios that demostrates how a feature works " "Cucumber, Selenium etc"{
@@ -76,6 +76,10 @@ workspace "Agile Software Development Model for efficient Product feature delive
 
                 }
 
+//                livingDocumentation = component "Living Documentation" "Documentation that is co-located with the code and is updated as the code changes" "Confluence, etc"{
+//
+//                }
+
                 customerSupport = component "Customer Support" "The process of providing assistance to the end users of the product" "Jira"{
                     tags "product"
                 }
@@ -90,10 +94,6 @@ workspace "Agile Software Development Model for efficient Product feature delive
                 continuousIntegration = component "Continuous Integration" "Automated build scripts are used to run tests and provide immediate feedback to developers about the status of their code changes" "Jenkins, etc"{
 
                 }
-
-                livingDocumentation = component "Living Documentation" "Documentation that is co-located with the code and is updated as the code changes" "Confluence, etc"{
-
-                }
             }
 
         }
@@ -106,9 +106,8 @@ workspace "Agile Software Development Model for efficient Product feature delive
         // container relationships
         alignAndUnderstand -> bdd "collaborative requirement specification
         alignAndUnderstand -> ddd "collaborative domain modelling"
-        bdd -> agile "creates a shared understanding"
-        ddd -> agile "enhances agility"
-        ddd -> tdd "guides code implementation"
+//        bdd -> agile "creates a shared understanding"
+//        ddd -> tdd "guides code implementation"
 
         //align and understand
         productBrief -> storyMap "spread domain knowledge"
@@ -119,29 +118,32 @@ workspace "Agile Software Development Model for efficient Product feature delive
         product -> discovery "presents rules and examples"
         developer -> discovery "identifies functional gaps or inconsistencies"
         discovery -> formulation "formulate acceptance criteria" "Gherkin"
-        discovery -> backlog "formulate user stories"
+//        formulation -> backlog "formulate user stories"
+        automation -> backlog "creates a shared understanding"
         formulation -> automation "automate acceptance tests" "Cucumber"
         automation -> development "guides code implementation"
 
         //ddd
         decompose -> strategize "collaborative modelling" "Miro"
         strategize -> design "visualize software architecture" "draw.io, structurizr"
-        design -> knowledgeBase "document the software design" "Google Drive"
+//        design -> knowledgeBase "document the software design" "Google Drive"
         developer -> decompose "identifies strategic focus areas"
         product -> decompose "validates and categorizes subdomains"
+        design -> tdd "guides code implementation"
+        design -> backlog "enhances agility"
 
         //tdd
         developer -> development "implements high-quality software"
         development -> continuousIntegration "push code to version control"
         continuousIntegration -> backlog "deliver product increment"
-        continuousIntegration -> livingDocumentation "generates"
+//        continuousIntegration -> livingDocumentation "generates"
 
         //agile
         product -> ceremonies "validates product increment"
         developer -> ceremonies "updates work progress"
         ceremonies -> informationRadiators "visualize progress on"
         customerSupport -> knowledgeBase "references"
-        knowledgeBase -> development "reference for"
+//        knowledgeBase -> development "reference for"
 
     }
 
@@ -160,28 +162,34 @@ workspace "Agile Software Development Model for efficient Product feature delive
         }
 
         component allComponents "Components" "All Components and relationships" {
-//            include product developer productBrief storyMap discovery formulation automation decompose strategize design backlog ceremonies informationRadiators customerSupport knowledgeBase development continuousIntegration livingDocumentation
-            include *
-            exclude product->discovery product->ceremonies
-            exclude developer->decompose developer->development developer->ceremonies
+            include product developer productBrief storyMap discovery formulation automation
+            include decompose strategize design backlog ceremonies informationRadiators
+            include customerSupport knowledgeBase development continuousIntegration
+            exclude product->discovery product->ceremonies product->decompose
+            exclude developer->decompose developer->development developer->ceremonies developer->discovery
        }
 
         component alignAndUnderstand "AlignAndUnderstand" {
             include *
             exclude product->bdd developer->bdd
             exclude product->ddd developer->ddd
+            autoLayout tb
         }
 
         component bdd "BehaviorDrivenDevelopment" {
             include *
+            exclude tdd
             exclude *->alignAndUnderstand
-            exclude developer->tdd
+            exclude product->agile
+            exclude developer->agile
         }
 
         component ddd "DomainDrivenDesign" "" {
             include *
             exclude *->alignAndUnderstand
-            exclude product->agile developer->agile
+            exclude product->agile
+            exclude developer->agile developer->tdd
+            exclude tdd->*
         }
 
         component tdd "TestDrivenDevelopment" {

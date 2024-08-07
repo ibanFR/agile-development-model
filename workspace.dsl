@@ -143,7 +143,7 @@ workspace "Agile Software Development Model for efficient Product feature delive
         product -> ceremonies "validates product increment"
         developer -> ceremonies "updates work progress"
         backlog -> informationRadiators "visualize progress on"
-        customerSupport -> knowledgeBase "references"
+        knowledgeBase -> customerSupport "is referenced by"
 //        knowledgeBase -> development "reference for"
 
     }

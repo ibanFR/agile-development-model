@@ -2,6 +2,8 @@
 
 ## Context
 
+![](embed:Context)
+
 The "Agile Software Development Model for efficient Product feature delivery" is a dynamic and iterative approach to 
 delivering product features in a rapid and flexible manner.
 
@@ -17,9 +19,12 @@ Through frequent retrospectives, teams reflect on their process, identifying are
 adjusting their approach accordingly. This iterative cycle fosters a responsive and customer-centric development
 environment, where product features are delivered efficiently, meeting evolving user needs and market demands.
 
-![](embed:Context)
 
 ### Containers
 
 ![](embed:Containers)
+
+### Components
+
+![](embed:Components)
 

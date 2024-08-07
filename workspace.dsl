@@ -7,7 +7,7 @@ workspace "Agile Software Development Model for efficient Product feature delive
         }
         developer = person "Software Engineer" "Engineering Team member who follows the software development model to become more efficient"
 
-        process = softwareSystem "Agile Software Development Model for Product feature delivery" "The process used to develop and deliver product features" "Software Development Process"{
+        process = softwareSystem "Software Development Model for Product feature delivery" "Dynamic and iterative approach to delivering product features in a rapid and flexible manner" "Software Development Model"{
             !docs docs
             !adrs adrs
 
@@ -118,9 +118,9 @@ workspace "Agile Software Development Model for efficient Product feature delive
         //bdd
         product -> discovery "presents rules and examples"
         developer -> discovery "identifies functional gaps or inconsistencies"
-        discovery -> formulation "formulate acceptance criteria" "Gherkin"
+        discovery -> formulation "formulate acceptance criteria" "Gherkin, Natural language"
 //        formulation -> backlog "creates a shared understanding"
-        formulation -> automation "automate acceptance tests" "Cucumber"
+        formulation -> automation "automate acceptance tests" "Cucumber, JUnit"
         automation -> development "guides code implementation"
 
         //ddd
@@ -140,8 +140,11 @@ workspace "Agile Software Development Model for efficient Product feature delive
 //        continuousIntegration -> livingDocumentation "generates"
 
         //agile
-        product -> ceremonies "validates product increment"
+        product -> backlog "validates product increments"
         developer -> ceremonies "updates work progress"
+        product -> ceremonies "shares domain knowledge"
+
+
         backlog -> informationRadiators "visualize progress on"
         knowledgeBase -> customerSupport "is referenced by"
 //        knowledgeBase -> development "reference for"
@@ -194,8 +197,9 @@ workspace "Agile Software Development Model for efficient Product feature delive
         }
 
         component tdd "TestDrivenDevelopment" {
-            include *
-            exclude developer->agile bdd->agile ddd->agile
+            include * product
+            exclude developer->agile bdd->agile
+            exclude ddd->agile
             exclude *->bdd
             exclude *->ddd
         }

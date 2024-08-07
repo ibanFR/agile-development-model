@@ -136,12 +136,13 @@ workspace "Agile Software Development Model for efficient Product feature delive
         developer -> development "implements high-quality software"
         development -> continuousIntegration "push code to version control"
         continuousIntegration -> backlog "deliver product increment"
+        continuousIntegration -> knowledgeBase "updates living documentation"
 //        continuousIntegration -> livingDocumentation "generates"
 
         //agile
         product -> ceremonies "validates product increment"
         developer -> ceremonies "updates work progress"
-        ceremonies -> informationRadiators "visualize progress on"
+        backlog -> informationRadiators "visualize progress on"
         customerSupport -> knowledgeBase "references"
 //        knowledgeBase -> development "reference for"
 

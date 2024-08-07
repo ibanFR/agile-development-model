@@ -1,11 +1,13 @@
 ## Strategic Architecture and Domain Driven Design
+![](embed:DomainDrivenDesign)
+
 Books worth reading:
 - [Domain-Driven Design with Java-A Practitioner’s Guide](https://ddd-book.karthiks.in/)
 
 Repositories:
 - https://github.com/PacktPublishing/Domain-Driven-Design-with-Java-A-Practitioner-s-Guide
 
-![](embed:DomainDrivenDesign)
+
 
 ### Domain Decomposition
 

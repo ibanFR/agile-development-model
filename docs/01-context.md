@@ -23,6 +23,3 @@ environment, where product features are delivered efficiently, meeting evolving 
 
 ![](embed:Containers)
 
-### Components
-
-![](embed:Components)

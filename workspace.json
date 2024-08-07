@@ -2,93 +2,14 @@
   "id" : 1,
   "name" : "Agile Software Development Model for efficient Product feature delivery",
   "description" : "Description",
-  "lastModifiedDate" : "2024-08-06T22:50:26Z",
+  "lastModifiedDate" : "2024-08-07T08:11:19Z",
   "lastModifiedAgent" : "structurizr-javascript",
   "properties" : {
-    "structurizr.dsl" : "d29ya3NwYWNlICJBZ2lsZSBTb2Z0d2FyZSBEZXZlbG9wbWVudCBNb2RlbCBmb3IgZWZmaWNpZW50IFByb2R1Y3QgZmVhdHVyZSBkZWxpdmVyeSJ7CgogICAgbW9kZWwgewoKICAgICAgICBwcm9kdWN0ID0gcGVyc29uICJQcm9kdWN0IHN0YWtlaG9sZGVyIiAiUHJvZHVjdCBUZWFtIG1lbWJlciB3aG8gb3ducyBhbmQgZHJpdmVzIHRoZSBwcm9kdWN0IHZpc2lvbiJ7CiAgICAgICAgICAgIHRhZ3MgInByb2R1Y3QiCiAgICAgICAgfQogICAgICAgIGRldmVsb3BlciA9IHBlcnNvbiAiU29mdHdhcmUgRW5naW5lZXIiICJFbmdpbmVlcmluZyBUZWFtIG1lbWJlciB3aG8gZm9sbG93cyB0aGUgc29mdHdhcmUgZGV2ZWxvcG1lbnQgbW9kZWwgdG8gYmVjb21lIG1vcmUgZWZmaWNpZW50IgoKICAgICAgICBwcm9jZXNzID0gc29mdHdhcmVTeXN0ZW0gIkFnaWxlIFNvZnR3YXJlIERldmVsb3BtZW50IE1vZGVsIGZvciBQcm9kdWN0IGZlYXR1cmUgZGVsaXZlcnkiICJUaGUgcHJvY2VzcyB1c2VkIHRvIGRldmVsb3AgYW5kIGRlbGl2ZXIgcHJvZHVjdCBmZWF0dXJlcyIgIlNvZnR3YXJlIERldmVsb3BtZW50IFByb2Nlc3MiewogICAgICAgICAgICAhZG9jcyBkb2NzCiAgICAgICAgICAgICFhZHJzIGFkcnMKCgogICAgICAgICAgICBhbGxDb21wb25lbnRzID0gY29udGFpbmVyICJBbGwgQ29tcG9uZW50cyIgIkFsbCBDb21wb25lbnRzIGFuZCByZWxhdGlvbnNoaXBzIiAiQWxsIENvbXBvbmVudHMiewoKICAgICAgICAgICAgfQoKICAgICAgICAgICAgYWxpZ25BbmRVbmRlcnN0YW5kID0gY29udGFpbmVyICJBbGlnbiBhbmQgVW5kZXJzdGFuZCBQcm9kdWN0IFJlcXVpcmVtZW50cyIgIkFsaWduIG91ciBmb2N1cyB3aXRoIHRoZSBvcmdhbmlzYXRpb24ncyBidXNpbmVzcyBtb2RlbCwgdGhlIG5lZWRzIG9mIGl0cyB1c2VycywgYW5kIGl0cyBzaG9ydCwgbWVkaXVtLCBhbmQgbG9uZy10ZXJtIGdvYWxzLiIgIkFsaWduICYgVW5kZXJzdGFuZCJ7CiAgICAgICAgICAgICAgICB0YWdzICJwcm9kdWN0IgogICAgICAgICAgICAgICAgcHJvZHVjdEJyaWVmID0gY29tcG9uZW50ICJQcm9kdWN0IEJyaWVmIiAiU2hvcnQgcHJvZHVjdCBvciBmZWF0dXJlIGJyaWVmIHRvIGZyYW1lIGFuZCBjb25zdHJhaW4gdGhlIHByb2plY3QuIElkZW50aWZpZXMga2V5IGNhcGFiaWxpdGllcyBhbmQgaGlnaCBsZXZlbCBnb2FscyBhbmQgb2JqZWN0aXZlcyBvZiB0aGUgcHJvZHVjdCBmZWF0dXJlIiAiT3Bwb3J0dW5pdHkgQ2FudmFzLCBTbGlkZWNrLCBldGMiewogICAgICAgICAgICAgICAgICAgIHRhZ3MgInByb2R1Y3QiCiAgICAgICAgICAgICAgICB9CgogICAgICAgICAgICAgICAgc3RvcnlNYXAgPSBjb21wb25lbnQgIkRvbWFpbiBEaXNjb3ZlcnkiICJNYXAgdGhlIEJpZyBQaWN0dXJlIGJ5IGRlc2NyaWJpbmcgdGhlIFVzZXIgam91cm5leSB0aHJvdWdoIHRoZSBQcm9kdWN0IHRlbGxpbmcgYSBzdG9yeSBmcm9tIHRoZSBwZXJzcGVjdGl2ZSBvZiB0aGUgZW5kIHVzZXIiICJVc2VyIFN0b3J5IE1hcCwgRXZlbnQgU3Rvcm1pbmcsIGV0YyJ7CiAgICAgICAgICAgICAgICAgICAgdGFncyAicHJvZHVjdCIKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQoKICAgICAgICAgICAgYmRkID0gY29udGFpbmVyICJCZWhhdmlvciBEcml2ZW4gRGV2ZWxvcG1lbnQiICJEZWZpbmUgYW5kIHVuZGVyc3RhbmQgdGhlIGRlc2lyZWQgc3lzdGVtIGJlaGF2aW9yIGJlZm9yZSB3cml0dGluZyBhbnkgY29kZS4gSXQgZW5jb3VyYWdlcyBjb2xsYWJvcmF0aW9uIGFuZCBhIHNoYXJlZCB1bmRlcnN0YW5kaW5nIG9mIHRoZSBwcm9qZWN0J3Mgb2JqZWN0aXZlcyIgIkJERCJ7CiAgICAgICAgICAgICAgICBkaXNjb3ZlcnkgPSBjb21wb25lbnQgIlJlcXVpcmVtZW50IFdvcmtzaG9wIiAiQ29uY3JldGUgcnVsZXMgYW5kIGV4YW1wbGVzIGhlbHAgdXMgZXhwbG9yZSB0aGUgcHJvYmxlbSBkb21haW4gYW5kIG1ha2VzIGEgZ3JlYXQgYmFzaXMgZm9yIG91ciBhY2NlcHRhbmNlIHRlc3RzIiAiRXhhbXBsZSBNYXBwaW5nIHNlc3Npb25zIHRvIGNsYXJpZnkgYW5kIGNvbmZpcm0gdGhlIGFjY2VwdGFuY2UgY3JpdGVyaWEiewogICAgICAgICAgICAgICAgICAgIHRhZ3MgInByb2R1Y3QiCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICBmb3JtdWxhdGlvbiA9IGNvbXBvbmVudCAiQWNjZXB0YW5jZSIgIk9uY2Ugd2UgaGF2ZSBpZGVudGlmaWVkIG91ciBydWxlcyBhbmQgZXhhbXBsZXMsIHdlIGNhbiBub3cgZm9ybXVsYXRlIGVhY2ggZXhhbXBsZSBhcyBzdHJ1Y3R1cmVkIGRvY3VtZW50YXRpb24uIiAiRXhlY3V0YWJsZSBzcGVjaWZpY2F0aW9ucyBvZiB0aGUgc3lzdGVtIGJlaGF2aW9yInsKCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICBhdXRvbWF0aW9uID0gY29tcG9uZW50ICJGZWF0dXJlcyIgIkdyb3VwcyByZWxhdGVkIHNjZW5hcmlvcyB0aGF0IGRlbW9zdHJhdGVzIGhvdyBhIGZlYXR1cmUgd29ya3MgIiAiQ3VjdW1iZXIsIFNlbGVuaXVtIGV0YyJ7CgogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9CgogICAgICAgICAgICBkZGQgPSBjb250YWluZXIgIlN0cmF0ZWdpYyBBcmNoaXRlY3R1cmUgYW5kIERvbWFpbiBEcml2ZW4gRGVzaWduIiAiRXhwbG9yZSBtb2RlbHMgaW4gYSBjcmVhdGl2ZSBjb2xsYWJvcmF0aW9uIG9mIGRvbWFpbiBleHBlcnRzIGFuZCBzb2Z0d2FyZSBlbmdpbmVlcnMuIiAiU290d2FyZSBBcmNoaXRlY3R1cmUgYW5kIERlc2lnbiJ7CgogICAgICAgICAgICAgICAgZGVjb21wb3NlID0gY29tcG9uZW50ICJEb21haW4gRGVjb21wb3NpdGlvbiIgIkRlY29tcG9zZSBhIGxhcmdlIHByb2JsZW0gZG9tYWluIGludG8gY29oZXNpdmUgbW9kdWxlcywgc28gdGhhdCB3ZSBjYW4gaWRlbnRpZnkgc3RyYWdpY2FsbHkgc2lnbmlmaWNhbnQga2V5IGZvY3VzIGFyZWFzIiAiQ29yZSBEb21haW4gQ2hhcnRzInsKICAgICAgICAgICAgICAgICAgICB0YWdzICJwcm9kdWN0IgogICAgICAgICAgICAgICAgfQoKICAgICAgICAgICAgICAgIHN0cmF0ZWdpemUgPSBjb21wb25lbnQgIlN0cmF0ZWdpYyBBcmNoaXRlY3R1cmUiICJEb2N1bWVudCBCb3VuZGVkIENvbnRleHRzLCBmcm9tIG5hbWluZyB0byByZXNwb25zaWJpbGl0aWVzIGFsb25nc2lkZSBpdHMgcHVibGljIGludGVyZmFjZSBhbmQgZGVwZW5kZW5jaWVzIiAiQm91bmRlZCBDb250ZXh0IENhbnZhcyJ7CgogICAgICAgICAgICAgICAgfQoKICAgICAgICAgICAgICAgIGRlc2lnbiA9IGNvbXBvbmVudCAiU29mdHdhcmUgRGVzaWduIiAiQ3JlYXRlIG1vZGVscyB1c2luZyBhIGNvbW1vbiBzZXQgb2YgYWJzdHJhY3Rpb25zIHRvIGRlc2NyaWJlIHRoZSBzdGF0aWMgc3RydWN0dXJlIG9mIGEgc29mdHdhcmUgc3lzdGVtIiAiQzQgbW9kZWwiewoKICAgICAgICAgICAgICAgIH0KCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGFnaWxlID0gY29udGFpbmVyICJBZ2lsZSBQcm9kdWN0IE1hbmFnZW1lbnQiICJBZ2lsZSBwcm9qZWN0cyBhcmUgYnJva2VuIGRvd24gaW50byB0d28td2VlayBpdGVyYXRpb25zIHdoaWNoIHJlc3VsdCBpbiBhIHBvdGVudGlhbGx5IHNoaXBwYWJsZSBwcm9kdWN0IGluY3JlbWVudCIgIkFnaWxlIE1hbmlmZXN0byJ7CgogICAgICAgICAgICAgICAgdGFncyAicHJvZHVjdCIKCgogICAgICAgICAgICAgICAgYmFja2xvZyA9IGNvbXBvbmVudCAiUHJvZHVjdCBCYWNrbG9nIiAiUHJpb3JpdGlzZWQgbGlzdCBvZiBVc2VyIFN0b3JpZXMgdGhhdCBuZWVkIHRvIGJlIGNvbXBsZXRlZCBvciBhZGRyZXNzZWQgZHVyaW5nIHRoZSBwcm9qZWN0IiAiVGhleSB0eXBpY2FsbHkgZm9sbG93IHRoZSB0ZW1wbGF0ZTogQXMgYSBbdXNlciB0eXBlL3JvbGVdLCBJIHdhbnQgW2EgY2FwYWJpbGl0eV0gc28gdGhhdCBbYmVuZWZpdCBvciBnb2FsXSIgewogICAgICAgICAgICAgICAgICAgIHRhZ3MgInByb2R1Y3QiCiAgICAgICAgICAgICAgICB9CgogICAgICAgICAgICAgICAgaW5mb3JtYXRpb25SYWRpYXRvcnMgPSBjb21wb25lbnQgIkluZm9ybWF0aW9uIFJhZGlhdG9ycyIgIlByb2plY3QgcHJvZ3Jlc3MgYW5kIHBvdGVudGlhbCBpc3N1ZXMgYXJlIHZpc2libGUgdG8gYWxsIHRlYW0gbWVtYmVycyB3aXRoIGluZm9ybWF0aW9uIHJhZGlhdG9ycyIgIlNjcnVtIGFuZCBLYW5iYW4gYm9hcmRzLCBNZXRyaWMgRGFzaGJvYXJkcyBldGMiewoKICAgICAgICAgICAgICAgIH0KCiAgICAgICAgICAgICAgICBjZXJlbW9uaWVzID0gY29tcG9uZW50ICJBZ2lsZSBDZXJlbW9uaWVzIiAiQWdpbGUgaXRlcmF0aW9ucywgbWV0cmljcyBhbmQgZmVlZGJhY2sgbG9vcHMgdG8gaGVscCB0aGUgdGVhbSBtYWtlIGluZm9ybWVkIGRlY2lzaW9ucyIgIkppcmEsIFRyZWxsbywgTWlybywgZXRjInsKCiAgICAgICAgICAgICAgICB9CgogICAgICAgICAgICAgICAga25vd2xlZGdlQmFzZSA9IGNvbXBvbmVudCAiS25vd2xlZGdlIEJhc2UiICJDZW50cmFsaXplZCByZXBvc2l0b3J5IG9mIGluZm9ybWF0aW9uIGFuZCBiZXN0IHByYWN0aWNlcyB0aGF0IHRoZSB0ZWFtIGNhbiByZWZlciB0byBmb3IgZ3VpZGFuY2UsIHByb2JsZW0tc29sdmluZywgYW5kIGtub3dsZWRnZSBzaGFyaW5nLiIgIkdvb2dsZSBEcml2ZSwgQ29uZmx1ZW5jZSwgZXRjInsKCiAgICAgICAgICAgICAgICB9CgovLyAgICAgICAgICAgICAgICBsaXZpbmdEb2N1bWVudGF0aW9uID0gY29tcG9uZW50ICJMaXZpbmcgRG9jdW1lbnRhdGlvbiIgIkRvY3VtZW50YXRpb24gdGhhdCBpcyBjby1sb2NhdGVkIHdpdGggdGhlIGNvZGUgYW5kIGlzIHVwZGF0ZWQgYXMgdGhlIGNvZGUgY2hhbmdlcyIgIkNvbmZsdWVuY2UsIGV0YyJ7Ci8vCi8vICAgICAgICAgICAgICAgIH0KCiAgICAgICAgICAgICAgICBjdXN0b21lclN1cHBvcnQgPSBjb21wb25lbnQgIkN1c3RvbWVyIFN1cHBvcnQiICJUaGUgcHJvY2VzcyBvZiBwcm92aWRpbmcgYXNzaXN0YW5jZSB0byB0aGUgZW5kIHVzZXJzIG9mIHRoZSBwcm9kdWN0IiAiSmlyYSJ7CiAgICAgICAgICAgICAgICAgICAgdGFncyAicHJvZHVjdCIKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQoKICAgICAgICAgICAgdGRkID0gY29udGFpbmVyICJUZXN0IERyaXZlbiBEZXZlbG9wbWVudCAiICJBY2NlcHRhbmNlIFRlc3RzIGd1aWRlIG91ciBjb2RlIGltcGxlbWVudGF0aW9uIHVzaW5nIGxvd2VyLWxldmVsIGV4YW1wbGVzIG9mIHRoZSBiZWhhdmlvciBvZiBpbnRlcm5hbCBzeXN0ZW0gY29tcG9uZW50cy4gIiAiInsKCiAgICAgICAgICAgICAgICBkZXZlbG9wbWVudCA9IGNvbXBvbmVudCAiVGVzdCBEcml2ZW4gRGV2ZWxvcG1lbnQiICJMb3dlci1sZXZlbCBleGFtcGxlcyBvZiB0aGUgYmVoYXZpb3Igb2YgaW50ZXJuYWwgc3lzdGVtIGNvbXBvbmVudHMiICJKVW5pdCwgZXRjInsKCiAgICAgICAgICAgICAgICB9CgogICAgICAgICAgICAgICAgY29udGludW91c0ludGVncmF0aW9uID0gY29tcG9uZW50ICJDb250aW51b3VzIEludGVncmF0aW9uIiAiQXV0b21hdGVkIGJ1aWxkIHNjcmlwdHMgYXJlIHVzZWQgdG8gcnVuIHRlc3RzIGFuZCBwcm92aWRlIGltbWVkaWF0ZSBmZWVkYmFjayB0byBkZXZlbG9wZXJzIGFib3V0IHRoZSBzdGF0dXMgb2YgdGhlaXIgY29kZSBjaGFuZ2VzIiAiSmVua2lucywgZXRjInsKCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KCiAgICAgICAgfQoKICAgICAgICBwcm9kdWN0IC0+IHByb2Nlc3MgImNvbnRyaWJ1dGVzIHRvIgogICAgICAgIGRldmVsb3BlciAtPiBwcm9jZXNzICJmb2xsb3dzIgogICAgICAgIHByb2R1Y3QgLT4gcHJvZHVjdEJyaWVmICJwcmVzZW50cyBQcm9kdWN0IEZlYXR1cmUiCiAgICAgICAgZGV2ZWxvcGVyIC0+IHByb2R1Y3RCcmllZiAib2J0YWlucyBkb21haW4ga25vd2xlZGdlIgoKICAgICAgICAvLyBjb250YWluZXIgcmVsYXRpb25zaGlwcwogICAgICAgIGFsaWduQW5kVW5kZXJzdGFuZCAtPiBiZGQgImNvbGxhYm9yYXRpdmUgcmVxdWlyZW1lbnQgc3BlY2lmaWNhdGlvbgogICAgICAgIGFsaWduQW5kVW5kZXJzdGFuZCAtPiBkZGQgImNvbGxhYm9yYXRpdmUgZG9tYWluIG1vZGVsbGluZyIKLy8gICAgICAgIGJkZCAtPiBhZ2lsZSAiY3JlYXRlcyBhIHNoYXJlZCB1bmRlcnN0YW5kaW5nIgovLyAgICAgICAgZGRkIC0+IHRkZCAiZ3VpZGVzIGNvZGUgaW1wbGVtZW50YXRpb24iCgogICAgICAgIC8vYWxpZ24gYW5kIHVuZGVyc3RhbmQKICAgICAgICBwcm9kdWN0QnJpZWYgLT4gc3RvcnlNYXAgInNwcmVhZCBkb21haW4ga25vd2xlZGdlIgogICAgICAgIHN0b3J5TWFwIC0+IGRpc2NvdmVyeSAiaWRlbnRpZnkgcnVsZXMgYW5kIGV4YW1wbGVzIiAiTWlybyIKICAgICAgICBzdG9yeU1hcCAtPiBkZWNvbXBvc2UgInByb2JsZW0gZGVjb21wb3NpdGlvbiIgIkNvcmUgRG9tYWluIENoYXJ0cyIKCiAgICAgICAgLy9iZGQKICAgICAgICBwcm9kdWN0IC0+IGRpc2NvdmVyeSAicHJlc2VudHMgcnVsZXMgYW5kIGV4YW1wbGVzIgogICAgICAgIGRldmVsb3BlciAtPiBkaXNjb3ZlcnkgImlkZW50aWZpZXMgZnVuY3Rpb25hbCBnYXBzIG9yIGluY29uc2lzdGVuY2llcyIKICAgICAgICBkaXNjb3ZlcnkgLT4gZm9ybXVsYXRpb24gImZvcm11bGF0ZSBhY2NlcHRhbmNlIGNyaXRlcmlhIiAiR2hlcmtpbiIKLy8gICAgICAgIGZvcm11bGF0aW9uIC0+IGJhY2tsb2cgImZvcm11bGF0ZSB1c2VyIHN0b3JpZXMiCiAgICAgICAgYXV0b21hdGlvbiAtPiBiYWNrbG9nICJjcmVhdGVzIGEgc2hhcmVkIHVuZGVyc3RhbmRpbmciCiAgICAgICAgZm9ybXVsYXRpb24gLT4gYXV0b21hdGlvbiAiYXV0b21hdGUgYWNjZXB0YW5jZSB0ZXN0cyIgIkN1Y3VtYmVyIgogICAgICAgIGF1dG9tYXRpb24gLT4gZGV2ZWxvcG1lbnQgImd1aWRlcyBjb2RlIGltcGxlbWVudGF0aW9uIgoKICAgICAgICAvL2RkZAogICAgICAgIGRlY29tcG9zZSAtPiBzdHJhdGVnaXplICJjb2xsYWJvcmF0aXZlIG1vZGVsbGluZyIgIk1pcm8iCiAgICAgICAgc3RyYXRlZ2l6ZSAtPiBkZXNpZ24gInZpc3VhbGl6ZSBzb2Z0d2FyZSBhcmNoaXRlY3R1cmUiICJkcmF3LmlvLCBzdHJ1Y3R1cml6ciIKLy8gICAgICAgIGRlc2lnbiAtPiBrbm93bGVkZ2VCYXNlICJkb2N1bWVudCB0aGUgc29mdHdhcmUgZGVzaWduIiAiR29vZ2xlIERyaXZlIgogICAgICAgIGRldmVsb3BlciAtPiBkZWNvbXBvc2UgImlkZW50aWZpZXMgc3RyYXRlZ2ljIGZvY3VzIGFyZWFzIgogICAgICAgIHByb2R1Y3QgLT4gZGVjb21wb3NlICJ2YWxpZGF0ZXMgYW5kIGNhdGVnb3JpemVzIHN1YmRvbWFpbnMiCiAgICAgICAgZGVzaWduIC0+IHRkZCAiZ3VpZGVzIGNvZGUgaW1wbGVtZW50YXRpb24iCiAgICAgICAgZGVzaWduIC0+IGJhY2tsb2cgImVuaGFuY2VzIGFnaWxpdHkiCgogICAgICAgIC8vdGRkCiAgICAgICAgZGV2ZWxvcGVyIC0+IGRldmVsb3BtZW50ICJpbXBsZW1lbnRzIGhpZ2gtcXVhbGl0eSBzb2Z0d2FyZSIKICAgICAgICBkZXZlbG9wbWVudCAtPiBjb250aW51b3VzSW50ZWdyYXRpb24gInB1c2ggY29kZSB0byB2ZXJzaW9uIGNvbnRyb2wiCiAgICAgICAgY29udGludW91c0ludGVncmF0aW9uIC0+IGJhY2tsb2cgImRlbGl2ZXIgcHJvZHVjdCBpbmNyZW1lbnQiCi8vICAgICAgICBjb250aW51b3VzSW50ZWdyYXRpb24gLT4gbGl2aW5nRG9jdW1lbnRhdGlvbiAiZ2VuZXJhdGVzIgoKICAgICAgICAvL2FnaWxlCiAgICAgICAgcHJvZHVjdCAtPiBjZXJlbW9uaWVzICJ2YWxpZGF0ZXMgcHJvZHVjdCBpbmNyZW1lbnQiCiAgICAgICAgZGV2ZWxvcGVyIC0+IGNlcmVtb25pZXMgInVwZGF0ZXMgd29yayBwcm9ncmVzcyIKICAgICAgICBjZXJlbW9uaWVzIC0+IGluZm9ybWF0aW9uUmFkaWF0b3JzICJ2aXN1YWxpemUgcHJvZ3Jlc3Mgb24iCiAgICAgICAgY3VzdG9tZXJTdXBwb3J0IC0+IGtub3dsZWRnZUJhc2UgInJlZmVyZW5jZXMiCi8vICAgICAgICBrbm93bGVkZ2VCYXNlIC0+IGRldmVsb3BtZW50ICJyZWZlcmVuY2UgZm9yIgoKICAgIH0KCiAgICB2aWV3cyB7CiAgICAgICAgc3lzdGVtQ29udGV4dCBwcm9jZXNzICJDb250ZXh0IiAiVGhlIHN5c3RlbSBjb250ZXh0IGRpYWdyYW0gZm9yIHRoZSBTb2Z0d2FyZSBEZXZlbG9wbWVudCBQcm9jZXNzIiB7CiAgICAgICAgICAgIGluY2x1ZGUgKgogICAgICAgIH0KCiAgICAgICAgY29udGFpbmVyIHByb2Nlc3MgIkNvbnRhaW5lcnMiIHsKICAgICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgICAgIGF1dG9MYXlvdXQgdGIKICAgICAgICAgICAgZXhjbHVkZSBhbGxDb21wb25lbnRzCiAgICAgICAgICAgIGV4Y2x1ZGUgcHJvZHVjdC0+ZGRkIHByb2R1Y3QtPmFnaWxlIHByb2R1Y3QtPmJkZAogICAgICAgICAgICBleGNsdWRlIGRldmVsb3Blci0+YWdpbGUgZGV2ZWxvcGVyLT5kZGQgZGV2ZWxvcGVyLT5iZGQgZGV2ZWxvcGVyLT50ZGQKICAgICAgICAgICAgZXhjbHVkZSBhZ2lsZS0+dGRkCiAgICAgICAgfQoKICAgICAgICBjb21wb25lbnQgYWxsQ29tcG9uZW50cyAiQ29tcG9uZW50cyIgIkFsbCBDb21wb25lbnRzIGFuZCByZWxhdGlvbnNoaXBzIiB7CiAgICAgICAgICAgIGluY2x1ZGUgcHJvZHVjdCBkZXZlbG9wZXIgcHJvZHVjdEJyaWVmIHN0b3J5TWFwIGRpc2NvdmVyeSBmb3JtdWxhdGlvbiBhdXRvbWF0aW9uCiAgICAgICAgICAgIGluY2x1ZGUgZGVjb21wb3NlIHN0cmF0ZWdpemUgZGVzaWduIGJhY2tsb2cgY2VyZW1vbmllcyBpbmZvcm1hdGlvblJhZGlhdG9ycwogICAgICAgICAgICBpbmNsdWRlIGN1c3RvbWVyU3VwcG9ydCBrbm93bGVkZ2VCYXNlIGRldmVsb3BtZW50IGNvbnRpbnVvdXNJbnRlZ3JhdGlvbgogICAgICAgICAgICBleGNsdWRlIHByb2R1Y3QtPmRpc2NvdmVyeSBwcm9kdWN0LT5jZXJlbW9uaWVzIHByb2R1Y3QtPmRlY29tcG9zZQogICAgICAgICAgICBleGNsdWRlIGRldmVsb3Blci0+ZGVjb21wb3NlIGRldmVsb3Blci0+ZGV2ZWxvcG1lbnQgZGV2ZWxvcGVyLT5jZXJlbW9uaWVzIGRldmVsb3Blci0+ZGlzY292ZXJ5CiAgICAgICB9CgogICAgICAgIGNvbXBvbmVudCBhbGlnbkFuZFVuZGVyc3RhbmQgIkFsaWduQW5kVW5kZXJzdGFuZCIgewogICAgICAgICAgICBpbmNsdWRlICoKICAgICAgICAgICAgZXhjbHVkZSBwcm9kdWN0LT5iZGQgZGV2ZWxvcGVyLT5iZGQKICAgICAgICAgICAgZXhjbHVkZSBwcm9kdWN0LT5kZGQgZGV2ZWxvcGVyLT5kZGQKICAgICAgICAgICAgYXV0b0xheW91dCB0YgogICAgICAgIH0KCiAgICAgICAgY29tcG9uZW50IGJkZCAiQmVoYXZpb3JEcml2ZW5EZXZlbG9wbWVudCIgewogICAgICAgICAgICBpbmNsdWRlICoKICAgICAgICAgICAgZXhjbHVkZSB0ZGQKICAgICAgICAgICAgZXhjbHVkZSAqLT5hbGlnbkFuZFVuZGVyc3RhbmQKICAgICAgICAgICAgZXhjbHVkZSBwcm9kdWN0LT5hZ2lsZQogICAgICAgICAgICBleGNsdWRlIGRldmVsb3Blci0+YWdpbGUKICAgICAgICB9CgogICAgICAgIGNvbXBvbmVudCBkZGQgIkRvbWFpbkRyaXZlbkRlc2lnbiIgIiIgewogICAgICAgICAgICBpbmNsdWRlICoKICAgICAgICAgICAgZXhjbHVkZSAqLT5hbGlnbkFuZFVuZGVyc3RhbmQKICAgICAgICAgICAgZXhjbHVkZSBwcm9kdWN0LT5hZ2lsZQogICAgICAgICAgICBleGNsdWRlIGRldmVsb3Blci0+YWdpbGUgZGV2ZWxvcGVyLT50ZGQKICAgICAgICAgICAgZXhjbHVkZSB0ZGQtPioKICAgICAgICB9CgogICAgICAgIGNvbXBvbmVudCB0ZGQgIlRlc3REcml2ZW5EZXZlbG9wbWVudCIgewogICAgICAgICAgICBpbmNsdWRlICogcHJvZHVjdCBkZXZlbG9wZXIKICAgICAgICAgICAgZXhjbHVkZSBkZXZlbG9wZXItPmFnaWxlIGJkZC0+YWdpbGUgKi0+YmRkCiAgICAgICAgICAgIGV4Y2x1ZGUgYWdpbGUtPmRldmVsb3BtZW50CiAgICAgICAgfQoKICAgICAgICBjb21wb25lbnQgYWdpbGUgIkFnaWxlUHJvZHVjdE1hbmFnZW1lbnQiICJBZ2lsZSBwcm9qZWN0cyBhcmUgYnJva2VuIGRvd24gaW50byB0d28td2VlayBpdGVyYXRpb25zIHdoaWNoIHJlc3VsdCBpbiBhIHBvdGVudGlhbGx5IHNoaXBwYWJsZSBwcm9kdWN0IGluY3JlbWVudCIgewogICAgICAgICAgICBpbmNsdWRlICoKICAgICAgICAgICAgZXhjbHVkZSAqLT5kZGQKICAgICAgICAgICAgZXhjbHVkZSAqLT50ZGQKICAgICAgICAgICAgZXhjbHVkZSAqLT5iZGQKICAgICAgICAgICAgZXhjbHVkZSBkZXZlbG9wZXItPmFsaWduQW5kVW5kZXJzdGFuZAogICAgICAgICAgICBhdXRvTGF5b3V0IHRiCiAgICAgICAgfQoKCgogICAgICAgIHRoZW1lIGRlZmF1bHQKCiAgICAgICAgc3R5bGVzIHsKICAgICAgICAgICAgZWxlbWVudCAicHJvZHVjdCIgewogICAgICAgICAgICAgICAgYmFja2dyb3VuZCBncmV5CiAgICAgICAgICAgICAgICBjb2xvciAjZmZmZmZmCiAgICAgICAgICAgIH0KICAgICAgICAgICAgcmVsYXRpb25zaGlwICJiZGQtYWdpbGUiIHsKICAgICAgICAgICAgICAgIHJvdXRpbmcgQ3VydmVkCiAgICAgICAgICAgIH0KCi8vICAgICAgICAgICAgZWxlbWVudCA8dGFnPiB7Ci8vICAgICAgICAgICAgICAgIHNoYXBlIDxCb3h8Um91bmRlZEJveHxDaXJjbGV8RWxsaXBzZXxIZXhhZ29ufEN5bGluZGVyfFBpcGV8UGVyc29ufFJvYm90fEZvbGRlcnxXZWJCcm93c2VyfE1vYmlsZURldmljZVBvcnRyYWl0fE1vYmlsZURldmljZUxhbmRzY2FwZXxDb21wb25lbnQ+Ci8vICAgICAgICAgICAgICAgIGljb24gPGZpbGV8dXJsPgovLyAgICAgICAgICAgICAgICB3aWR0aCA8aW50ZWdlcj4KLy8gICAgICAgICAgICAgICAgaGVpZ2h0IDxpbnRlZ2VyPgovLyAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kIDwjcnJnZ2JifGNvbG9yIG5hbWU+Ci8vICAgICAgICAgICAgICAgIGNvbG9yIDwjcnJnZ2JifGNvbG9yIG5hbWU+Ci8vICAgICAgICAgICAgICAgIGNvbG91ciA8I3JyZ2diYnxjb2xvciBuYW1lPgovLyAgICAgICAgICAgICAgICBzdHJva2UgPCNycmdnYmJ8Y29sb3IgbmFtZT4KLy8gICAgICAgICAgICAgICAgc3Ryb2tlV2lkdGggPGludGVnZXI6IDEtMTA+Ci8vICAgICAgICAgICAgICAgIGZvbnRTaXplIDxpbnRlZ2VyPgovLyAgICAgICAgICAgICAgICBib3JkZXIgPHNvbGlkfGRhc2hlZHxkb3R0ZWQ+Ci8vICAgICAgICAgICAgICAgIG9wYWNpdHkgPGludGVnZXI6IDAtMTAwPgovLyAgICAgICAgICAgICAgICBtZXRhZGF0YSA8dHJ1ZXxmYWxzZT4KLy8gICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gPHRydWV8ZmFsc2U+Ci8vICAgICAgICAgICAgICAgIHByb3BlcnRpZXMgewovLyAgICAgICAgICAgICAgICAgICAgbmFtZSB2YWx1ZQovLyAgICAgICAgICAgICAgICB9Ci8vICAgICAgICAgICAgfQovLyAgICAgICAgICAgIHJlbGF0aW9uc2hpcCA8dGFnPiB7Ci8vICAgICAgICAgICAgICAgIHRoaWNrbmVzcyA8aW50ZWdlcj4KLy8gICAgICAgICAgICAgICAgY29sb3IgPCNycmdnYmJ8Y29sb3IgbmFtZT4KLy8gICAgICAgICAgICAgICAgY29sb3VyIDwjcnJnZ2JifGNvbG9yIG5hbWU+Ci8vICAgICAgICAgICAgICAgIHN0eWxlIDxzb2xpZHxkYXNoZWR8ZG90dGVkPgovLyAgICAgICAgICAgICAgICByb3V0aW5nIDxEaXJlY3R8T3J0aG9nb25hbHxDdXJ2ZWQ+Ci8vICAgICAgICAgICAgICAgIGZvbnRTaXplIDxpbnRlZ2VyPgovLyAgICAgICAgICAgICAgICB3aWR0aCA8aW50ZWdlcj4KLy8gICAgICAgICAgICAgICAgcG9zaXRpb24gPGludGVnZXI6IDAtMTAwPgovLyAgICAgICAgICAgICAgICBvcGFjaXR5IDxpbnRlZ2VyOiAwLTEwMD4KLy8gICAgICAgICAgICAgICAgcHJvcGVydGllcyB7Ci8vICAgICAgICAgICAgICAgICAgICBuYW1lIHZhbHVlCi8vICAgICAgICAgICAgICAgIH0KLy8gICAgICAgICAgICB9CiAgICAgICAgfQogICAgfQoKfQo="
+    "structurizr.dsl" : "d29ya3NwYWNlICJBZ2lsZSBTb2Z0d2FyZSBEZXZlbG9wbWVudCBNb2RlbCBmb3IgZWZmaWNpZW50IFByb2R1Y3QgZmVhdHVyZSBkZWxpdmVyeSJ7CgogICAgbW9kZWwgewoKICAgICAgICBwcm9kdWN0ID0gcGVyc29uICJQcm9kdWN0IHN0YWtlaG9sZGVyIiAiUHJvZHVjdCBUZWFtIG1lbWJlciB3aG8gb3ducyBhbmQgZHJpdmVzIHRoZSBwcm9kdWN0IHZpc2lvbiJ7CiAgICAgICAgICAgIHRhZ3MgInByb2R1Y3QiCiAgICAgICAgfQogICAgICAgIGRldmVsb3BlciA9IHBlcnNvbiAiU29mdHdhcmUgRW5naW5lZXIiICJFbmdpbmVlcmluZyBUZWFtIG1lbWJlciB3aG8gZm9sbG93cyB0aGUgc29mdHdhcmUgZGV2ZWxvcG1lbnQgbW9kZWwgdG8gYmVjb21lIG1vcmUgZWZmaWNpZW50IgoKICAgICAgICBwcm9jZXNzID0gc29mdHdhcmVTeXN0ZW0gIkFnaWxlIFNvZnR3YXJlIERldmVsb3BtZW50IE1vZGVsIGZvciBQcm9kdWN0IGZlYXR1cmUgZGVsaXZlcnkiICJUaGUgcHJvY2VzcyB1c2VkIHRvIGRldmVsb3AgYW5kIGRlbGl2ZXIgcHJvZHVjdCBmZWF0dXJlcyIgIlNvZnR3YXJlIERldmVsb3BtZW50IFByb2Nlc3MiewogICAgICAgICAgICAhZG9jcyBkb2NzCiAgICAgICAgICAgICFhZHJzIGFkcnMKCgogICAgICAgICAgICBhbGxDb21wb25lbnRzID0gY29udGFpbmVyICJBbGwgQ29tcG9uZW50cyIgIkFsbCBDb21wb25lbnRzIGFuZCByZWxhdGlvbnNoaXBzIiAiQWxsIENvbXBvbmVudHMiewoKICAgICAgICAgICAgfQoKICAgICAgICAgICAgYWxpZ25BbmRVbmRlcnN0YW5kID0gY29udGFpbmVyICJBbGlnbiBhbmQgVW5kZXJzdGFuZCBQcm9kdWN0IFJlcXVpcmVtZW50cyIgIkFsaWduIG91ciBmb2N1cyB3aXRoIHRoZSBvcmdhbmlzYXRpb24ncyBidXNpbmVzcyBtb2RlbCwgdGhlIG5lZWRzIG9mIGl0cyB1c2VycywgYW5kIGl0cyBzaG9ydCwgbWVkaXVtLCBhbmQgbG9uZy10ZXJtIGdvYWxzLiIgIkFsaWduICYgVW5kZXJzdGFuZCJ7CiAgICAgICAgICAgICAgICB0YWdzICJwcm9kdWN0IgogICAgICAgICAgICAgICAgcHJvZHVjdEJyaWVmID0gY29tcG9uZW50ICJQcm9kdWN0IEJyaWVmIiAiU2hvcnQgcHJvZHVjdCBvciBmZWF0dXJlIGJyaWVmIHRvIGZyYW1lIGFuZCBjb25zdHJhaW4gdGhlIHByb2plY3QuIElkZW50aWZpZXMga2V5IGNhcGFiaWxpdGllcyBhbmQgaGlnaCBsZXZlbCBnb2FscyBhbmQgb2JqZWN0aXZlcyBvZiB0aGUgcHJvZHVjdCBmZWF0dXJlIiAiT3Bwb3J0dW5pdHkgQ2FudmFzLCBTbGlkZWNrLCBldGMiewogICAgICAgICAgICAgICAgICAgIHRhZ3MgInByb2R1Y3QiCiAgICAgICAgICAgICAgICB9CgogICAgICAgICAgICAgICAgc3RvcnlNYXAgPSBjb21wb25lbnQgIkRvbWFpbiBEaXNjb3ZlcnkiICJNYXAgdGhlIEJpZyBQaWN0dXJlIGJ5IGRlc2NyaWJpbmcgdGhlIFVzZXIgam91cm5leSB0aHJvdWdoIHRoZSBQcm9kdWN0IHRlbGxpbmcgYSBzdG9yeSBmcm9tIHRoZSBwZXJzcGVjdGl2ZSBvZiB0aGUgZW5kIHVzZXIiICJVc2VyIFN0b3J5IE1hcCwgRXZlbnQgU3Rvcm1pbmcsIGV0YyJ7CiAgICAgICAgICAgICAgICAgICAgdGFncyAicHJvZHVjdCIKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQoKICAgICAgICAgICAgYmRkID0gY29udGFpbmVyICJCZWhhdmlvciBEcml2ZW4gRGV2ZWxvcG1lbnQiICJEZWZpbmUgYW5kIHVuZGVyc3RhbmQgdGhlIGRlc2lyZWQgc3lzdGVtIGJlaGF2aW9yIGJlZm9yZSB3cml0dGluZyBhbnkgY29kZS4gSXQgZW5jb3VyYWdlcyBjb2xsYWJvcmF0aW9uIGFuZCBhIHNoYXJlZCB1bmRlcnN0YW5kaW5nIG9mIHRoZSBwcm9qZWN0J3Mgb2JqZWN0aXZlcyIgIkJERCJ7CiAgICAgICAgICAgICAgICBkaXNjb3ZlcnkgPSBjb21wb25lbnQgIlJlcXVpcmVtZW50IFdvcmtzaG9wIiAiQ29uY3JldGUgcnVsZXMgYW5kIGV4YW1wbGVzIGhlbHAgdXMgZXhwbG9yZSB0aGUgcHJvYmxlbSBkb21haW4gYW5kIG1ha2VzIGEgZ3JlYXQgYmFzaXMgZm9yIG91ciBhY2NlcHRhbmNlIHRlc3RzIiAiRXhhbXBsZSBNYXBwaW5nIHNlc3Npb25zIHRvIGNsYXJpZnkgYW5kIGNvbmZpcm0gdGhlIGFjY2VwdGFuY2UgY3JpdGVyaWEiewogICAgICAgICAgICAgICAgICAgIHRhZ3MgInByb2R1Y3QiCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICBmb3JtdWxhdGlvbiA9IGNvbXBvbmVudCAiQWNjZXB0YW5jZSIgIk9uY2Ugd2UgaGF2ZSBpZGVudGlmaWVkIG91ciBydWxlcyBhbmQgZXhhbXBsZXMsIHdlIGNhbiBub3cgZm9ybXVsYXRlIGVhY2ggZXhhbXBsZSBhcyBzdHJ1Y3R1cmVkIGRvY3VtZW50YXRpb24uIiAiRXhlY3V0YWJsZSBzcGVjaWZpY2F0aW9ucyBvZiB0aGUgc3lzdGVtIGJlaGF2aW9yInsKCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICBhdXRvbWF0aW9uID0gY29tcG9uZW50ICJGZWF0dXJlcyIgIkdyb3VwcyByZWxhdGVkIHNjZW5hcmlvcyB0aGF0IGRlbW9zdHJhdGVzIGhvdyBhIGZlYXR1cmUgd29ya3MgIiAiQ3VjdW1iZXIsIFNlbGVuaXVtIGV0YyJ7CgogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9CgogICAgICAgICAgICBkZGQgPSBjb250YWluZXIgIlN0cmF0ZWdpYyBBcmNoaXRlY3R1cmUgYW5kIERvbWFpbiBEcml2ZW4gRGVzaWduIiAiRXhwbG9yZSBtb2RlbHMgaW4gYSBjcmVhdGl2ZSBjb2xsYWJvcmF0aW9uIG9mIGRvbWFpbiBleHBlcnRzIGFuZCBzb2Z0d2FyZSBlbmdpbmVlcnMuIiAiU290d2FyZSBBcmNoaXRlY3R1cmUgYW5kIERlc2lnbiJ7CgogICAgICAgICAgICAgICAgZGVjb21wb3NlID0gY29tcG9uZW50ICJEb21haW4gRGVjb21wb3NpdGlvbiIgIkRlY29tcG9zZSBhIGxhcmdlIHByb2JsZW0gZG9tYWluIGludG8gY29oZXNpdmUgbW9kdWxlcywgc28gdGhhdCB3ZSBjYW4gaWRlbnRpZnkgc3RyYWdpY2FsbHkgc2lnbmlmaWNhbnQga2V5IGZvY3VzIGFyZWFzIiAiQ29yZSBEb21haW4gQ2hhcnRzInsKICAgICAgICAgICAgICAgICAgICB0YWdzICJwcm9kdWN0IgogICAgICAgICAgICAgICAgfQoKICAgICAgICAgICAgICAgIHN0cmF0ZWdpemUgPSBjb21wb25lbnQgIlN0cmF0ZWdpYyBBcmNoaXRlY3R1cmUiICJEb2N1bWVudCBCb3VuZGVkIENvbnRleHRzLCBmcm9tIG5hbWluZyB0byByZXNwb25zaWJpbGl0aWVzIGFsb25nc2lkZSBpdHMgcHVibGljIGludGVyZmFjZSBhbmQgZGVwZW5kZW5jaWVzIiAiQm91bmRlZCBDb250ZXh0IENhbnZhcyJ7CgogICAgICAgICAgICAgICAgfQoKICAgICAgICAgICAgICAgIGRlc2lnbiA9IGNvbXBvbmVudCAiU29mdHdhcmUgRGVzaWduIiAiQ3JlYXRlIG1vZGVscyB1c2luZyBhIGNvbW1vbiBzZXQgb2YgYWJzdHJhY3Rpb25zIHRvIGRlc2NyaWJlIHRoZSBzdGF0aWMgc3RydWN0dXJlIG9mIGEgc29mdHdhcmUgc3lzdGVtIiAiQzQgbW9kZWwiewoKICAgICAgICAgICAgICAgIH0KCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGFnaWxlID0gY29udGFpbmVyICJBZ2lsZSBQcm9kdWN0IE1hbmFnZW1lbnQiICJBZ2lsZSBwcm9qZWN0cyBhcmUgYnJva2VuIGRvd24gaW50byB0d28td2VlayBpdGVyYXRpb25zIHdoaWNoIHJlc3VsdCBpbiBhIHBvdGVudGlhbGx5IHNoaXBwYWJsZSBwcm9kdWN0IGluY3JlbWVudCIgIkFnaWxlIE1hbmlmZXN0byJ7CgogICAgICAgICAgICAgICAgdGFncyAicHJvZHVjdCIKCgogICAgICAgICAgICAgICAgYmFja2xvZyA9IGNvbXBvbmVudCAiUHJvZHVjdCBCYWNrbG9nIiAiUHJpb3JpdGlzZWQgbGlzdCBvZiBVc2VyIFN0b3JpZXMgdGhhdCBuZWVkIHRvIGJlIGNvbXBsZXRlZCBvciBhZGRyZXNzZWQgZHVyaW5nIHRoZSBwcm9qZWN0IiAiVGhleSB0eXBpY2FsbHkgZm9sbG93IHRoZSB0ZW1wbGF0ZTogQXMgYSBbdXNlciB0eXBlL3JvbGVdLCBJIHdhbnQgW2EgY2FwYWJpbGl0eV0gc28gdGhhdCBbYmVuZWZpdCBvciBnb2FsXSIgewogICAgICAgICAgICAgICAgICAgIHRhZ3MgInByb2R1Y3QiCiAgICAgICAgICAgICAgICB9CgogICAgICAgICAgICAgICAgaW5mb3JtYXRpb25SYWRpYXRvcnMgPSBjb21wb25lbnQgIkluZm9ybWF0aW9uIFJhZGlhdG9ycyIgIlByb2plY3QgcHJvZ3Jlc3MgYW5kIHBvdGVudGlhbCBpc3N1ZXMgYXJlIHZpc2libGUgdG8gYWxsIHRlYW0gbWVtYmVycyB3aXRoIGluZm9ybWF0aW9uIHJhZGlhdG9ycyIgIlNjcnVtIGFuZCBLYW5iYW4gYm9hcmRzLCBNZXRyaWMgRGFzaGJvYXJkcyBldGMiewoKICAgICAgICAgICAgICAgIH0KCiAgICAgICAgICAgICAgICBjZXJlbW9uaWVzID0gY29tcG9uZW50ICJBZ2lsZSBDZXJlbW9uaWVzIiAiQWdpbGUgaXRlcmF0aW9ucywgbWV0cmljcyBhbmQgZmVlZGJhY2sgbG9vcHMgdG8gaGVscCB0aGUgdGVhbSBtYWtlIGluZm9ybWVkIGRlY2lzaW9ucyIgIkppcmEsIFRyZWxsbywgTWlybywgZXRjInsKCiAgICAgICAgICAgICAgICB9CgogICAgICAgICAgICAgICAga25vd2xlZGdlQmFzZSA9IGNvbXBvbmVudCAiS25vd2xlZGdlIEJhc2UiICJDZW50cmFsaXplZCByZXBvc2l0b3J5IG9mIGluZm9ybWF0aW9uIGFuZCBiZXN0IHByYWN0aWNlcyB0aGF0IHRoZSB0ZWFtIGNhbiByZWZlciB0byBmb3IgZ3VpZGFuY2UsIHByb2JsZW0tc29sdmluZywgYW5kIGtub3dsZWRnZSBzaGFyaW5nLiIgIkdvb2dsZSBEcml2ZSwgQ29uZmx1ZW5jZSwgZXRjInsKCiAgICAgICAgICAgICAgICB9CgovLyAgICAgICAgICAgICAgICBsaXZpbmdEb2N1bWVudGF0aW9uID0gY29tcG9uZW50ICJMaXZpbmcgRG9jdW1lbnRhdGlvbiIgIkRvY3VtZW50YXRpb24gdGhhdCBpcyBjby1sb2NhdGVkIHdpdGggdGhlIGNvZGUgYW5kIGlzIHVwZGF0ZWQgYXMgdGhlIGNvZGUgY2hhbmdlcyIgIkNvbmZsdWVuY2UsIGV0YyJ7Ci8vCi8vICAgICAgICAgICAgICAgIH0KCiAgICAgICAgICAgICAgICBjdXN0b21lclN1cHBvcnQgPSBjb21wb25lbnQgIkN1c3RvbWVyIFN1cHBvcnQiICJUaGUgcHJvY2VzcyBvZiBwcm92aWRpbmcgYXNzaXN0YW5jZSB0byB0aGUgZW5kIHVzZXJzIG9mIHRoZSBwcm9kdWN0IiAiSmlyYSJ7CiAgICAgICAgICAgICAgICAgICAgdGFncyAicHJvZHVjdCIKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQoKICAgICAgICAgICAgdGRkID0gY29udGFpbmVyICJUZXN0IERyaXZlbiBEZXZlbG9wbWVudCAiICJBY2NlcHRhbmNlIFRlc3RzIGd1aWRlIG91ciBjb2RlIGltcGxlbWVudGF0aW9uIHVzaW5nIGxvd2VyLWxldmVsIGV4YW1wbGVzIG9mIHRoZSBiZWhhdmlvciBvZiBpbnRlcm5hbCBzeXN0ZW0gY29tcG9uZW50cy4gIiAiInsKCiAgICAgICAgICAgICAgICBkZXZlbG9wbWVudCA9IGNvbXBvbmVudCAiVGVzdCBEcml2ZW4gRGV2ZWxvcG1lbnQiICJMb3dlci1sZXZlbCBleGFtcGxlcyBvZiB0aGUgYmVoYXZpb3Igb2YgaW50ZXJuYWwgc3lzdGVtIGNvbXBvbmVudHMiICJKVW5pdCwgZXRjInsKCiAgICAgICAgICAgICAgICB9CgogICAgICAgICAgICAgICAgY29udGludW91c0ludGVncmF0aW9uID0gY29tcG9uZW50ICJDb250aW51b3VzIEludGVncmF0aW9uIiAiQXV0b21hdGVkIGJ1aWxkIHNjcmlwdHMgYXJlIHVzZWQgdG8gcnVuIHRlc3RzIGFuZCBwcm92aWRlIGltbWVkaWF0ZSBmZWVkYmFjayB0byBkZXZlbG9wZXJzIGFib3V0IHRoZSBzdGF0dXMgb2YgdGhlaXIgY29kZSBjaGFuZ2VzIiAiSmVua2lucywgZXRjInsKCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KCiAgICAgICAgfQoKICAgICAgICBwcm9kdWN0IC0+IHByb2Nlc3MgImNvbnRyaWJ1dGVzIHRvIgogICAgICAgIGRldmVsb3BlciAtPiBwcm9jZXNzICJmb2xsb3dzIgogICAgICAgIHByb2R1Y3QgLT4gcHJvZHVjdEJyaWVmICJwcmVzZW50cyBQcm9kdWN0IEZlYXR1cmUiCiAgICAgICAgZGV2ZWxvcGVyIC0+IHByb2R1Y3RCcmllZiAib2J0YWlucyBkb21haW4ga25vd2xlZGdlIgoKICAgICAgICAvLyBjb250YWluZXIgcmVsYXRpb25zaGlwcwogICAgICAgIGFsaWduQW5kVW5kZXJzdGFuZCAtPiBiZGQgImNvbGxhYm9yYXRpdmUgcmVxdWlyZW1lbnQgc3BlY2lmaWNhdGlvbgogICAgICAgIGFsaWduQW5kVW5kZXJzdGFuZCAtPiBkZGQgImNvbGxhYm9yYXRpdmUgZG9tYWluIG1vZGVsbGluZyIKICAgICAgICBiZGQgLT4gYWdpbGUgImNyZWF0ZXMgYSBzaGFyZWQgdW5kZXJzdGFuZGluZyIKLy8gICAgICAgIGRkZCAtPiB0ZGQgImd1aWRlcyBjb2RlIGltcGxlbWVudGF0aW9uIgogICAgICAgIGRkZCAtPiBhZ2lsZSAiZW5oYW5jZXMgYWdpbGl0eSIKCiAgICAgICAgLy9hbGlnbiBhbmQgdW5kZXJzdGFuZAogICAgICAgIHByb2R1Y3RCcmllZiAtPiBzdG9yeU1hcCAic3ByZWFkIGRvbWFpbiBrbm93bGVkZ2UiCiAgICAgICAgc3RvcnlNYXAgLT4gZGlzY292ZXJ5ICJpZGVudGlmeSBydWxlcyBhbmQgZXhhbXBsZXMiICJNaXJvIgogICAgICAgIHN0b3J5TWFwIC0+IGRlY29tcG9zZSAicHJvYmxlbSBkZWNvbXBvc2l0aW9uIiAiQ29yZSBEb21haW4gQ2hhcnRzIgoKICAgICAgICAvL2JkZAogICAgICAgIHByb2R1Y3QgLT4gZGlzY292ZXJ5ICJwcmVzZW50cyBydWxlcyBhbmQgZXhhbXBsZXMiCiAgICAgICAgZGV2ZWxvcGVyIC0+IGRpc2NvdmVyeSAiaWRlbnRpZmllcyBmdW5jdGlvbmFsIGdhcHMgb3IgaW5jb25zaXN0ZW5jaWVzIgogICAgICAgIGRpc2NvdmVyeSAtPiBmb3JtdWxhdGlvbiAiZm9ybXVsYXRlIGFjY2VwdGFuY2UgY3JpdGVyaWEiICJHaGVya2luIgovLyAgICAgICAgZm9ybXVsYXRpb24gLT4gYmFja2xvZyAiY3JlYXRlcyBhIHNoYXJlZCB1bmRlcnN0YW5kaW5nIgogICAgICAgIGZvcm11bGF0aW9uIC0+IGF1dG9tYXRpb24gImF1dG9tYXRlIGFjY2VwdGFuY2UgdGVzdHMiICJDdWN1bWJlciIKICAgICAgICBhdXRvbWF0aW9uIC0+IGRldmVsb3BtZW50ICJndWlkZXMgY29kZSBpbXBsZW1lbnRhdGlvbiIKCiAgICAgICAgLy9kZGQKICAgICAgICBkZWNvbXBvc2UgLT4gc3RyYXRlZ2l6ZSAiY29sbGFib3JhdGl2ZSBtb2RlbGxpbmciICJNaXJvIgogICAgICAgIHN0cmF0ZWdpemUgLT4gZGVzaWduICJ2aXN1YWxpemUgc29mdHdhcmUgYXJjaGl0ZWN0dXJlIiAiZHJhdy5pbywgc3RydWN0dXJpenIiCi8vICAgICAgICBkZXNpZ24gLT4ga25vd2xlZGdlQmFzZSAiZG9jdW1lbnQgdGhlIHNvZnR3YXJlIGRlc2lnbiIgIkdvb2dsZSBEcml2ZSIKICAgICAgICBkZXZlbG9wZXIgLT4gZGVjb21wb3NlICJpZGVudGlmaWVzIHN0cmF0ZWdpYyBmb2N1cyBhcmVhcyIKICAgICAgICBwcm9kdWN0IC0+IGRlY29tcG9zZSAidmFsaWRhdGVzIGFuZCBjYXRlZ29yaXplcyBzdWJkb21haW5zIgogICAgICAgIGRlc2lnbiAtPiBkZXZlbG9wbWVudCAiZ3VpZGVzIGNvZGUgaW1wbGVtZW50YXRpb24iCi8vCgogICAgICAgIC8vdGRkCiAgICAgICAgZGV2ZWxvcGVyIC0+IGRldmVsb3BtZW50ICJpbXBsZW1lbnRzIGhpZ2gtcXVhbGl0eSBzb2Z0d2FyZSIKICAgICAgICBkZXZlbG9wbWVudCAtPiBjb250aW51b3VzSW50ZWdyYXRpb24gInB1c2ggY29kZSB0byB2ZXJzaW9uIGNvbnRyb2wiCiAgICAgICAgY29udGludW91c0ludGVncmF0aW9uIC0+IGJhY2tsb2cgImRlbGl2ZXIgcHJvZHVjdCBpbmNyZW1lbnQiCi8vICAgICAgICBjb250aW51b3VzSW50ZWdyYXRpb24gLT4gbGl2aW5nRG9jdW1lbnRhdGlvbiAiZ2VuZXJhdGVzIgoKICAgICAgICAvL2FnaWxlCiAgICAgICAgcHJvZHVjdCAtPiBjZXJlbW9uaWVzICJ2YWxpZGF0ZXMgcHJvZHVjdCBpbmNyZW1lbnQiCiAgICAgICAgZGV2ZWxvcGVyIC0+IGNlcmVtb25pZXMgInVwZGF0ZXMgd29yayBwcm9ncmVzcyIKICAgICAgICBjZXJlbW9uaWVzIC0+IGluZm9ybWF0aW9uUmFkaWF0b3JzICJ2aXN1YWxpemUgcHJvZ3Jlc3Mgb24iCiAgICAgICAgY3VzdG9tZXJTdXBwb3J0IC0+IGtub3dsZWRnZUJhc2UgInJlZmVyZW5jZXMiCi8vICAgICAgICBrbm93bGVkZ2VCYXNlIC0+IGRldmVsb3BtZW50ICJyZWZlcmVuY2UgZm9yIgoKICAgIH0KCiAgICB2aWV3cyB7CiAgICAgICAgc3lzdGVtQ29udGV4dCBwcm9jZXNzICJDb250ZXh0IiAiVGhlIHN5c3RlbSBjb250ZXh0IGRpYWdyYW0gZm9yIHRoZSBTb2Z0d2FyZSBEZXZlbG9wbWVudCBQcm9jZXNzIiB7CiAgICAgICAgICAgIGluY2x1ZGUgKgogICAgICAgIH0KCiAgICAgICAgY29udGFpbmVyIHByb2Nlc3MgIkNvbnRhaW5lcnMiIHsKICAgICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgICAgIGF1dG9MYXlvdXQgdGIKICAgICAgICAgICAgZXhjbHVkZSBhbGxDb21wb25lbnRzCiAgICAgICAgICAgIGV4Y2x1ZGUgcHJvZHVjdC0+ZGRkIHByb2R1Y3QtPmFnaWxlIHByb2R1Y3QtPmJkZAogICAgICAgICAgICBleGNsdWRlIGRldmVsb3Blci0+YWdpbGUgZGV2ZWxvcGVyLT5kZGQgZGV2ZWxvcGVyLT5iZGQgZGV2ZWxvcGVyLT50ZGQKICAgICAgICAgICAgZXhjbHVkZSBhZ2lsZS0+dGRkCiAgICAgICAgfQoKICAgICAgICBjb21wb25lbnQgYWxsQ29tcG9uZW50cyAiQ29tcG9uZW50cyIgIkFsbCBDb21wb25lbnRzIGFuZCByZWxhdGlvbnNoaXBzIiB7CiAgICAgICAgICAgIGluY2x1ZGUgcHJvZHVjdCBkZXZlbG9wZXIgcHJvZHVjdEJyaWVmIHN0b3J5TWFwIGRpc2NvdmVyeSBmb3JtdWxhdGlvbiBhdXRvbWF0aW9uCiAgICAgICAgICAgIGluY2x1ZGUgZGVjb21wb3NlIHN0cmF0ZWdpemUgZGVzaWduIGJhY2tsb2cgY2VyZW1vbmllcyBpbmZvcm1hdGlvblJhZGlhdG9ycwogICAgICAgICAgICBpbmNsdWRlIGN1c3RvbWVyU3VwcG9ydCBrbm93bGVkZ2VCYXNlIGRldmVsb3BtZW50IGNvbnRpbnVvdXNJbnRlZ3JhdGlvbgogICAgICAgICAgICBleGNsdWRlIHByb2R1Y3QtPmRpc2NvdmVyeSBwcm9kdWN0LT5jZXJlbW9uaWVzIHByb2R1Y3QtPmRlY29tcG9zZQogICAgICAgICAgICBleGNsdWRlIGRldmVsb3Blci0+ZGVjb21wb3NlIGRldmVsb3Blci0+ZGV2ZWxvcG1lbnQgZGV2ZWxvcGVyLT5jZXJlbW9uaWVzIGRldmVsb3Blci0+ZGlzY292ZXJ5CiAgICAgICB9CgogICAgICAgIGNvbXBvbmVudCBhbGlnbkFuZFVuZGVyc3RhbmQgIkFsaWduQW5kVW5kZXJzdGFuZCIgewogICAgICAgICAgICBpbmNsdWRlICoKICAgICAgICAgICAgZXhjbHVkZSBwcm9kdWN0LT5iZGQgZGV2ZWxvcGVyLT5iZGQKICAgICAgICAgICAgZXhjbHVkZSBwcm9kdWN0LT5kZGQgZGV2ZWxvcGVyLT5kZGQKICAgICAgICAgICAgYXV0b0xheW91dCB0YgogICAgICAgIH0KCiAgICAgICAgY29tcG9uZW50IGJkZCAiQmVoYXZpb3JEcml2ZW5EZXZlbG9wbWVudCIgewogICAgICAgICAgICBpbmNsdWRlICoKLy8gICAgICAgICAgICBleGNsdWRlIHRkZAogICAgICAgICAgICBleGNsdWRlICotPmFsaWduQW5kVW5kZXJzdGFuZAogICAgICAgICAgICBleGNsdWRlIGRldmVsb3Blci0+dGRkCiAgICAgICAgICAgIGV4Y2x1ZGUgcHJvZHVjdC0+YWdpbGUKICAgICAgICAgICAgZXhjbHVkZSBkZXZlbG9wZXItPmFnaWxlCiAgICAgICAgfQoKICAgICAgICBjb21wb25lbnQgZGRkICJEb21haW5Ecml2ZW5EZXNpZ24iICIiIHsKICAgICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgICAgIGV4Y2x1ZGUgKi0+YWxpZ25BbmRVbmRlcnN0YW5kCiAgICAgICAgICAgIGV4Y2x1ZGUgcHJvZHVjdC0+YWdpbGUKICAgICAgICAgICAgZXhjbHVkZSBkZXZlbG9wZXItPmFnaWxlIGRldmVsb3Blci0+dGRkCiAgICAgICAgICAgIGV4Y2x1ZGUgdGRkLT4qCiAgICAgICAgfQoKICAgICAgICBjb21wb25lbnQgdGRkICJUZXN0RHJpdmVuRGV2ZWxvcG1lbnQiIHsKICAgICAgICAgICAgaW5jbHVkZSAqIHByb2R1Y3QgZGV2ZWxvcGVyCiAgICAgICAgICAgIGV4Y2x1ZGUgZGV2ZWxvcGVyLT5hZ2lsZSBiZGQtPmFnaWxlICotPmJkZAogICAgICAgICAgICBleGNsdWRlIGFnaWxlLT5kZXZlbG9wbWVudAogICAgICAgIH0KCiAgICAgICAgY29tcG9uZW50IGFnaWxlICJBZ2lsZVByb2R1Y3RNYW5hZ2VtZW50IiAiQWdpbGUgcHJvamVjdHMgYXJlIGJyb2tlbiBkb3duIGludG8gdHdvLXdlZWsgaXRlcmF0aW9ucyB3aGljaCByZXN1bHQgaW4gYSBwb3RlbnRpYWxseSBzaGlwcGFibGUgcHJvZHVjdCBpbmNyZW1lbnQiIHsKICAgICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgICAgIGV4Y2x1ZGUgKi0+ZGRkCiAgICAgICAgICAgIGV4Y2x1ZGUgKi0+dGRkCiAgICAgICAgICAgIGV4Y2x1ZGUgKi0+YmRkCiAgICAgICAgICAgIGV4Y2x1ZGUgZGV2ZWxvcGVyLT5hbGlnbkFuZFVuZGVyc3RhbmQKICAgICAgICAgICAgYXV0b0xheW91dCB0YgogICAgICAgIH0KCgoKICAgICAgICB0aGVtZSBkZWZhdWx0CgogICAgICAgIHN0eWxlcyB7CiAgICAgICAgICAgIGVsZW1lbnQgInByb2R1Y3QiIHsKICAgICAgICAgICAgICAgIGJhY2tncm91bmQgZ3JleQogICAgICAgICAgICAgICAgY29sb3IgI2ZmZmZmZgogICAgICAgICAgICB9CiAgICAgICAgICAgIHJlbGF0aW9uc2hpcCAiYmRkLWFnaWxlIiB7CiAgICAgICAgICAgICAgICByb3V0aW5nIEN1cnZlZAogICAgICAgICAgICB9CgovLyAgICAgICAgICAgIGVsZW1lbnQgPHRhZz4gewovLyAgICAgICAgICAgICAgICBzaGFwZSA8Qm94fFJvdW5kZWRCb3h8Q2lyY2xlfEVsbGlwc2V8SGV4YWdvbnxDeWxpbmRlcnxQaXBlfFBlcnNvbnxSb2JvdHxGb2xkZXJ8V2ViQnJvd3NlcnxNb2JpbGVEZXZpY2VQb3J0cmFpdHxNb2JpbGVEZXZpY2VMYW5kc2NhcGV8Q29tcG9uZW50PgovLyAgICAgICAgICAgICAgICBpY29uIDxmaWxlfHVybD4KLy8gICAgICAgICAgICAgICAgd2lkdGggPGludGVnZXI+Ci8vICAgICAgICAgICAgICAgIGhlaWdodCA8aW50ZWdlcj4KLy8gICAgICAgICAgICAgICAgYmFja2dyb3VuZCA8I3JyZ2diYnxjb2xvciBuYW1lPgovLyAgICAgICAgICAgICAgICBjb2xvciA8I3JyZ2diYnxjb2xvciBuYW1lPgovLyAgICAgICAgICAgICAgICBjb2xvdXIgPCNycmdnYmJ8Y29sb3IgbmFtZT4KLy8gICAgICAgICAgICAgICAgc3Ryb2tlIDwjcnJnZ2JifGNvbG9yIG5hbWU+Ci8vICAgICAgICAgICAgICAgIHN0cm9rZVdpZHRoIDxpbnRlZ2VyOiAxLTEwPgovLyAgICAgICAgICAgICAgICBmb250U2l6ZSA8aW50ZWdlcj4KLy8gICAgICAgICAgICAgICAgYm9yZGVyIDxzb2xpZHxkYXNoZWR8ZG90dGVkPgovLyAgICAgICAgICAgICAgICBvcGFjaXR5IDxpbnRlZ2VyOiAwLTEwMD4KLy8gICAgICAgICAgICAgICAgbWV0YWRhdGEgPHRydWV8ZmFsc2U+Ci8vICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uIDx0cnVlfGZhbHNlPgovLyAgICAgICAgICAgICAgICBwcm9wZXJ0aWVzIHsKLy8gICAgICAgICAgICAgICAgICAgIG5hbWUgdmFsdWUKLy8gICAgICAgICAgICAgICAgfQovLyAgICAgICAgICAgIH0KLy8gICAgICAgICAgICByZWxhdGlvbnNoaXAgPHRhZz4gewovLyAgICAgICAgICAgICAgICB0aGlja25lc3MgPGludGVnZXI+Ci8vICAgICAgICAgICAgICAgIGNvbG9yIDwjcnJnZ2JifGNvbG9yIG5hbWU+Ci8vICAgICAgICAgICAgICAgIGNvbG91ciA8I3JyZ2diYnxjb2xvciBuYW1lPgovLyAgICAgICAgICAgICAgICBzdHlsZSA8c29saWR8ZGFzaGVkfGRvdHRlZD4KLy8gICAgICAgICAgICAgICAgcm91dGluZyA8RGlyZWN0fE9ydGhvZ29uYWx8Q3VydmVkPgovLyAgICAgICAgICAgICAgICBmb250U2l6ZSA8aW50ZWdlcj4KLy8gICAgICAgICAgICAgICAgd2lkdGggPGludGVnZXI+Ci8vICAgICAgICAgICAgICAgIHBvc2l0aW9uIDxpbnRlZ2VyOiAwLTEwMD4KLy8gICAgICAgICAgICAgICAgb3BhY2l0eSA8aW50ZWdlcjogMC0xMDA+Ci8vICAgICAgICAgICAgICAgIHByb3BlcnRpZXMgewovLyAgICAgICAgICAgICAgICAgICAgbmFtZSB2YWx1ZQovLyAgICAgICAgICAgICAgICB9Ci8vICAgICAgICAgICAgfQogICAgICAgIH0KICAgIH0KCn0K"
   },
   "configuration" : { },
   "model" : {
     "people" : [ {
-      "id" : "1",
-      "tags" : "Element,Person,product",
-      "properties" : {
-        "structurizr.dsl.identifier" : "product"
-      },
-      "name" : "Product stakeholder",
-      "description" : "Product Team member who owns and drives the product vision",
-      "relationships" : [ {
-        "id" : "27",
-        "tags" : "Relationship",
-        "properties" : {
-          "structurizr.dsl.identifier" : "2bf48675-b356-4b7b-a5dd-7629ece4ca8d"
-        },
-        "sourceId" : "1",
-        "destinationId" : "6",
-        "description" : "presents Product Feature"
-      }, {
-        "id" : "73",
-        "tags" : "Relationship",
-        "properties" : {
-          "structurizr.dsl.identifier" : "e59cb18e-3178-4031-b270-4d6d805739ca"
-        },
-        "sourceId" : "1",
-        "destinationId" : "19",
-        "description" : "validates product increment"
-      }, {
-        "id" : "25",
-        "tags" : "Relationship",
-        "properties" : {
-          "structurizr.dsl.identifier" : "0624a832-9034-484c-a7ac-4b5cfbfcc007"
-        },
-        "sourceId" : "1",
-        "destinationId" : "3",
-        "description" : "contributes to"
-      }, {
-        "id" : "58",
-        "tags" : "Relationship",
-        "properties" : {
-          "structurizr.dsl.identifier" : "3970aecf-4019-41af-a7ae-c70f8f165a87"
-        },
-        "sourceId" : "1",
-        "destinationId" : "13",
-        "description" : "validates and categorizes subdomains"
-      }, {
-        "id" : "59",
-        "sourceId" : "1",
-        "destinationId" : "12",
-        "description" : "validates and categorizes subdomains",
-        "linkedRelationshipId" : "58"
-      }, {
-        "id" : "41",
-        "sourceId" : "1",
-        "destinationId" : "8",
-        "description" : "presents rules and examples",
-        "linkedRelationshipId" : "40"
-      }, {
-        "id" : "74",
-        "sourceId" : "1",
-        "destinationId" : "16",
-        "description" : "validates product increment",
-        "linkedRelationshipId" : "73"
-      }, {
-        "id" : "28",
-        "sourceId" : "1",
-        "destinationId" : "5",
-        "description" : "presents Product Feature",
-        "linkedRelationshipId" : "27"
-      }, {
-        "id" : "40",
-        "tags" : "Relationship",
-        "properties" : {
-          "structurizr.dsl.identifier" : "760e1195-b844-43b9-822a-e036606c57f2"
-        },
-        "sourceId" : "1",
-        "destinationId" : "9",
-        "description" : "presents rules and examples"
-      } ],
-      "location" : "Unspecified"
-    }, {
       "id" : "2",
       "tags" : "Element,Person",
       "properties" : {
@@ -97,20 +18,20 @@
       "name" : "Software Engineer",
       "description" : "Engineering Team member who follows the software development model to become more efficient",
       "relationships" : [ {
-        "id" : "42",
+        "id" : "45",
+        "sourceId" : "2",
+        "destinationId" : "8",
+        "description" : "identifies functional gaps or inconsistencies",
+        "linkedRelationshipId" : "44"
+      }, {
+        "id" : "26",
         "tags" : "Relationship",
         "properties" : {
-          "structurizr.dsl.identifier" : "6160bb24-48da-410f-bb40-229ff5955b16"
+          "structurizr.dsl.identifier" : "40449441-d666-4b38-87c5-31ff893d01f5"
         },
         "sourceId" : "2",
-        "destinationId" : "9",
-        "description" : "identifies functional gaps or inconsistencies"
-      }, {
-        "id" : "57",
-        "sourceId" : "2",
-        "destinationId" : "12",
-        "description" : "identifies strategic focus areas",
-        "linkedRelationshipId" : "56"
+        "destinationId" : "3",
+        "description" : "follows"
       }, {
         "id" : "30",
         "sourceId" : "2",
@@ -118,68 +39,147 @@
         "description" : "obtains domain knowledge",
         "linkedRelationshipId" : "29"
       }, {
-        "id" : "56",
+        "id" : "54",
         "tags" : "Relationship",
         "properties" : {
-          "structurizr.dsl.identifier" : "079a3cca-7b16-4454-805a-badea7b4641d"
+          "structurizr.dsl.identifier" : "6d1467d9-5caa-4608-98cc-9805e48a499b"
         },
         "sourceId" : "2",
         "destinationId" : "13",
         "description" : "identifies strategic focus areas"
       }, {
-        "id" : "67",
-        "sourceId" : "2",
-        "destinationId" : "22",
-        "description" : "implements high-quality software",
-        "linkedRelationshipId" : "66"
-      }, {
-        "id" : "26",
-        "tags" : "Relationship",
-        "properties" : {
-          "structurizr.dsl.identifier" : "7d683edc-0de3-4105-b24f-f21716f50d3d"
-        },
-        "sourceId" : "2",
-        "destinationId" : "3",
-        "description" : "follows"
-      }, {
-        "id" : "76",
+        "id" : "72",
         "sourceId" : "2",
         "destinationId" : "16",
         "description" : "updates work progress",
-        "linkedRelationshipId" : "75"
+        "linkedRelationshipId" : "71"
       }, {
-        "id" : "29",
+        "id" : "71",
         "tags" : "Relationship",
         "properties" : {
-          "structurizr.dsl.identifier" : "c163bb6e-73a6-4684-a6c0-3ffdce5e4fb3"
-        },
-        "sourceId" : "2",
-        "destinationId" : "6",
-        "description" : "obtains domain knowledge"
-      }, {
-        "id" : "75",
-        "tags" : "Relationship",
-        "properties" : {
-          "structurizr.dsl.identifier" : "c5a7029d-b222-4179-918a-4df790f6a974"
+          "structurizr.dsl.identifier" : "e162f754-a799-4830-8d23-0c66fdaa121c"
         },
         "sourceId" : "2",
         "destinationId" : "19",
         "description" : "updates work progress"
       }, {
-        "id" : "43",
+        "id" : "55",
         "sourceId" : "2",
-        "destinationId" : "8",
-        "description" : "identifies functional gaps or inconsistencies",
-        "linkedRelationshipId" : "42"
+        "destinationId" : "12",
+        "description" : "identifies strategic focus areas",
+        "linkedRelationshipId" : "54"
       }, {
-        "id" : "66",
+        "id" : "44",
         "tags" : "Relationship",
         "properties" : {
-          "structurizr.dsl.identifier" : "85e1c8dc-789c-449f-952a-129f1029e37f"
+          "structurizr.dsl.identifier" : "c70d9aea-97b5-4099-8b30-df747662ea9a"
+        },
+        "sourceId" : "2",
+        "destinationId" : "9",
+        "description" : "identifies functional gaps or inconsistencies"
+      }, {
+        "id" : "29",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "4dc37cee-f589-42cd-ad57-344278793409"
+        },
+        "sourceId" : "2",
+        "destinationId" : "6",
+        "description" : "obtains domain knowledge"
+      }, {
+        "id" : "62",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "f27707a7-7fd4-4d27-807a-05645494ef36"
         },
         "sourceId" : "2",
         "destinationId" : "23",
         "description" : "implements high-quality software"
+      }, {
+        "id" : "63",
+        "sourceId" : "2",
+        "destinationId" : "22",
+        "description" : "implements high-quality software",
+        "linkedRelationshipId" : "62"
+      } ],
+      "location" : "Unspecified"
+    }, {
+      "id" : "1",
+      "tags" : "Element,Person,product",
+      "properties" : {
+        "structurizr.dsl.identifier" : "product"
+      },
+      "name" : "Product stakeholder",
+      "description" : "Product Team member who owns and drives the product vision",
+      "relationships" : [ {
+        "id" : "25",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "1aa5e22d-4df7-41c7-b9ae-9baecc26cb5e"
+        },
+        "sourceId" : "1",
+        "destinationId" : "3",
+        "description" : "contributes to"
+      }, {
+        "id" : "27",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "a03c3444-ca2f-4b91-8103-f7e4cd52d9c0"
+        },
+        "sourceId" : "1",
+        "destinationId" : "6",
+        "description" : "presents Product Feature"
+      }, {
+        "id" : "56",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "c2908191-f713-47a9-a47f-ce60a974f60f"
+        },
+        "sourceId" : "1",
+        "destinationId" : "13",
+        "description" : "validates and categorizes subdomains"
+      }, {
+        "id" : "69",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "c570afd4-c7a8-49e0-b12f-802f3b5a1086"
+        },
+        "sourceId" : "1",
+        "destinationId" : "19",
+        "description" : "validates product increment"
+      }, {
+        "id" : "43",
+        "sourceId" : "1",
+        "destinationId" : "8",
+        "description" : "presents rules and examples",
+        "linkedRelationshipId" : "42"
+      }, {
+        "id" : "28",
+        "sourceId" : "1",
+        "destinationId" : "5",
+        "description" : "presents Product Feature",
+        "linkedRelationshipId" : "27"
+      }, {
+        "id" : "42",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "01a07a3a-dabc-4a6d-aa7c-2d75bec4d912"
+        },
+        "sourceId" : "1",
+        "destinationId" : "9",
+        "description" : "presents rules and examples"
+      }, {
+        "id" : "57",
+        "sourceId" : "1",
+        "destinationId" : "12",
+        "description" : "validates and categorizes subdomains",
+        "linkedRelationshipId" : "56"
+      }, {
+        "id" : "70",
+        "sourceId" : "1",
+        "destinationId" : "16",
+        "description" : "validates product increment",
+        "linkedRelationshipId" : "69"
       } ],
       "location" : "Unspecified"
     } ],
@@ -193,109 +193,121 @@
       "description" : "The process used to develop and deliver product features",
       "location" : "Unspecified",
       "containers" : [ {
-        "id" : "12",
+        "id" : "4",
         "tags" : "Element,Container",
         "properties" : {
-          "structurizr.dsl.identifier" : "ddd"
+          "structurizr.dsl.identifier" : "allcomponents"
         },
-        "name" : "Strategic Architecture and Domain Driven Design",
-        "description" : "Explore models in a creative collaboration of domain experts and software engineers.",
+        "name" : "All Components",
+        "description" : "All Components and relationships",
+        "technology" : "All Components",
+        "documentation" : { }
+      }, {
+        "id" : "5",
+        "tags" : "Element,Container,product",
+        "properties" : {
+          "structurizr.dsl.identifier" : "alignandunderstand"
+        },
+        "name" : "Align and Understand Product Requirements",
+        "description" : "Align our focus with the organisation's business model, the needs of its users, and its short, medium, and long-term goals.",
         "relationships" : [ {
-          "id" : "61",
-          "sourceId" : "12",
-          "destinationId" : "22",
-          "description" : "guides code implementation",
-          "linkedRelationshipId" : "60"
+          "id" : "41",
+          "sourceId" : "5",
+          "destinationId" : "13",
+          "description" : "problem decomposition",
+          "technology" : "Core Domain Charts",
+          "linkedRelationshipId" : "39"
         }, {
-          "id" : "65",
-          "sourceId" : "12",
-          "destinationId" : "16",
-          "description" : "enhances agility",
-          "linkedRelationshipId" : "62"
+          "id" : "38",
+          "sourceId" : "5",
+          "destinationId" : "9",
+          "description" : "identify rules and examples",
+          "technology" : "Miro",
+          "linkedRelationshipId" : "36"
         }, {
-          "id" : "64",
-          "sourceId" : "12",
-          "destinationId" : "17",
-          "description" : "enhances agility",
-          "linkedRelationshipId" : "62"
-        } ],
-        "technology" : "Sotware Architecture and Design",
-        "components" : [ {
-          "id" : "15",
-          "tags" : "Element,Component",
+          "id" : "31",
+          "tags" : "Relationship",
           "properties" : {
-            "structurizr.dsl.identifier" : "design"
+            "structurizr.dsl.identifier" : "269364b7-0af9-42ea-bf1a-e81edaece2ee"
           },
-          "name" : "Software Design",
-          "description" : "Create models using a common set of abstractions to describe the static structure of a software system",
-          "relationships" : [ {
-            "id" : "60",
-            "tags" : "Relationship",
-            "properties" : {
-              "structurizr.dsl.identifier" : "bbdf1eac-d7b4-44e4-ba04-b8bf254dcb09"
-            },
-            "sourceId" : "15",
-            "destinationId" : "22",
-            "description" : "guides code implementation"
-          }, {
-            "id" : "63",
-            "sourceId" : "15",
-            "destinationId" : "16",
-            "description" : "enhances agility",
-            "linkedRelationshipId" : "62"
-          }, {
-            "id" : "62",
-            "tags" : "Relationship",
-            "properties" : {
-              "structurizr.dsl.identifier" : "72fb8658-77bf-4f60-ae21-d8477ce20c39"
-            },
-            "sourceId" : "15",
-            "destinationId" : "17",
-            "description" : "enhances agility"
-          } ],
-          "technology" : "C4 model",
-          "documentation" : { }
+          "sourceId" : "5",
+          "destinationId" : "8",
+          "description" : "collaborative requirement specification"
         }, {
-          "id" : "13",
+          "id" : "32",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "828940be-10d6-4c79-ade9-427fc4a6bc08"
+          },
+          "sourceId" : "5",
+          "destinationId" : "12",
+          "description" : "collaborative domain modelling"
+        } ],
+        "technology" : "Align & Understand",
+        "components" : [ {
+          "id" : "7",
           "tags" : "Element,Component,product",
           "properties" : {
-            "structurizr.dsl.identifier" : "decompose"
+            "structurizr.dsl.identifier" : "storymap"
           },
-          "name" : "Domain Decomposition",
-          "description" : "Decompose a large problem domain into cohesive modules, so that we can identify stragically significant key focus areas",
+          "name" : "Domain Discovery",
+          "description" : "Map the Big Picture by describing the User journey through the Product telling a story from the perspective of the end user",
           "relationships" : [ {
-            "id" : "54",
+            "id" : "37",
+            "sourceId" : "7",
+            "destinationId" : "8",
+            "description" : "identify rules and examples",
+            "technology" : "Miro",
+            "linkedRelationshipId" : "36"
+          }, {
+            "id" : "40",
+            "sourceId" : "7",
+            "destinationId" : "12",
+            "description" : "problem decomposition",
+            "technology" : "Core Domain Charts",
+            "linkedRelationshipId" : "39"
+          }, {
+            "id" : "36",
             "tags" : "Relationship",
             "properties" : {
-              "structurizr.dsl.identifier" : "3d621551-37c5-4bbe-a7f9-c3c72359204e"
+              "structurizr.dsl.identifier" : "570c6361-3d62-4b1b-a26a-d1e177df5b8a"
             },
-            "sourceId" : "13",
-            "destinationId" : "14",
-            "description" : "collaborative modelling",
+            "sourceId" : "7",
+            "destinationId" : "9",
+            "description" : "identify rules and examples",
             "technology" : "Miro"
+          }, {
+            "id" : "39",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "3cd3ac7b-1d1d-4490-845c-6752051442f1"
+            },
+            "sourceId" : "7",
+            "destinationId" : "13",
+            "description" : "problem decomposition",
+            "technology" : "Core Domain Charts"
           } ],
-          "technology" : "Core Domain Charts",
+          "technology" : "User Story Map, Event Storming, etc",
           "documentation" : { }
         }, {
-          "id" : "14",
-          "tags" : "Element,Component",
+          "id" : "6",
+          "tags" : "Element,Component,product",
           "properties" : {
-            "structurizr.dsl.identifier" : "strategize"
+            "structurizr.dsl.identifier" : "productbrief"
           },
-          "name" : "Strategic Architecture",
-          "description" : "Document Bounded Contexts, from naming to responsibilities alongside its public interface and dependencies",
+          "name" : "Product Brief",
+          "description" : "Short product or feature brief to frame and constrain the project. Identifies key capabilities and high level goals and objectives of the product feature",
           "relationships" : [ {
-            "id" : "55",
+            "id" : "35",
             "tags" : "Relationship",
             "properties" : {
-              "structurizr.dsl.identifier" : "9b2c985b-9528-40cb-95fc-c5a578276306"
+              "structurizr.dsl.identifier" : "b183ae70-c230-4667-b092-08b8d61df69b"
             },
-            "sourceId" : "14",
-            "destinationId" : "15",
-            "description" : "visualize software architecture",
-            "technology" : "draw.io, structurizr"
+            "sourceId" : "6",
+            "destinationId" : "7",
+            "description" : "spread domain knowledge"
           } ],
-          "technology" : "Bounded Context Canvas",
+          "technology" : "Opportunity Canvas, Slideck, etc",
           "documentation" : { }
         } ],
         "documentation" : { }
@@ -308,53 +320,29 @@
         "name" : "Behavior Driven Development",
         "description" : "Define and understand the desired system behavior before writting any code. It encourages collaboration and a shared understanding of the project's objectives",
         "relationships" : [ {
-          "id" : "53",
+          "id" : "33",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "da8d1e87-98a7-4160-bed5-25baf52c922a"
+          },
+          "sourceId" : "8",
+          "destinationId" : "16",
+          "description" : "creates a shared understanding"
+        }, {
+          "id" : "51",
           "sourceId" : "8",
           "destinationId" : "22",
           "description" : "guides code implementation",
-          "linkedRelationshipId" : "50"
+          "linkedRelationshipId" : "48"
         }, {
-          "id" : "47",
-          "sourceId" : "8",
-          "destinationId" : "17",
-          "description" : "creates a shared understanding",
-          "linkedRelationshipId" : "45"
-        }, {
-          "id" : "48",
-          "sourceId" : "8",
-          "destinationId" : "16",
-          "description" : "creates a shared understanding",
-          "linkedRelationshipId" : "45"
-        }, {
-          "id" : "52",
+          "id" : "50",
           "sourceId" : "8",
           "destinationId" : "23",
           "description" : "guides code implementation",
-          "linkedRelationshipId" : "50"
+          "linkedRelationshipId" : "48"
         } ],
         "technology" : "BDD",
         "components" : [ {
-          "id" : "9",
-          "tags" : "Element,Component,product",
-          "properties" : {
-            "structurizr.dsl.identifier" : "discovery"
-          },
-          "name" : "Requirement Workshop",
-          "description" : "Concrete rules and examples help us explore the problem domain and makes a great basis for our acceptance tests",
-          "relationships" : [ {
-            "id" : "44",
-            "tags" : "Relationship",
-            "properties" : {
-              "structurizr.dsl.identifier" : "dcc774ed-e894-4b8c-9f59-29e93fe73fc4"
-            },
-            "sourceId" : "9",
-            "destinationId" : "10",
-            "description" : "formulate acceptance criteria",
-            "technology" : "Gherkin"
-          } ],
-          "technology" : "Example Mapping sessions to clarify and confirm the acceptance criteria",
-          "documentation" : { }
-        }, {
           "id" : "10",
           "tags" : "Element,Component",
           "properties" : {
@@ -363,10 +351,10 @@
           "name" : "Acceptance",
           "description" : "Once we have identified our rules and examples, we can now formulate each example as structured documentation.",
           "relationships" : [ {
-            "id" : "49",
+            "id" : "47",
             "tags" : "Relationship",
             "properties" : {
-              "structurizr.dsl.identifier" : "94688ed1-3fba-400b-87ff-ac97a4a43ed0"
+              "structurizr.dsl.identifier" : "4f6db0af-e64b-4d25-bd86-14edd4253e54"
             },
             "sourceId" : "10",
             "destinationId" : "11",
@@ -374,6 +362,27 @@
             "technology" : "Cucumber"
           } ],
           "technology" : "Executable specifications of the system behavior",
+          "documentation" : { }
+        }, {
+          "id" : "9",
+          "tags" : "Element,Component,product",
+          "properties" : {
+            "structurizr.dsl.identifier" : "discovery"
+          },
+          "name" : "Requirement Workshop",
+          "description" : "Concrete rules and examples help us explore the problem domain and makes a great basis for our acceptance tests",
+          "relationships" : [ {
+            "id" : "46",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "6075cd71-7ed9-4790-a499-9badad3dc2a2"
+            },
+            "sourceId" : "9",
+            "destinationId" : "10",
+            "description" : "formulate acceptance criteria",
+            "technology" : "Gherkin"
+          } ],
+          "technology" : "Example Mapping sessions to clarify and confirm the acceptance criteria",
           "documentation" : { }
         }, {
           "id" : "11",
@@ -384,146 +393,22 @@
           "name" : "Features",
           "description" : "Groups related scenarios that demostrates how a feature works",
           "relationships" : [ {
-            "id" : "45",
-            "tags" : "Relationship",
-            "properties" : {
-              "structurizr.dsl.identifier" : "8d864e63-8559-4eab-9f10-4255c3627bf1"
-            },
+            "id" : "49",
             "sourceId" : "11",
-            "destinationId" : "17",
-            "description" : "creates a shared understanding"
+            "destinationId" : "22",
+            "description" : "guides code implementation",
+            "linkedRelationshipId" : "48"
           }, {
-            "id" : "50",
+            "id" : "48",
             "tags" : "Relationship",
             "properties" : {
-              "structurizr.dsl.identifier" : "53b868c8-1946-4d48-93e4-c68c9a89e54e"
+              "structurizr.dsl.identifier" : "5b7bfafa-27a0-4a91-9eaf-ae781e1a1551"
             },
             "sourceId" : "11",
             "destinationId" : "23",
             "description" : "guides code implementation"
-          }, {
-            "id" : "51",
-            "sourceId" : "11",
-            "destinationId" : "22",
-            "description" : "guides code implementation",
-            "linkedRelationshipId" : "50"
-          }, {
-            "id" : "46",
-            "sourceId" : "11",
-            "destinationId" : "16",
-            "description" : "creates a shared understanding",
-            "linkedRelationshipId" : "45"
           } ],
           "technology" : "Cucumber, Selenium etc",
-          "documentation" : { }
-        } ],
-        "documentation" : { }
-      }, {
-        "id" : "5",
-        "tags" : "Element,Container,product",
-        "properties" : {
-          "structurizr.dsl.identifier" : "alignandunderstand"
-        },
-        "name" : "Align and Understand Product Requirements",
-        "description" : "Align our focus with the organisation's business model, the needs of its users, and its short, medium, and long-term goals.",
-        "relationships" : [ {
-          "id" : "32",
-          "tags" : "Relationship",
-          "properties" : {
-            "structurizr.dsl.identifier" : "37211650-a245-4e21-9568-d60657fbf5a2"
-          },
-          "sourceId" : "5",
-          "destinationId" : "12",
-          "description" : "collaborative domain modelling"
-        }, {
-          "id" : "31",
-          "tags" : "Relationship",
-          "properties" : {
-            "structurizr.dsl.identifier" : "b6d7f60d-9a43-4d01-a21e-645af2dfc681"
-          },
-          "sourceId" : "5",
-          "destinationId" : "8",
-          "description" : "collaborative requirement specification"
-        }, {
-          "id" : "39",
-          "sourceId" : "5",
-          "destinationId" : "13",
-          "description" : "problem decomposition",
-          "technology" : "Core Domain Charts",
-          "linkedRelationshipId" : "37"
-        }, {
-          "id" : "36",
-          "sourceId" : "5",
-          "destinationId" : "9",
-          "description" : "identify rules and examples",
-          "technology" : "Miro",
-          "linkedRelationshipId" : "34"
-        } ],
-        "technology" : "Align & Understand",
-        "components" : [ {
-          "id" : "6",
-          "tags" : "Element,Component,product",
-          "properties" : {
-            "structurizr.dsl.identifier" : "productbrief"
-          },
-          "name" : "Product Brief",
-          "description" : "Short product or feature brief to frame and constrain the project. Identifies key capabilities and high level goals and objectives of the product feature",
-          "relationships" : [ {
-            "id" : "33",
-            "tags" : "Relationship",
-            "properties" : {
-              "structurizr.dsl.identifier" : "86b53822-f906-4205-be74-bd740dc6dd5c"
-            },
-            "sourceId" : "6",
-            "destinationId" : "7",
-            "description" : "spread domain knowledge"
-          } ],
-          "technology" : "Opportunity Canvas, Slideck, etc",
-          "documentation" : { }
-        }, {
-          "id" : "7",
-          "tags" : "Element,Component,product",
-          "properties" : {
-            "structurizr.dsl.identifier" : "storymap"
-          },
-          "name" : "Domain Discovery",
-          "description" : "Map the Big Picture by describing the User journey through the Product telling a story from the perspective of the end user",
-          "relationships" : [ {
-            "id" : "35",
-            "sourceId" : "7",
-            "destinationId" : "8",
-            "description" : "identify rules and examples",
-            "technology" : "Miro",
-            "linkedRelationshipId" : "34"
-          }, {
-            "id" : "37",
-            "tags" : "Relationship",
-            "properties" : {
-              "structurizr.dsl.identifier" : "e08e6d40-7b62-491e-be0a-77a5f614e86e"
-            },
-            "sourceId" : "7",
-            "destinationId" : "13",
-            "description" : "problem decomposition",
-            "technology" : "Core Domain Charts"
-          }, {
-            "id" : "34",
-            "tags" : "Relationship",
-            "properties" : {
-              "structurizr.dsl.identifier" : "053dbe8d-09d6-4676-a316-c278381698a5"
-            },
-            "sourceId" : "7",
-            "destinationId" : "9",
-            "description" : "identify rules and examples",
-            "technology" : "Miro"
-          }, {
-            "id" : "38",
-            "sourceId" : "7",
-            "destinationId" : "12",
-            "description" : "problem decomposition",
-            "technology" : "Core Domain Charts",
-            "linkedRelationshipId" : "37"
-          } ],
-          "technology" : "User Story Map, Event Storming, etc",
           "documentation" : { }
         } ],
         "documentation" : { }
@@ -547,6 +432,16 @@
           "technology" : "Scrum and Kanban boards, Metric Dashboards etc",
           "documentation" : { }
         }, {
+          "id" : "20",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "knowledgebase"
+          },
+          "name" : "Knowledge Base",
+          "description" : "Centralized repository of information and best practices that the team can refer to for guidance, problem-solving, and knowledge sharing.",
+          "technology" : "Google Drive, Confluence, etc",
+          "documentation" : { }
+        }, {
           "id" : "17",
           "tags" : "Element,Component,product",
           "properties" : {
@@ -557,26 +452,6 @@
           "technology" : "They typically follow the template: As a [user type/role], I want [a capability] so that [benefit or goal]",
           "documentation" : { }
         }, {
-          "id" : "21",
-          "tags" : "Element,Component,product",
-          "properties" : {
-            "structurizr.dsl.identifier" : "customersupport"
-          },
-          "name" : "Customer Support",
-          "description" : "The process of providing assistance to the end users of the product",
-          "relationships" : [ {
-            "id" : "78",
-            "tags" : "Relationship",
-            "properties" : {
-              "structurizr.dsl.identifier" : "e466ae16-5215-47a8-b318-4c722243f81e"
-            },
-            "sourceId" : "21",
-            "destinationId" : "20",
-            "description" : "references"
-          } ],
-          "technology" : "Jira",
-          "documentation" : { }
-        }, {
           "id" : "19",
           "tags" : "Element,Component",
           "properties" : {
@@ -585,10 +460,10 @@
           "name" : "Agile Ceremonies",
           "description" : "Agile iterations, metrics and feedback loops to help the team make informed decisions",
           "relationships" : [ {
-            "id" : "77",
+            "id" : "73",
             "tags" : "Relationship",
             "properties" : {
-              "structurizr.dsl.identifier" : "7a659c6f-58e6-4f81-9bd2-4419a50098fa"
+              "structurizr.dsl.identifier" : "19b4b420-88c1-44e2-9c4a-f8a23c451846"
             },
             "sourceId" : "19",
             "destinationId" : "18",
@@ -597,26 +472,26 @@
           "technology" : "Jira, Trello, Miro, etc",
           "documentation" : { }
         }, {
-          "id" : "20",
-          "tags" : "Element,Component",
+          "id" : "21",
+          "tags" : "Element,Component,product",
           "properties" : {
-            "structurizr.dsl.identifier" : "knowledgebase"
+            "structurizr.dsl.identifier" : "customersupport"
           },
-          "name" : "Knowledge Base",
-          "description" : "Centralized repository of information and best practices that the team can refer to for guidance, problem-solving, and knowledge sharing.",
-          "technology" : "Google Drive, Confluence, etc",
+          "name" : "Customer Support",
+          "description" : "The process of providing assistance to the end users of the product",
+          "relationships" : [ {
+            "id" : "74",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "d58d358c-2ef6-4c9a-9fdf-7f765762d292"
+            },
+            "sourceId" : "21",
+            "destinationId" : "20",
+            "description" : "references"
+          } ],
+          "technology" : "Jira",
           "documentation" : { }
         } ],
-        "documentation" : { }
-      }, {
-        "id" : "4",
-        "tags" : "Element,Container",
-        "properties" : {
-          "structurizr.dsl.identifier" : "allcomponents"
-        },
-        "name" : "All Components",
-        "description" : "All Components and relationships",
-        "technology" : "All Components",
         "documentation" : { }
       }, {
         "id" : "22",
@@ -627,17 +502,17 @@
         "name" : "Test Driven Development",
         "description" : "Acceptance Tests guide our code implementation using lower-level examples of the behavior of internal system components.",
         "relationships" : [ {
-          "id" : "71",
-          "sourceId" : "22",
-          "destinationId" : "17",
-          "description" : "deliver product increment",
-          "linkedRelationshipId" : "69"
-        }, {
-          "id" : "72",
+          "id" : "68",
           "sourceId" : "22",
           "destinationId" : "16",
           "description" : "deliver product increment",
-          "linkedRelationshipId" : "69"
+          "linkedRelationshipId" : "65"
+        }, {
+          "id" : "67",
+          "sourceId" : "22",
+          "destinationId" : "17",
+          "description" : "deliver product increment",
+          "linkedRelationshipId" : "65"
         } ],
         "components" : [ {
           "id" : "24",
@@ -648,20 +523,20 @@
           "name" : "Continuous Integration",
           "description" : "Automated build scripts are used to run tests and provide immediate feedback to developers about the status of their code changes",
           "relationships" : [ {
-            "id" : "70",
-            "sourceId" : "24",
-            "destinationId" : "16",
-            "description" : "deliver product increment",
-            "linkedRelationshipId" : "69"
-          }, {
-            "id" : "69",
+            "id" : "65",
             "tags" : "Relationship",
             "properties" : {
-              "structurizr.dsl.identifier" : "d7edb7ae-a7ee-42b4-a4f3-103d1d7fbba2"
+              "structurizr.dsl.identifier" : "69ca70e1-3394-4eb1-97b5-a39385d0edfb"
             },
             "sourceId" : "24",
             "destinationId" : "17",
             "description" : "deliver product increment"
+          }, {
+            "id" : "66",
+            "sourceId" : "24",
+            "destinationId" : "16",
+            "description" : "deliver product increment",
+            "linkedRelationshipId" : "65"
           } ],
           "technology" : "Jenkins, etc",
           "documentation" : { }
@@ -674,16 +549,117 @@
           "name" : "Test Driven Development",
           "description" : "Lower-level examples of the behavior of internal system components",
           "relationships" : [ {
-            "id" : "68",
+            "id" : "64",
             "tags" : "Relationship",
             "properties" : {
-              "structurizr.dsl.identifier" : "a07d25c6-cbf5-42ee-9dd6-075816f7fb79"
+              "structurizr.dsl.identifier" : "af5de6ed-77dc-49ff-8e92-f2ff181a63ac"
             },
             "sourceId" : "23",
             "destinationId" : "24",
             "description" : "push code to version control"
           } ],
           "technology" : "JUnit, etc",
+          "documentation" : { }
+        } ],
+        "documentation" : { }
+      }, {
+        "id" : "12",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "ddd"
+        },
+        "name" : "Strategic Architecture and Domain Driven Design",
+        "description" : "Explore models in a creative collaboration of domain experts and software engineers.",
+        "relationships" : [ {
+          "id" : "60",
+          "sourceId" : "12",
+          "destinationId" : "23",
+          "description" : "guides code implementation",
+          "linkedRelationshipId" : "58"
+        }, {
+          "id" : "34",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "2139c172-21b7-4f57-b539-749347f3cf2f"
+          },
+          "sourceId" : "12",
+          "destinationId" : "16",
+          "description" : "enhances agility"
+        }, {
+          "id" : "61",
+          "sourceId" : "12",
+          "destinationId" : "22",
+          "description" : "guides code implementation",
+          "linkedRelationshipId" : "58"
+        } ],
+        "technology" : "Sotware Architecture and Design",
+        "components" : [ {
+          "id" : "14",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "strategize"
+          },
+          "name" : "Strategic Architecture",
+          "description" : "Document Bounded Contexts, from naming to responsibilities alongside its public interface and dependencies",
+          "relationships" : [ {
+            "id" : "53",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "c11bc005-9333-4b25-beda-ec19c74d1e89"
+            },
+            "sourceId" : "14",
+            "destinationId" : "15",
+            "description" : "visualize software architecture",
+            "technology" : "draw.io, structurizr"
+          } ],
+          "technology" : "Bounded Context Canvas",
+          "documentation" : { }
+        }, {
+          "id" : "15",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "design"
+          },
+          "name" : "Software Design",
+          "description" : "Create models using a common set of abstractions to describe the static structure of a software system",
+          "relationships" : [ {
+            "id" : "59",
+            "sourceId" : "15",
+            "destinationId" : "22",
+            "description" : "guides code implementation",
+            "linkedRelationshipId" : "58"
+          }, {
+            "id" : "58",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "42f303d3-1781-4d6d-ac7a-d63a183b820c"
+            },
+            "sourceId" : "15",
+            "destinationId" : "23",
+            "description" : "guides code implementation"
+          } ],
+          "technology" : "C4 model",
+          "documentation" : { }
+        }, {
+          "id" : "13",
+          "tags" : "Element,Component,product",
+          "properties" : {
+            "structurizr.dsl.identifier" : "decompose"
+          },
+          "name" : "Domain Decomposition",
+          "description" : "Decompose a large problem domain into cohesive modules, so that we can identify stragically significant key focus areas",
+          "relationships" : [ {
+            "id" : "52",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "3b84e675-1ebe-4069-a164-57a373266a1a"
+            },
+            "sourceId" : "13",
+            "destinationId" : "14",
+            "description" : "collaborative modelling",
+            "technology" : "Miro"
+          } ],
+          "technology" : "Core Domain Charts",
           "documentation" : { }
         } ],
         "documentation" : { }
@@ -772,6 +748,10 @@
       "key" : "Containers",
       "order" : 2,
       "softwareSystemId" : "3",
+      "dimensions" : {
+        "width" : 2190,
+        "height" : 3191
+      },
       "automaticLayout" : {
         "implementation" : "Graphviz",
         "rankDirection" : "TopBottom",
@@ -779,48 +759,56 @@
         "nodeSeparation" : 300,
         "edgeSeparation" : 0,
         "vertices" : false,
-        "applied" : false
+        "applied" : true
       },
       "externalSoftwareSystemBoundariesVisible" : true,
       "elements" : [ {
         "id" : "22",
-        "x" : 0,
-        "y" : 0
-      }, {
-        "id" : "1",
-        "x" : 0,
-        "y" : 0
+        "x" : 869,
+        "y" : 1999
       }, {
         "id" : "12",
-        "x" : 0,
-        "y" : 0
+        "x" : 494,
+        "y" : 1399
+      }, {
+        "id" : "1",
+        "x" : 494,
+        "y" : 199
       }, {
         "id" : "2",
-        "x" : 0,
-        "y" : 0
+        "x" : 1244,
+        "y" : 199
       }, {
         "id" : "16",
-        "x" : 0,
-        "y" : 0
+        "x" : 869,
+        "y" : 2599
       }, {
         "id" : "5",
-        "x" : 0,
-        "y" : 0
+        "x" : 869,
+        "y" : 799
       }, {
         "id" : "8",
-        "x" : 0,
-        "y" : 0
+        "x" : 1244,
+        "y" : 1399
       } ],
       "relationships" : [ {
         "id" : "28"
       }, {
-        "id" : "72"
-      }, {
         "id" : "61"
       }, {
-        "id" : "65"
+        "id" : "51"
       }, {
-        "id" : "53"
+        "id" : "34",
+        "vertices" : [ {
+          "x" : 719,
+          "y" : 2299
+        } ]
+      }, {
+        "id" : "33",
+        "vertices" : [ {
+          "x" : 1469,
+          "y" : 2299
+        } ]
       }, {
         "id" : "32"
       }, {
@@ -828,10 +816,124 @@
       }, {
         "id" : "30"
       }, {
-        "id" : "48"
+        "id" : "68"
       } ]
     } ],
     "componentViews" : [ {
+      "key" : "DomainDrivenDesign",
+      "order" : 6,
+      "paperSize" : "A3_Landscape",
+      "dimensions" : {
+        "width" : 3866,
+        "height" : 1916
+      },
+      "containerId" : "12",
+      "externalContainerBoundariesVisible" : true,
+      "elements" : [ {
+        "id" : "22",
+        "x" : 3208,
+        "y" : 808
+      }, {
+        "id" : "1",
+        "x" : 208,
+        "y" : 208
+      }, {
+        "id" : "13",
+        "x" : 958,
+        "y" : 808
+      }, {
+        "id" : "2",
+        "x" : 208,
+        "y" : 808
+      }, {
+        "id" : "14",
+        "x" : 1708,
+        "y" : 808
+      }, {
+        "id" : "15",
+        "x" : 2458,
+        "y" : 808
+      }, {
+        "id" : "5",
+        "x" : 208,
+        "y" : 1408
+      } ],
+      "relationships" : [ {
+        "id" : "52"
+      }, {
+        "id" : "41"
+      }, {
+        "id" : "53"
+      }, {
+        "id" : "54"
+      }, {
+        "id" : "56"
+      }, {
+        "id" : "59"
+      } ]
+    }, {
+      "key" : "TestDrivenDevelopment",
+      "order" : 7,
+      "paperSize" : "A3_Portrait",
+      "dimensions" : {
+        "width" : 2600,
+        "height" : 3116
+      },
+      "containerId" : "22",
+      "externalContainerBoundariesVisible" : true,
+      "elements" : [ {
+        "id" : "23",
+        "x" : 1262,
+        "y" : 1408
+      }, {
+        "id" : "12",
+        "x" : 583,
+        "y" : 808
+      }, {
+        "id" : "1",
+        "x" : 208,
+        "y" : 208
+      }, {
+        "id" : "24",
+        "x" : 1262,
+        "y" : 2008
+      }, {
+        "id" : "2",
+        "x" : 1108,
+        "y" : 208
+      }, {
+        "id" : "16",
+        "x" : 583,
+        "y" : 2608
+      }, {
+        "id" : "8",
+        "x" : 1942,
+        "y" : 808
+      } ],
+      "relationships" : [ {
+        "id" : "70",
+        "vertices" : [ {
+          "x" : 433,
+          "y" : 1108
+        } ]
+      }, {
+        "id" : "60"
+      }, {
+        "id" : "50"
+      }, {
+        "id" : "62"
+      }, {
+        "id" : "34"
+      }, {
+        "id" : "64"
+      }, {
+        "id" : "55"
+      }, {
+        "id" : "66"
+      }, {
+        "id" : "57"
+      } ]
+    }, {
       "key" : "AlignAndUnderstand",
       "order" : 4,
       "automaticLayout" : {
@@ -875,16 +977,20 @@
       }, {
         "id" : "27"
       }, {
+        "id" : "37"
+      }, {
+        "id" : "40"
+      }, {
         "id" : "35"
-      }, {
-        "id" : "33"
-      }, {
-        "id" : "38"
       } ]
     }, {
       "key" : "AgileProductManagement",
       "order" : 8,
       "description" : "Agile projects are broken down into two-week iterations which result in a potentially shippable product increment",
+      "dimensions" : {
+        "width" : 3070,
+        "height" : 1991
+      },
       "automaticLayout" : {
         "implementation" : "Graphviz",
         "rankDirection" : "TopBottom",
@@ -892,281 +998,53 @@
         "nodeSeparation" : 300,
         "edgeSeparation" : 0,
         "vertices" : false,
-        "applied" : false
+        "applied" : true
       },
       "containerId" : "16",
       "externalContainerBoundariesVisible" : true,
       "elements" : [ {
         "id" : "22",
-        "x" : 0,
-        "y" : 0
+        "x" : 970,
+        "y" : 200
       }, {
         "id" : "1",
-        "x" : 0,
-        "y" : 0
-      }, {
-        "id" : "12",
-        "x" : 0,
-        "y" : 0
+        "x" : 1720,
+        "y" : 200
       }, {
         "id" : "2",
-        "x" : 0,
-        "y" : 0
+        "x" : 2470,
+        "y" : 200
       }, {
         "id" : "17",
-        "x" : 0,
-        "y" : 0
+        "x" : 970,
+        "y" : 800
       }, {
         "id" : "18",
-        "x" : 0,
-        "y" : 0
+        "x" : 1720,
+        "y" : 1400
       }, {
         "id" : "19",
-        "x" : 0,
-        "y" : 0
-      }, {
-        "id" : "8",
-        "x" : 0,
-        "y" : 0
+        "x" : 1720,
+        "y" : 800
       }, {
         "id" : "20",
-        "x" : 0,
-        "y" : 0
+        "x" : 220,
+        "y" : 1400
       }, {
         "id" : "21",
-        "x" : 0,
-        "y" : 0
+        "x" : 220,
+        "y" : 800
       } ],
       "relationships" : [ {
         "id" : "71"
       }, {
-        "id" : "73"
-      }, {
-        "id" : "75"
-      }, {
-        "id" : "64"
-      }, {
-        "id" : "78"
-      }, {
-        "id" : "77"
-      }, {
-        "id" : "47"
-      } ]
-    }, {
-      "key" : "DomainDrivenDesign",
-      "order" : 6,
-      "paperSize" : "A3_Landscape",
-      "dimensions" : {
-        "width" : 3866,
-        "height" : 1916
-      },
-      "containerId" : "12",
-      "externalContainerBoundariesVisible" : true,
-      "elements" : [ {
-        "id" : "22",
-        "x" : 3208,
-        "y" : 508
-      }, {
-        "id" : "1",
-        "x" : 208,
-        "y" : 208
-      }, {
-        "id" : "13",
-        "x" : 958,
-        "y" : 808
-      }, {
-        "id" : "2",
-        "x" : 208,
-        "y" : 808
-      }, {
-        "id" : "14",
-        "x" : 1708,
-        "y" : 808
-      }, {
-        "id" : "15",
-        "x" : 2458,
-        "y" : 808
-      }, {
-        "id" : "16",
-        "x" : 3208,
-        "y" : 1108
-      }, {
-        "id" : "5",
-        "x" : 208,
-        "y" : 1408
-      } ],
-      "relationships" : [ {
-        "id" : "60"
-      }, {
-        "id" : "63"
-      }, {
-        "id" : "54"
-      }, {
-        "id" : "55"
-      }, {
-        "id" : "56"
-      }, {
-        "id" : "58"
-      }, {
-        "id" : "39"
-      } ]
-    }, {
-      "key" : "Components",
-      "order" : 3,
-      "description" : "All Components and relationships",
-      "dimensions" : {
-        "width" : 6120,
-        "height" : 2512
-      },
-      "containerId" : "4",
-      "externalContainerBoundariesVisible" : true,
-      "elements" : [ {
-        "id" : "11",
-        "x" : 3950,
-        "y" : 824
-      }, {
-        "id" : "23",
-        "x" : 4700,
-        "y" : 220
-      }, {
-        "id" : "13",
-        "x" : 2432,
-        "y" : 1451
-      }, {
-        "id" : "24",
-        "x" : 5450,
-        "y" : 220
-      }, {
-        "id" : "14",
-        "x" : 3192,
-        "y" : 1441
-      }, {
-        "id" : "15",
-        "x" : 3917,
-        "y" : 1446
-      }, {
-        "id" : "17",
-        "x" : 4707,
-        "y" : 821
-      }, {
-        "id" : "18",
-        "x" : 5425,
-        "y" : 1355
-      }, {
-        "id" : "19",
-        "x" : 4710,
-        "y" : 1415
-      }, {
-        "id" : "1",
-        "x" : 200,
-        "y" : 828
-      }, {
-        "id" : "2",
-        "x" : 200,
-        "y" : 1428
-      }, {
-        "id" : "6",
-        "x" : 950,
-        "y" : 1128
-      }, {
-        "id" : "7",
-        "x" : 1700,
-        "y" : 1128
-      }, {
-        "id" : "9",
-        "x" : 2450,
-        "y" : 824
-      }, {
-        "id" : "20",
-        "x" : 5445,
-        "y" : 1890
-      }, {
-        "id" : "10",
-        "x" : 3200,
-        "y" : 824
-      }, {
-        "id" : "21",
-        "x" : 4715,
-        "y" : 1930
-      } ],
-      "relationships" : [ {
-        "id" : "50"
-      }, {
-        "id" : "62"
-      }, {
-        "id" : "54"
-      }, {
-        "id" : "29"
-      }, {
-        "id" : "27"
-      }, {
-        "id" : "37"
-      }, {
-        "id" : "34"
-      }, {
-        "id" : "33"
-      }, {
-        "id" : "44"
-      }, {
-        "id" : "55"
-      }, {
-        "id" : "78"
-      }, {
-        "id" : "45"
-      }, {
-        "id" : "77"
-      }, {
-        "id" : "69"
-      }, {
-        "id" : "68"
-      }, {
-        "id" : "49"
-      } ]
-    }, {
-      "key" : "TestDrivenDevelopment",
-      "order" : 7,
-      "paperSize" : "A4_Portrait",
-      "dimensions" : {
-        "width" : 1991,
-        "height" : 2516
-      },
-      "containerId" : "22",
-      "externalContainerBoundariesVisible" : true,
-      "elements" : [ {
-        "id" : "23",
-        "x" : 958,
-        "y" : 808
-      }, {
-        "id" : "1",
-        "x" : 208,
-        "y" : 1408
-      }, {
-        "id" : "2",
-        "x" : 583,
-        "y" : 208
-      }, {
-        "id" : "24",
-        "x" : 958,
-        "y" : 1408
-      }, {
-        "id" : "16",
-        "x" : 583,
-        "y" : 2008
-      }, {
-        "id" : "8",
-        "x" : 1333,
-        "y" : 208
-      } ],
-      "relationships" : [ {
-        "id" : "70"
-      }, {
         "id" : "74"
       }, {
-        "id" : "52"
+        "id" : "73"
       }, {
-        "id" : "66"
+        "id" : "67"
       }, {
-        "id" : "68"
+        "id" : "69"
       } ]
     }, {
       "key" : "BehaviorDrivenDevelopment",
@@ -1183,6 +1061,10 @@
         "x" : 2458,
         "y" : 808
       }, {
+        "id" : "22",
+        "x" : 3208,
+        "y" : 808
+      }, {
         "id" : "1",
         "x" : 208,
         "y" : 208
@@ -1195,10 +1077,6 @@
         "x" : 208,
         "y" : 1408
       }, {
-        "id" : "16",
-        "x" : 3208,
-        "y" : 808
-      }, {
         "id" : "9",
         "x" : 958,
         "y" : 808
@@ -1208,17 +1086,128 @@
         "y" : 808
       } ],
       "relationships" : [ {
-        "id" : "36"
-      }, {
-        "id" : "40"
-      }, {
         "id" : "42"
       }, {
         "id" : "44"
       }, {
         "id" : "46"
       }, {
+        "id" : "47"
+      }, {
         "id" : "49"
+      }, {
+        "id" : "38"
+      } ]
+    }, {
+      "key" : "Components",
+      "order" : 3,
+      "description" : "All Components and relationships",
+      "paperSize" : "A1_Landscape",
+      "dimensions" : {
+        "width" : 7720,
+        "height" : 2458
+      },
+      "containerId" : "4",
+      "externalContainerBoundariesVisible" : true,
+      "elements" : [ {
+        "id" : "11",
+        "x" : 3958,
+        "y" : 929
+      }, {
+        "id" : "23",
+        "x" : 4708,
+        "y" : 629
+      }, {
+        "id" : "13",
+        "x" : 2458,
+        "y" : 329
+      }, {
+        "id" : "24",
+        "x" : 5458,
+        "y" : 629
+      }, {
+        "id" : "14",
+        "x" : 3208,
+        "y" : 329
+      }, {
+        "id" : "15",
+        "x" : 3958,
+        "y" : 329
+      }, {
+        "id" : "17",
+        "x" : 6208,
+        "y" : 629
+      }, {
+        "id" : "18",
+        "x" : 6958,
+        "y" : 1229
+      }, {
+        "id" : "19",
+        "x" : 6208,
+        "y" : 1229
+      }, {
+        "id" : "1",
+        "x" : 208,
+        "y" : 329
+      }, {
+        "id" : "2",
+        "x" : 208,
+        "y" : 929
+      }, {
+        "id" : "6",
+        "x" : 958,
+        "y" : 629
+      }, {
+        "id" : "7",
+        "x" : 1708,
+        "y" : 629
+      }, {
+        "id" : "9",
+        "x" : 2458,
+        "y" : 929
+      }, {
+        "id" : "20",
+        "x" : 6958,
+        "y" : 1829
+      }, {
+        "id" : "10",
+        "x" : 3208,
+        "y" : 929
+      }, {
+        "id" : "21",
+        "x" : 6208,
+        "y" : 1829
+      } ],
+      "relationships" : [ {
+        "id" : "74"
+      }, {
+        "id" : "52"
+      }, {
+        "id" : "73"
+      }, {
+        "id" : "53"
+      }, {
+        "id" : "65"
+      }, {
+        "id" : "64"
+      }, {
+        "id" : "29"
+      }, {
+        "id" : "27"
+      }, {
+        "id" : "36"
+      }, {
+        "id" : "35"
+      }, {
+        "id" : "46"
+      }, {
+        "id" : "47"
+      }, {
+        "id" : "58"
+      }, {
+        "id" : "48"
+      }, {
+        "id" : "39"
       } ]
     } ],
     "configuration" : {
@@ -1237,7 +1226,7 @@
       "themes" : [ "https://static.structurizr.com/themes/default/theme.json" ],
       "terminology" : { },
       "metadataSymbols" : "SquareBrackets",
-      "lastSavedView" : "TestDrivenDevelopment"
+      "lastSavedView" : "Containers"
     }
   }
 }

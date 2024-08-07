@@ -106,8 +106,9 @@ workspace "Agile Software Development Model for efficient Product feature delive
         // container relationships
         alignAndUnderstand -> bdd "collaborative requirement specification
         alignAndUnderstand -> ddd "collaborative domain modelling"
-//        bdd -> agile "creates a shared understanding"
+        bdd -> agile "creates a shared understanding"
 //        ddd -> tdd "guides code implementation"
+        ddd -> agile "enhances agility"
 
         //align and understand
         productBrief -> storyMap "spread domain knowledge"
@@ -118,8 +119,7 @@ workspace "Agile Software Development Model for efficient Product feature delive
         product -> discovery "presents rules and examples"
         developer -> discovery "identifies functional gaps or inconsistencies"
         discovery -> formulation "formulate acceptance criteria" "Gherkin"
-//        formulation -> backlog "formulate user stories"
-        automation -> backlog "creates a shared understanding"
+//        formulation -> backlog "creates a shared understanding"
         formulation -> automation "automate acceptance tests" "Cucumber"
         automation -> development "guides code implementation"
 
@@ -129,8 +129,8 @@ workspace "Agile Software Development Model for efficient Product feature delive
 //        design -> knowledgeBase "document the software design" "Google Drive"
         developer -> decompose "identifies strategic focus areas"
         product -> decompose "validates and categorizes subdomains"
-        design -> tdd "guides code implementation"
-        design -> backlog "enhances agility"
+        design -> development "guides code implementation"
+//
 
         //tdd
         developer -> development "implements high-quality software"
@@ -178,8 +178,8 @@ workspace "Agile Software Development Model for efficient Product feature delive
 
         component bdd "BehaviorDrivenDevelopment" {
             include *
-            exclude tdd
             exclude *->alignAndUnderstand
+            exclude developer->tdd
             exclude product->agile
             exclude developer->agile
         }

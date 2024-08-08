@@ -104,7 +104,7 @@ workspace "Agile Software Development Model for efficient Product feature delive
         developer -> productBrief "obtains domain knowledge"
 
         // container relationships
-        alignAndUnderstand -> bdd "collaborative requirement specification
+//        alignAndUnderstand -> bdd "collaborative requirement specification"
         alignAndUnderstand -> ddd "collaborative domain modelling"
         bdd -> agile "creates a shared understanding"
 //        ddd -> tdd "guides code implementation"
@@ -112,8 +112,8 @@ workspace "Agile Software Development Model for efficient Product feature delive
 
         //align and understand
         productBrief -> storyMap "spread domain knowledge"
-        storyMap -> discovery "identify rules and examples" "Miro"
-        storyMap -> decompose "problem decomposition" "Core Domain Charts"
+        storyMap -> discovery "collaborative requirement specification"
+        storyMap -> decompose "problem decomposition"
 
         //bdd
         product -> discovery "presents rules and examples"
@@ -142,9 +142,9 @@ workspace "Agile Software Development Model for efficient Product feature delive
         //agile
         product -> backlog "validates product increments"
         developer -> ceremonies "updates work progress"
-        product -> ceremonies "shares domain knowledge"
-
-
+        product -> ceremonies "provide customer feedback"
+//        ceremonies -> backlog "groom and prioritize"
+        ceremonies -> informationRadiators "makes informed decision based on"
         backlog -> informationRadiators "visualize progress on"
         knowledgeBase -> customerSupport "is referenced by"
 //        knowledgeBase -> development "reference for"
@@ -169,15 +169,16 @@ workspace "Agile Software Development Model for efficient Product feature delive
             include product developer productBrief storyMap discovery formulation automation
             include decompose strategize design backlog ceremonies informationRadiators
             include customerSupport knowledgeBase development continuousIntegration
-            exclude product->discovery product->ceremonies product->decompose
+            exclude product->discovery product->ceremonies product->decompose product->backlog
             exclude developer->decompose developer->development developer->ceremonies developer->discovery
+            autolayout lr
        }
 
         component alignAndUnderstand "AlignAndUnderstand" {
             include *
             exclude product->bdd developer->bdd
             exclude product->ddd developer->ddd
-            autoLayout tb
+            autoLayout lr
         }
 
         component bdd "BehaviorDrivenDevelopment" {
@@ -186,6 +187,7 @@ workspace "Agile Software Development Model for efficient Product feature delive
             exclude developer->tdd
             exclude product->agile
             exclude developer->agile
+            autoLayout lr
         }
 
         component ddd "DomainDrivenDesign" "" {
@@ -194,6 +196,7 @@ workspace "Agile Software Development Model for efficient Product feature delive
             exclude product->agile
             exclude developer->agile developer->tdd
             exclude tdd->*
+            autolayout lr
         }
 
         component tdd "TestDrivenDevelopment" {

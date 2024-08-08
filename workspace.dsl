@@ -225,11 +225,12 @@ workspace "Agile Software Development Model for efficient Product feature delive
                 background grey
                 color #ffffff
             }
-            relationship "bdd-agile" {
-                routing Curved
+            relationship "Relationship"{
+                routing Direct
             }
 
-//            element <tag> {
+
+            //            element <tag> {
 //                shape <Box|RoundedBox|Circle|Ellipse|Hexagon|Cylinder|Pipe|Person|Robot|Folder|WebBrowser|MobileDevicePortrait|MobileDeviceLandscape|Component>
 //                icon <file|url>
 //                width <integer>

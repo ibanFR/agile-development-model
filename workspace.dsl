@@ -171,7 +171,7 @@ workspace "Agile Software Development Model for efficient Product feature delive
             include customerSupport knowledgeBase development continuousIntegration
             exclude product->discovery product->ceremonies product->decompose product->backlog
             exclude developer->decompose developer->development developer->ceremonies developer->discovery
-            autolayout lr
+//            autolayout lr
        }
 
         component alignAndUnderstand "AlignAndUnderstand" {

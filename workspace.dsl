@@ -130,7 +130,6 @@ workspace "Agile Software Development Model for efficient Product feature delive
         developer -> decompose "identifies strategic focus areas"
         product -> decompose "validates and categorizes subdomains"
         design -> development "guides code implementation"
-//
 
         //tdd
         developer -> development "implements high-quality software"
@@ -144,6 +143,8 @@ workspace "Agile Software Development Model for efficient Product feature delive
         developer -> ceremonies "updates work progress"
         product -> ceremonies "provide customer feedback"
 //        ceremonies -> backlog "groom and prioritize"
+
+//        Removed the below relationship due to rendering problems with PlantUML
 //        ceremonies -> informationRadiators "makes informed decision based on"
         backlog -> informationRadiators "visualize progress on"
         knowledgeBase -> customerSupport "is referenced by"
@@ -152,6 +153,9 @@ workspace "Agile Software Development Model for efficient Product feature delive
     }
 
     views {
+        properties {
+            "generatr.site.exporter" "structurizr"
+        }
         systemContext process "Context" "The system context diagram for the Software Development Process" {
             include *
         }

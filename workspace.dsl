@@ -144,7 +144,7 @@ workspace "Agile Software Development Model for efficient Product feature delive
         developer -> ceremonies "updates work progress"
         product -> ceremonies "provide customer feedback"
 //        ceremonies -> backlog "groom and prioritize"
-        ceremonies -> informationRadiators "makes informed decision based on"
+//        ceremonies -> informationRadiators "makes informed decision based on"
         backlog -> informationRadiators "visualize progress on"
         knowledgeBase -> customerSupport "is referenced by"
 //        knowledgeBase -> development "reference for"
@@ -224,9 +224,6 @@ workspace "Agile Software Development Model for efficient Product feature delive
             element "product" {
                 background grey
                 color #ffffff
-            }
-            relationship "Relationship" {
-                routing Direct
             }
 
 

@@ -225,7 +225,7 @@ workspace "Agile Software Development Model for efficient Product feature delive
                 background grey
                 color #ffffff
             }
-            relationship "Relationship"{
+            relationship "Relationship" {
                 routing Direct
             }
 

@@ -144,8 +144,6 @@ workspace "Agile Software Development Model for efficient Product feature delive
         product -> ceremonies "provide customer feedback"
 //        ceremonies -> backlog "groom and prioritize"
 
-//        Removed the below relationship due to rendering problems with PlantUML
-//        ceremonies -> informationRadiators "makes informed decision based on"
         backlog -> informationRadiators "visualize progress on"
         knowledgeBase -> customerSupport "is referenced by"
 //        knowledgeBase -> development "reference for"
@@ -154,7 +152,7 @@ workspace "Agile Software Development Model for efficient Product feature delive
 
     views {
         properties {
-            "generatr.site.exporter" "c4"
+            "generatr.site.exporter" "structurizr"
         }
         systemContext process "Context" "The system context diagram for the Software Development Process" {
             include *

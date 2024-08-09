@@ -14,8 +14,4 @@ Books worth reading:
 ### Continuous Integration
 
 
-### Living Documentation
-
-Diataxis Framework:
-- [Diataxis Framework](https://diataxis.fr/)
 

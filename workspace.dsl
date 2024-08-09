@@ -198,6 +198,7 @@ workspace "Agile Software Development Model for efficient Product feature delive
             exclude ddd->agile
             exclude *->bdd
             exclude *->ddd
+            autoLayout lr
         }
 
         component agile "AgileProductManagement" "Agile projects are broken down into two-week iterations which result in a potentially shippable product increment" {

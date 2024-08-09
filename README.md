@@ -42,8 +42,8 @@ Access the Structurizr Lite web application at http://localhost:8080
 
 ## Rendering tools
 
-This projects uses [Structurizr Site Generatr]() to Generates a HTML microsite with diagrams, documentation, and a UI to
-explore the model.
+This projects uses [Structurizr Site Generatr](https://github.com/avisi-cloud/structurizr-site-generatr) to Generates a
+HTML microsite with diagrams, documentation, and a UI to explore the model.
 
 To generate the HTML microsite, run the following command:
 
@@ -53,7 +53,7 @@ structurizr-site-generatr generate-site -w workspace.dsl
 Start a development web server around the generated website:
 
 ```shell 
-structurizr-site-generatr serve -w workspace.dsl
+structurizr-site-generatr serve -w workspace.dsl -p 8081
 ```
 
 

@@ -144,7 +144,7 @@ workspace "Agile Software Development Model for efficient Product feature delive
 
     views {
         properties {
-            "generatr.site.exporter" "structurizr"
+            "generatr.site.exporter" "c4"
         }
         systemContext process "Context" "The system context diagram for the Software Development Process" {
             include *

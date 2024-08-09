@@ -1,7 +1,6 @@
 workspace "Agile Software Development Model for efficient Product feature delivery"{
 
     !docs docs
-    !adrs adrs
 
     model {
 
@@ -11,6 +10,8 @@ workspace "Agile Software Development Model for efficient Product feature delive
         developer = person "Software Engineer" "Engineering Team member who follows the software development model to become more efficient"
 
         process = softwareSystem "Software Development Model for Product feature delivery" "Dynamic and iterative approach to delivering product features in a rapid and flexible manner" "Software Development Model"{
+
+            !adrs adrs
 
             allComponents = container "All Components" "All Components and relationships" "All Components"{
 

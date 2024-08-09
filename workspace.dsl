@@ -135,9 +135,10 @@ workspace "Agile Software Development Model for efficient Product feature delive
         //agile
         product -> backlog "validates product increments"
         developer -> ceremonies "updates work progress"
-        product -> ceremonies "provide customer feedback"
+        product -> ceremonies "clarify requirements and provide feedback"
         backlog -> informationRadiators "visualize progress on"
         knowledgeBase -> customerSupport "is referenced by"
+
 
     }
 

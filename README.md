@@ -20,11 +20,6 @@ See [Structurizr Lite - Quickstart](https://docs.structurizr.com/lite/quickstart
 
 ```
 ├── workspace.dsl          # Primary Structurizr DSL script defining the system architecture
-├── views/                 # Additional Structurizr DSL scripts for specific views or perspectives
-│   ├── context_view.dsl   # DSL script for the system context view
-│   ├── container_view.dsl # DSL script for the container view
-│   ├── component_view.dsl # DSL script for the component view
-│   └── ...
 ├── docs/                  # Directory to store Markdown/AsciiDoc documentation files
 ├── adrs/                  # Directory to store Markdown/AsciiDoc Architecture Decision Records (ADRs)
 ├── README.md              # Project documentation

@@ -77,10 +77,6 @@ workspace "Agile Software Development Model for efficient Product feature delive
 
                 }
 
-//                livingDocumentation = component "Living Documentation" "Documentation that is co-located with the code and is updated as the code changes" "Confluence, etc"{
-//
-//                }
-
                 customerSupport = component "Customer Support" "The process of providing assistance to the end users of the product" "Jira"{
                     tags "product"
                 }
@@ -105,10 +101,8 @@ workspace "Agile Software Development Model for efficient Product feature delive
         developer -> productBrief "obtains domain knowledge"
 
         // container relationships
-//        alignAndUnderstand -> bdd "collaborative requirement specification"
         alignAndUnderstand -> ddd "collaborative domain modelling"
-        bdd -> agile "creates a shared understanding"
-//        ddd -> tdd "guides code implementation"
+        bdd -> agile "creates shared understanding"
         ddd -> agile "enhances agility"
 
         //align and understand
@@ -120,13 +114,13 @@ workspace "Agile Software Development Model for efficient Product feature delive
         product -> discovery "presents rules and examples"
         developer -> discovery "identifies functional gaps or inconsistencies"
         discovery -> formulation "formulate acceptance criteria" "Gherkin, Natural language"
-//        formulation -> backlog "creates a shared understanding"
         formulation -> automation "automate acceptance tests" "Cucumber, JUnit"
         automation -> development "guides code implementation"
 
         //ddd
         decompose -> strategize "collaborative modelling" "Miro"
-        strategize -> design "visualize software architecture" "draw.io, structurizr"
+        strategize -> design "visualize software architecture" "structurizr, draw.io, miro"
+//        The relationship below is inferred in continuousIntegration -> knowledgeBase
 //        design -> knowledgeBase "document the software design" "Google Drive"
         developer -> decompose "identifies strategic focus areas"
         product -> decompose "validates and categorizes subdomains"
@@ -136,18 +130,14 @@ workspace "Agile Software Development Model for efficient Product feature delive
         developer -> development "implements high-quality software"
         development -> continuousIntegration "push code to version control"
         continuousIntegration -> backlog "deliver product increment"
-        continuousIntegration -> knowledgeBase "updates living documentation"
-//        continuousIntegration -> livingDocumentation "generates"
+        continuousIntegration -> knowledgeBase "updates living documentation" "structurizr, serenity, javadoc"
 
         //agile
         product -> backlog "validates product increments"
         developer -> ceremonies "updates work progress"
         product -> ceremonies "provide customer feedback"
-//        ceremonies -> backlog "groom and prioritize"
-
         backlog -> informationRadiators "visualize progress on"
         knowledgeBase -> customerSupport "is referenced by"
-//        knowledgeBase -> development "reference for"
 
     }
 

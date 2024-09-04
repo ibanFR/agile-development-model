@@ -20,4 +20,11 @@ the development process.
 ### Acceptance Tests
 
 
-### Features
+### Automated Features
+
+“ a feature is a piece of software functionality that helps users or other stakeholders achieve some business goal”
+
+Excerpt From
+BDD in Action, Second Edition
+John Ferguson Smart
+This material may be protected by copyright.

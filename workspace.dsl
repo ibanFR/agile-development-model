@@ -35,7 +35,7 @@ workspace "Agile Software Development Model for efficient Product feature delive
                 formulation = component "Acceptance" "Once we have identified our rules and examples, we can now formulate each example as structured documentation." "Executable specifications of the system behavior"{
 
                 }
-                automation = component "Features" "Groups related scenarios that demostrates how a feature works " "Cucumber, Selenium etc"{
+                automation = component "Automated Features" "Group(s) related scenarios that demostrates how a feature works " "Cucumber, Selenium etc"{
 
                 }
             }
@@ -61,7 +61,7 @@ workspace "Agile Software Development Model for efficient Product feature delive
                 tags "product"
 
 
-                backlog = component "Product Backlog" "Prioritised list of User Stories that need to be completed or addressed during the project" "They typically follow the template: As a [user type/role], I want [a capability] so that [benefit or goal]" {
+                backlog = component "Product Backlog" "Prioritised list of User Stories that need to be completed or addressed during the project" "Jira, Trello, etc" {
                     tags "product"
                 }
 
@@ -69,7 +69,7 @@ workspace "Agile Software Development Model for efficient Product feature delive
 
                 }
 
-                ceremonies = component "Agile Ceremonies" "Agile iterations, metrics and feedback loops to help the team make informed decisions" "Jira, Trello, Miro, etc"{
+                ceremonies = component "Agile Ceremonies" "Agile iterations, metrics and feedback loops to help the team make informed decisions" "Miro, etc"{
 
                 }
 
@@ -82,13 +82,13 @@ workspace "Agile Software Development Model for efficient Product feature delive
                 }
             }
 
-            tdd = container "Test Driven Development " "Acceptance Tests guide our code implementation using lower-level examples of the behavior of internal system components. " ""{
+            tdd = container "Test Driven Development " "Acceptance Tests guide our code implementation using lower-level examples of the behavior of internal system components. " "TDD"{
 
                 development = component "Test Driven Development" "Lower-level examples of the behavior of internal system components" "JUnit, etc"{
 
                 }
 
-                continuousIntegration = component "Continuous Integration" "Automated build scripts are used to run tests and provide immediate feedback to developers about the status of their code changes" "Jenkins, etc"{
+                continuousIntegration = component "Continuous Integration" "Automated build scripts are used to run tests and provide immediate feedback to developers about the status of their code changes" "Jenkins, Github Actions, etc"{
 
                 }
             }

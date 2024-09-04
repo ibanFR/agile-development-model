@@ -3,10 +3,16 @@
 
 ![](embed:AgileProductManagement)
 
-### Agile ceremonies
+### Product Backlog
 
+Contains a rioritised list of User Stories that need to be completed or addressed during the project. They typically
+follow the template: As a [user type/role], I want [a capability] so that [benefit or goal].
 
 ### Information Radiators
+
+
+### Agile ceremonies
+
 
 
 ### Knowledge Base

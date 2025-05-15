@@ -69,7 +69,7 @@ workspace "Agile Software Development Model for efficient Product feature delive
 
                 }
 
-                ceremonies = component "Agile Ceremonies" "Agile iterations, metrics and feedback loops to help the team make informed decisions" "Miro, etc"{
+                ceremonies = component "Agile Iterations" "Agile iterations, metrics and feedback loops to help the team make informed decisions" "Miro, etc"{
 
                 }
 

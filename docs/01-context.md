@@ -29,6 +29,6 @@ Continuous Integration and
 Continuous Delivery (CI/CD) practices ensure that new features are regularly integrated into the Product, allowing for 
 swift feedback and adaptation.
 
-Through frequent retrospectives and agile ceremonies, teams reflect on their process, identifying areas for improvement 
+Through frequent retrospectives, teams reflect on their process, identifying areas for improvement 
 and adjusting their approach accordingly.
 

@@ -22,8 +22,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Ensure site directory exists
-        run: mkdir -p build/site
       - name: Create site
         run: |
           /opt/structurizr-site-generatr/bin/structurizr-site-generatr generate-site -w workspace.dsl

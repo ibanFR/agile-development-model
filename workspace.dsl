@@ -84,6 +84,10 @@ workspace "Agile Software Development Model for efficient Product feature delive
 
             tdd = container "Test Driven Development " "Acceptance Tests guide our code implementation using lower-level examples of the behavior of internal system components. " "TDD"{
 
+                pairProgramming = component "Pair Programming" "Developers work together in pairs and as a group, reviewing the code in real-time and improving the design continuously" "Pair Programming, Ensemble, Mob Programming"{
+
+                }
+
                 development = component "Test Driven Development" "Lower-level examples of the behavior of internal system components" "JUnit, etc"{
 
                 }
@@ -115,7 +119,7 @@ workspace "Agile Software Development Model for efficient Product feature delive
         developer -> discovery "identifies functional gaps or inconsistencies"
         discovery -> formulation "formulate acceptance criteria" "Gherkin, Natural language"
         formulation -> automation "automate acceptance tests" "Cucumber, JUnit"
-        automation -> development "guides code implementation"
+        automation -> pairProgramming "guides code implementation"
 
         //ddd
         decompose -> strategize "collaborative modelling" "Miro"
@@ -124,10 +128,11 @@ workspace "Agile Software Development Model for efficient Product feature delive
 //        design -> knowledgeBase "document the software design" "Google Drive"
         developer -> decompose "identifies strategic focus areas"
         product -> decompose "validates and categorizes subdomains"
-        design -> development "guides code implementation"
+        design -> pairProgramming "guides code implementation"
 
         //tdd
-        developer -> development "implements high-quality software"
+        developer -> pairProgramming "implements high-quality software"
+        pairProgramming -> development "write just enough code"
         development -> continuousIntegration "push code to version control"
         continuousIntegration -> backlog "deliver product increment"
         continuousIntegration -> knowledgeBase "updates living documentation" "structurizr, serenity, javadoc"
@@ -160,10 +165,11 @@ workspace "Agile Software Development Model for efficient Product feature delive
 
         component allComponents "Components" "All Components and relationships" {
             include product developer productBrief storyMap discovery formulation automation
-            include decompose strategize design backlog ceremonies informationRadiators
-            include customerSupport knowledgeBase development continuousIntegration
+            include decompose strategize design
+            include pairProgramming development continuousIntegration
+            include backlog ceremonies informationRadiators customerSupport knowledgeBase
             exclude product->discovery product->ceremonies product->decompose product->backlog
-            exclude developer->decompose developer->development developer->ceremonies developer->discovery
+            exclude developer->decompose developer->pairProgramming developer->ceremonies developer->discovery
 //            autolayout lr
        }
 
@@ -193,9 +199,8 @@ workspace "Agile Software Development Model for efficient Product feature delive
         }
 
         component tdd "TestDrivenDevelopment" {
-            include * product
-            exclude developer->agile bdd->agile
-            exclude ddd->agile
+            include *
+            exclude developer->agile bdd->agile ddd->agile
             exclude *->bdd
             exclude *->ddd
             autoLayout lr

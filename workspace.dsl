@@ -40,7 +40,7 @@ workspace "Agile Software Development Model for efficient Product feature delive
                 }
             }
 
-            ddd = container "Strategic Architecture and Domain Driven Design" "Explore models in a creative collaboration of domain experts and software engineers." "Sotware Architecture and Design"{
+            ddd = container "Strategic Architecture and Domain Driven Design" "Explore models in a creative collaboration of domain experts and software engineers." "DDD"{
 
                 decompose = component "Domain Decomposition" "Decompose a large problem domain into cohesive modules, so that we can identify stragically significant key focus areas" "Core Domain Charts"{
                     tags "product"

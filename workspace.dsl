@@ -1,4 +1,4 @@
-workspace "Agile Software Development Model for efficient Product feature delivery"{
+workspace "Software Development Model for Product feature delivery"{
 
     !docs docs
 
@@ -32,10 +32,10 @@ workspace "Agile Software Development Model for efficient Product feature delive
                 discovery = component "Specification Workshop" "Concrete rules and examples help us explore the problem domain and makes a great basis for our acceptance tests" "Example Mapping sessions to clarify and confirm the acceptance criteria"{
                     tags "product"
                 }
-                formulation = component "Acceptance" "Once we have identified our rules and examples, we can now formulate each example as structured documentation." "Executable specifications of the system behavior"{
+                formulation = component "Acceptance" "Once we have identified our rules and examples, we can now formulate each example as structured documentation." "Gherkin, Natural language"{
 
                 }
-                automation = component "Automated Features" "Group(s) related scenarios that demostrates how a feature works " "Cucumber, Selenium etc"{
+                automation = component "Automated Features" "Group(s) related scenarios that demostrates how a feature works " "Executable specifications of the system behavior"{
 
                 }
             }
@@ -50,7 +50,7 @@ workspace "Agile Software Development Model for efficient Product feature delive
 
                 }
 
-                design = component "Software Design" "Create models using a common set of abstractions to describe the static structure of a software system" "C4 model"{
+                design = component "Software Design" "Create models using a common set of abstractions to describe the static structure of a software system" "C4 model, UML, etc"{
 
                 }
 
@@ -69,11 +69,12 @@ workspace "Agile Software Development Model for efficient Product feature delive
 
                 }
 
-                ceremonies = component "Agile Iterations" "Agile iterations, metrics and feedback loops to help the team make informed decisions" "Miro, etc"{
+                ceremonies = component "Agile Iterations" "Agile iterations, metrics and feedback loops to help the team make informed decisions" "short, time-boxed development cycles (two to four weeks)"{
+                    tags "product"
 
                 }
 
-                knowledgeBase = component "Knowledge Base" "Centralized repository of information and best practices that the team can refer to for guidance, problem-solving, and knowledge sharing." "Google Drive, Confluence, etc"{
+                knowledgeBase = component "Knowledge Base" "Centralized repository of information and best practices that the team can refer to for guidance, problem-solving, and knowledge sharing." "Google Drive, Confluence, javadoc"{
 
                 }
 
@@ -82,13 +83,13 @@ workspace "Agile Software Development Model for efficient Product feature delive
                 }
             }
 
-            xp = container "Extreme Programming " "Engineers working together in pairs and as a group, with simple design and obsessively tested code, improving the design continually to keep it always just right for the current needs. " "XP"{
+            xp = container "Extreme Programming " "Work together in pairs and as a group, with simple design and obsessively tested code, improving the design continually to keep it always just right for the current needs. " "XP"{
 
-                pairProgramming = component "Pair Programming" "Developers work together in pairs and as a group, reviewing the code in real-time and improving the design continuously" "Pair Programming, Ensemble, Mob Programming"{
+                pairProgramming = component "Pair Programming" "Developers work together in pairs and as a group, reviewing the code in real-time and improving the design continuously" "Ensemble, Mob Programming"{
 
                 }
 
-                development = component "Test Driven Development" "Lower-level examples of the behavior of internal system components" "JUnit, etc"{
+                tdd = component "Test Driven Development" "Lower-level examples of the behavior of internal system components" "JUnit, etc"{
 
                 }
 
@@ -117,13 +118,13 @@ workspace "Agile Software Development Model for efficient Product feature delive
         //bdd
         product -> discovery "presents rules and examples"
         developer -> discovery "identifies functional gaps or inconsistencies"
-        discovery -> formulation "formulate acceptance criteria" "Gherkin, Natural language"
-        formulation -> automation "automate acceptance tests" "Cucumber, JUnit"
+        discovery -> formulation "formulate acceptance criteria"
+        formulation -> automation "automate acceptance tests"
         automation -> pairProgramming "guides code implementation"
 
         //ddd
-        decompose -> strategize "collaborative modelling" "Miro"
-        strategize -> design "visualize software architecture" "structurizr, draw.io, miro"
+        decompose -> strategize "collaborative modelling"
+        strategize -> design "visualize software architecture"
 //        The relationship below is inferred in continuousIntegration -> knowledgeBase
 //        design -> knowledgeBase "document the software design" "Google Drive"
         developer -> decompose "identifies strategic focus areas"
@@ -132,10 +133,10 @@ workspace "Agile Software Development Model for efficient Product feature delive
 
         //xp
         developer -> pairProgramming "implements high-quality software"
-        pairProgramming -> development "write just enough code"
-        development -> continuousIntegration "push code to version control"
+        pairProgramming -> tdd "write just enough code"
+        tdd -> continuousIntegration "push code to version control"
         continuousIntegration -> backlog "deliver product increment"
-        continuousIntegration -> knowledgeBase "updates living documentation" "structurizr, serenity, javadoc"
+        continuousIntegration -> knowledgeBase "updates living documentation"
 
         //agile
 //        product -> backlog "validates product increments"
@@ -167,7 +168,7 @@ workspace "Agile Software Development Model for efficient Product feature delive
         component allComponents "Components" "All Components and relationships" {
             include product developer productBrief storyMap discovery formulation automation
             include decompose strategize design
-            include pairProgramming development continuousIntegration
+            include pairProgramming tdd continuousIntegration
             include backlog ceremonies informationRadiators customerSupport knowledgeBase
             exclude product->discovery product->ceremonies product->decompose product->backlog
             exclude developer->decompose developer->pairProgramming developer->ceremonies developer->discovery

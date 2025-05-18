@@ -7,7 +7,7 @@ workspace "Software Development Model for Product feature delivery"{
         product = person "Product stakeholder" "Product Team member who owns and drives the product vision"{
             tags "product"
         }
-        developer = person "Software Engineer" "Engineering Team member who follows the software development model to become more efficient"
+        developer = person "Software Engineer" "Engineering Team member delivering high-quality software efficiently and iteratively"
 
         process = softwareSystem "Software Development Model for Product feature delivery" "Dynamic and iterative approach to delivering product features in a rapid and flexible manner" "Software Development Model"{
 

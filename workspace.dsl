@@ -56,7 +56,7 @@ workspace "Agile Software Development Model for efficient Product feature delive
 
             }
 
-            agile = container "Agile Product Management" "Agile projects are broken down into two-week iterations which result in a potentially shippable product increment" "Agile Manifesto"{
+            agile = container "Agile Product Management" "Agile projects are broken down into two-week iterations which result in a potentially shippable product increment" "Agile"{
 
                 tags "product"
 
@@ -82,7 +82,7 @@ workspace "Agile Software Development Model for efficient Product feature delive
                 }
             }
 
-            tdd = container "Test Driven Development " "Acceptance Tests guide our code implementation using lower-level examples of the behavior of internal system components. " "TDD"{
+            xp = container "Extreme Programming " "Engineers working together in pairs and as a group, with simple design and obsessively tested code, improving the design continually to keep it always just right for the current needs. " "XP"{
 
                 pairProgramming = component "Pair Programming" "Developers work together in pairs and as a group, reviewing the code in real-time and improving the design continuously" "Pair Programming, Ensemble, Mob Programming"{
 
@@ -130,7 +130,7 @@ workspace "Agile Software Development Model for efficient Product feature delive
         product -> decompose "validates and categorizes subdomains"
         design -> pairProgramming "guides code implementation"
 
-        //tdd
+        //xp
         developer -> pairProgramming "implements high-quality software"
         pairProgramming -> development "write just enough code"
         development -> continuousIntegration "push code to version control"
@@ -138,7 +138,8 @@ workspace "Agile Software Development Model for efficient Product feature delive
         continuousIntegration -> knowledgeBase "updates living documentation" "structurizr, serenity, javadoc"
 
         //agile
-        product -> backlog "validates product increments"
+//        product -> backlog "validates product increments"
+        product -> ceremonies "validates product increments"
         developer -> ceremonies "continuous improvement"
         backlog -> informationRadiators "visualize progress on"
         knowledgeBase -> customerSupport "is referenced by"
@@ -159,8 +160,8 @@ workspace "Agile Software Development Model for efficient Product feature delive
             autoLayout tb
             exclude allComponents
             exclude product->ddd product->agile product->bdd
-            exclude developer->agile developer->ddd developer->bdd developer->tdd
-            exclude agile->tdd
+            exclude developer->agile developer->ddd developer->bdd developer->xp
+            exclude agile->xp
         }
 
         component allComponents "Components" "All Components and relationships" {
@@ -183,7 +184,7 @@ workspace "Agile Software Development Model for efficient Product feature delive
         component bdd "BehaviorDrivenDevelopment" {
             include *
             exclude *->alignAndUnderstand
-            exclude developer->tdd
+            exclude developer->xp
             exclude product->agile
             exclude developer->agile
             autoLayout lr
@@ -193,12 +194,12 @@ workspace "Agile Software Development Model for efficient Product feature delive
             include *
             exclude *->alignAndUnderstand
             exclude product->agile
-            exclude developer->agile developer->tdd
-            exclude tdd->*
+            exclude developer->agile developer->xp
+            exclude xp->*
             autolayout lr
         }
 
-        component tdd "TestDrivenDevelopment" {
+        component xp "TestDrivenDevelopment" {
             include *
             exclude developer->agile bdd->agile ddd->agile
             exclude *->bdd
@@ -208,8 +209,8 @@ workspace "Agile Software Development Model for efficient Product feature delive
 
         component agile "AgileProductManagement" "Agile projects are broken down into two-week iterations which result in a potentially shippable product increment" {
             include *
-            exclude *->tdd
-            autoLayout tb
+            exclude *->xp
+//            autoLayout lr
         }
 
 

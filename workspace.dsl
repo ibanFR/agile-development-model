@@ -29,13 +29,13 @@ workspace "Software Development Model for Product feature delivery"{
             }
 
             bdd = container "Behavior Driven Development" "Define and understand the desired system behavior before writting any code. It encourages collaboration and a shared understanding of the project's objectives" "BDD"{
-                discovery = component "Specification Workshop" "Concrete rules and examples help us explore the problem domain and makes a great basis for our acceptance tests" "Example Mapping sessions to clarify and confirm the acceptance criteria"{
+                discovery = component "Specification Workshop" "Concrete rules and examples help us explore the problem domain to clarify and confirm the acceptance criteria" "Example Mapping, Specification by Example"{
                     tags "product"
                 }
-                formulation = component "Acceptance" "Once we have identified our rules and examples, we can now formulate each example as structured documentation." "Gherkin, Natural language"{
+                formulation = component "Features" "Group of related scenarios that demostrates how a feature works" "Gherkin"{
 
                 }
-                automation = component "Automated Features" "Group(s) related scenarios that demostrates how a feature works " "Executable specifications of the system behavior"{
+                automation = component "Acceptance Tests" "Executable specifications of the system behavior" "Cucumber"{
 
                 }
             }
@@ -69,7 +69,7 @@ workspace "Software Development Model for Product feature delivery"{
 
                 }
 
-                ceremonies = component "Agile Iterations" "Agile iterations, metrics and feedback loops to help the team make informed decisions" "short, time-boxed development cycles (two to four weeks)"{
+                ceremonies = component "Agile Iterations" "Agile iterations, metrics and feedback loops to help the team make informed decisions" "two to four week development cycles"{
                     tags "product"
 
                 }
@@ -118,7 +118,7 @@ workspace "Software Development Model for Product feature delivery"{
         //bdd
         product -> discovery "presents rules and examples"
         developer -> discovery "identifies functional gaps or inconsistencies"
-        discovery -> formulation "formulate acceptance criteria"
+        discovery -> formulation "formulate features"
         formulation -> automation "automate acceptance tests"
         automation -> pairProgramming "guides code implementation"
 

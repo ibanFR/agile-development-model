@@ -3,7 +3,7 @@
 
 ![](embed:BehaviorDrivenDevelopment)
 
-### Requirement Workshop
+### Specification Workshop
 Specification workshop is a technique used to elicit and define requirements for software systems.
 
 It is a collaborative approach that brings together stakeholders from different areas of the business to discuss and
@@ -12,19 +12,18 @@ agree on the behavior of the system.
 The goal is to create a shared understanding of the system's requirements and to identify any potential issues early in
 the development process.
 
-[Gojko](https://gojko.net/2008/11/12/specification-workshops-an-agile-way-to-get-better-requirements/)
+Concrete rules and examples help us explore the problem domain and makes a great basis for our acceptance tests.
 
-- See [youtube](https://www.youtube.com/watch?v=VwvrGfWmG_U)
-- See [cucumber.io](https://cucumber.io/blog/bdd/example-mapping-introduction/)
+### Features
 
-### Acceptance Tests
+Once we have identified our rules and examples, we can now formulate each example as structured documentation.
 
+Examples of system behavior are document using business terminology and are grouped together into Features.
 
-### Automated Features
+A feature is a concrete solution to a business problem that delivers a capability.
 
-“ a feature is a piece of software functionality that helps users or other stakeholders achieve some business goal”
+A feature is a piece of software functionality that helps users or other stakeholders achieve some business goal.
 
-Excerpt From
-BDD in Action, Second Edition
-John Ferguson Smart
-This material may be protected by copyright.
+### Automated Acceptance Tests
+
+Executable specifications that verify the behavior of a system against its requirements.

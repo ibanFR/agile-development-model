@@ -29,7 +29,7 @@ workspace "Software Development Model for Product feature delivery"{
             }
 
             bdd = container "Behavior Driven Development" "Define and understand the desired system behavior before writting any code. It encourages collaboration and a shared understanding of the project's objectives" "BDD"{
-                discovery = component "Specification Workshop" "Concrete rules and examples help us explore the problem domain to clarify and confirm the acceptance criteria" "Example Mapping, Specification by Example"{
+                discovery = component "Specification Workshop" "Concrete rules and examples help us explore the problem domain to clarify and confirm the acceptance criteria" "Example Mapping"{
                     tags "product"
                 }
                 formulation = component "Features" "Group of related scenarios that demostrates how a feature works" "Gherkin"{

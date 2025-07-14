@@ -18,11 +18,10 @@ Concrete rules and examples help us explore the problem domain and makes a great
 
 Once we have identified our rules and examples, we can now formulate each example as structured documentation.
 
-Examples of system behavior are document using business terminology and are grouped together into Features.
+Examples of system behavior are documented using business terminology and grouped together into Features.
 
-A feature is a concrete solution to a business problem that delivers a capability.
-
-A feature is a piece of software functionality that helps users or other stakeholders achieve some business goal.
+A feature is a concrete software solution to a business problem that delivers a capability, helping users or other
+stakeholders achieve some business goal.
 
 ### Automated Acceptance Tests
 

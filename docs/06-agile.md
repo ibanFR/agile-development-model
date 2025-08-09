@@ -3,8 +3,8 @@
 Agile Product Management outlines key practices that enable teams to deliver value efficiently while maintaining
 adaptability.
 
-It emphasizes short iterations—time-boxed cycles that produce tested product increments and encourage continuous
-improvement.
+It emphasizes short iterations—time-boxed cycles that produce potentially shippable product increments and encourage
+continuous improvement.
 
 
 ![](embed:AgileProductManagement)

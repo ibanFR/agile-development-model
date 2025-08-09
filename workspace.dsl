@@ -60,29 +60,6 @@ workspace "Software Development Model for Product feature delivery"{
 
             }
 
-            agile = container "Agile Product Management" "Agile projects are broken down into two-week iterations which result in a potentially shippable product increment" "Agile"{
-
-                tags "product"
-
-
-                informationRadiators = component "Information Radiators" "Project progress and potential issues are visible to all team members with information radiators" "Scrum and Kanban boards, Metric Dashboards etc"{
-
-                }
-
-                ceremonies = component "Agile Iterations" "Agile iterations, metrics and feedback loops to help the team make informed decisions" "two to four week development cycles"{
-                    tags "product"
-
-                }
-
-                knowledgeBase = component "Knowledge Base" "Centralized repository of information and best practices that the team can refer to for guidance, problem-solving, and knowledge sharing." "Google Drive, Confluence, javadoc"{
-
-                }
-
-                customerSupport = component "Customer Support" "The process of providing assistance to the end users of the product" "Jira"{
-                    tags "product"
-                }
-            }
-
             xp = container "Extreme Programming " "Work together in pairs and as a group, with simple design and obsessively tested code, improving the design continually to keep it always just right for the current needs. " "XP"{
 
                 pairProgramming = component "Pair Programming" "Developers work together in pairs and as a group, reviewing the code in real-time and improving the design continuously" "Ensemble, Mob Programming"{
@@ -95,6 +72,29 @@ workspace "Software Development Model for Product feature delivery"{
 
                 continuousIntegration = component "Continuous Integration" "Automated build scripts are used to run tests and provide immediate feedback to developers about the status of their code changes" "Jenkins, Github Actions, etc"{
 
+                }
+            }
+
+            agile = container "Agile Product Management" "Agile projects are broken down into two-week iterations which result in a potentially shippable product increment" "Agile"{
+
+                tags "product"
+
+
+                informationRadiators = component "Information Radiators" "Project progress and potential issues are visible to all team members with information radiators" "Scrum and Kanban boards, Metric Dashboards etc"{
+
+                }
+
+                ceremonies = component "Agile Iterations" "Agile iterations and feedback loops to help the team make informed decisions" "two to four week development cycles"{
+                    tags "product"
+
+                }
+
+                knowledgeBase = component "Knowledge Base" "Centralized repository of information and best practices that the team can refer to for guidance, problem-solving, and knowledge sharing." "Google Drive, Confluence, javadoc"{
+
+                }
+
+                customerSupport = component "Customer Support" "The process of providing assistance to the end users of the product" "Jira"{
+                    tags "product"
                 }
             }
 

@@ -60,7 +60,7 @@ workspace "Software Development Model for Product feature delivery"{
 
             }
 
-            xp = container "Extreme Programming " "Developers work together in pairs and as a group, with simple design and obsessively tested code, improving the design continually to keep it always just right for the current needs" "XP"{
+            xp = container "Extreme Programming " "Developers work together in pairs and as a group, improving the design continually to keep it always just right for the current needs" "XP"{
 
                 pairProgramming = component "Pair Programming" "Developers work together in pairs and as a group, reviewing the code in real-time and improving the design continuously" "Ensemble, Mob Programming"{
 

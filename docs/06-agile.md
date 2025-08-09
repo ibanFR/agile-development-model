@@ -28,10 +28,12 @@ or delivery trends.
 
 ### Knowledge Base
 
-Diataxis Framework:
-- [Diataxis Framework](https://diataxis.fr/)
+A knowledge base is a centralized, well-organized repository where teams store information, best practices and technical
+guidelines. It serves as the go-to reference for guidance, troubleshooting, and decision-making, ensuring that valuable
+knowledge is easily accessible to both current and future team members.
 
-Living Documentation:
-Documentation that is co-located with the code and is updated as the code changes.
+An important aspect of a robust knowledge base is living documentation—documentation that evolves alongside the product.
+When documentation is co-located with the codebase and updated in sync with code changes, it remains accurate, relevant,
+and immediately useful.
 
 ### Customer Support

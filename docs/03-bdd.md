@@ -1,7 +1,7 @@
 ## Behavior-Driven Development
 
-Behavior-driven development is a software development process that helps to build a shared understanding of the
-business requirements through collaboration between Domain Experts and Software Engineers.
+Behavior-driven development helps to build a shared understanding of the business requirements through collaboration
+between Domain Experts and Software Engineers.
 
 It encourages teams to use conversation and concrete examples to formalize a shared understanding of how the application
 should behave.

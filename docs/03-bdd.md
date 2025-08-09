@@ -1,9 +1,17 @@
 ## Behavior Driven Development
 
+Behavior-driven development is a software development process that helps to build a shared understanding of the
+business requirements through collaboration between Domain Experts and Software Engineers.
+
+It encourages teams to use conversation and concrete examples to formalize a shared understanding of how the application
+should behave.
+
+These examples are defined before the development starts and are used as Acceptance Criteria.
 
 ![](embed:BehaviorDrivenDevelopment)
 
 ### Specification Workshop
+
 Specification workshop is a technique used to elicit and define requirements for software systems.
 
 It is a collaborative approach that brings together stakeholders from different areas of the business to discuss and

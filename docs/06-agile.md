@@ -3,16 +3,19 @@
 
 ![](embed:AgileProductManagement)
 
-### Product Backlog
+### Agile Iterations
 
-Contains a rioritised list of User Stories that need to be completed or addressed during the project. They typically
-follow the template: As a [user type/role], I want [a capability] so that [benefit or goal].
+Agile iterations are short, time-boxed cycles—commonly lasting between two and four weeks—designed to deliver
+incremental value while enabling continuous learning.
+
+Each iteration includes a clear set of goals, defined by the team in collaboration with stakeholders, and culminates in
+delivering working, tested product increments.
+
+Through frequent retrospectives, the team reflect on their process, identifying areas for improvement and adjusting
+their approach accordingly.
+
 
 ### Information Radiators
-
-
-### Agile ceremonies
-
 
 
 ### Knowledge Base

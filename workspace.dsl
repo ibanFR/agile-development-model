@@ -212,7 +212,7 @@ workspace "Software Development Model for Product feature delivery"{
         component agile "AgileProductManagement" "Agile projects are broken down into two-week iterations which result in a potentially shippable product increment" {
             include *
             exclude *->xp
-//            autoLayout lr
+            autoLayout tb
         }
 
 

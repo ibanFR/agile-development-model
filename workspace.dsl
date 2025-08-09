@@ -89,7 +89,7 @@ workspace "Software Development Model for Product feature delivery"{
 
                 }
 
-                knowledgeBase = component "Knowledge Base" "Centralized repository of information and best practices that the team can refer to for guidance, problem-solving, and knowledge sharing." "Google Drive, Confluence, javadoc"{
+                knowledgeBase = component "Knowledge Base" "Centralized repository of information and best practices that the team can refer to for guidance, problem-solving, and knowledge sharing." "Google Drive, Confluence, Javadoc"{
 
                 }
 
@@ -212,7 +212,7 @@ workspace "Software Development Model for Product feature delivery"{
         component agile "AgileProductManagement" "Agile projects are broken down into two-week iterations which result in a potentially shippable product increment" {
             include *
             exclude *->xp
-            autoLayout tb
+            autoLayout lr
         }
 
 

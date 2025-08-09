@@ -141,7 +141,7 @@ workspace "Software Development Model for Product feature delivery"{
 
         //agile
         product -> ceremonies "validates product increments"
-        developer -> ceremonies "continuous improvement"
+        developer -> ceremonies "continuously improves"
         ceremonies -> informationRadiators "visualize progress on"
         knowledgeBase -> customerSupport "is referenced by"
 

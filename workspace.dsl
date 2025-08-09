@@ -26,6 +26,10 @@ workspace "Software Development Model for Product feature delivery"{
                 storyMap = component "Domain Discovery" "Map the Big Picture by describing the User journey through the Product telling a story from the perspective of the end user" "User Story Map, Event Storming, etc"{
                     tags "product"
                 }
+
+                backlog = component "Product Backlog" "Prioritised list of User Stories that need to be completed or addressed during the project" "Jira, Trello, etc" {
+                    tags "product"
+                }
             }
 
             bdd = container "Behavior-Driven Development" "Define and understand the desired system behavior before writting any code. It encourages collaboration and a shared understanding of the project's objectives" "BDD"{
@@ -60,10 +64,6 @@ workspace "Software Development Model for Product feature delivery"{
 
                 tags "product"
 
-
-                backlog = component "Product Backlog" "Prioritised list of User Stories that need to be completed or addressed during the project" "Jira, Trello, etc" {
-                    tags "product"
-                }
 
                 informationRadiators = component "Information Radiators" "Project progress and potential issues are visible to all team members with information radiators" "Scrum and Kanban boards, Metric Dashboards etc"{
 
@@ -112,8 +112,9 @@ workspace "Software Development Model for Product feature delivery"{
 
         //align and understand
         productBrief -> storyMap "spread domain knowledge"
-        storyMap -> discovery "collaborative requirement specification"
-        storyMap -> strategize "problem decomposition"
+        storyMap -> backlog "creates"
+        backlog -> discovery "collaborative requirement specification"
+        backlog -> strategize "problem decomposition"
 
         //bdd
         product -> discovery "presents rules and examples"
@@ -135,14 +136,13 @@ workspace "Software Development Model for Product feature delivery"{
         developer -> pairProgramming "implements high-quality software"
         pairProgramming -> tdd "write just enough code"
         tdd -> continuousIntegration "push code to version control"
-        continuousIntegration -> backlog "deliver product increment"
+        continuousIntegration -> ceremonies "deliver product increment"
         continuousIntegration -> knowledgeBase "updates living documentation"
 
         //agile
-//        product -> backlog "validates product increments"
         product -> ceremonies "validates product increments"
         developer -> ceremonies "continuous improvement"
-        backlog -> informationRadiators "visualize progress on"
+        ceremonies -> informationRadiators "visualize progress on"
         knowledgeBase -> customerSupport "is referenced by"
 
 
@@ -170,7 +170,7 @@ workspace "Software Development Model for Product feature delivery"{
             include strategize define design
             include pairProgramming tdd continuousIntegration
             include backlog ceremonies informationRadiators customerSupport knowledgeBase
-            exclude product->discovery product->ceremonies product->strategize product->backlog
+            exclude product->discovery product->ceremonies product->strategize
             exclude developer->strategize developer->pairProgramming developer->ceremonies developer->discovery
 //            autolayout lr
        }

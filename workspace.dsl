@@ -17,7 +17,7 @@ workspace "Software Development Model for Product feature delivery"{
 
             }
 
-            alignAndUnderstand = container "Align and Understand Product Requirements" "Align our focus with the organisation's business model, the needs of its users, and its short, medium, and long-term goals." "Align & Understand"{
+            alignAndUnderstand = container "Align and Understand Product Requirements" "Align our focus with the organisation's business model, the needs of its users, and its short, medium, and long-term goals" "Align & Understand"{
                 tags "product"
                 productBrief = component "Product Brief" "Short product or feature brief to frame and constrain the project" "Opportunity Canvas, Slideck, etc"{
                     tags "product"
@@ -44,7 +44,7 @@ workspace "Software Development Model for Product feature delivery"{
                 }
             }
 
-            ddd = container "Strategic Architecture and Domain-Driven Design" "Explore models in a creative collaboration of domain experts and software engineers." "DDD"{
+            ddd = container "Strategic Architecture and Domain-Driven Design" "Explore models in a creative collaboration of domain experts and software engineers" "DDD"{
 
                 strategize = component "Strategic Architecture" "Decompose a large problem domain into cohesive modules, so that we can identify stragically significant key focus areas" "Core Domain Charts"{
                     tags "product"
@@ -60,7 +60,7 @@ workspace "Software Development Model for Product feature delivery"{
 
             }
 
-            xp = container "Extreme Programming " "Developers work together in pairs and as a group, with simple design and obsessively tested code, improving the design continually to keep it always just right for the current needs " "XP"{
+            xp = container "Extreme Programming " "Developers work together in pairs and as a group, with simple design and obsessively tested code, improving the design continually to keep it always just right for the current needs" "XP"{
 
                 pairProgramming = component "Pair Programming" "Developers work together in pairs and as a group, reviewing the code in real-time and improving the design continuously" "Ensemble, Mob Programming"{
 
@@ -89,7 +89,7 @@ workspace "Software Development Model for Product feature delivery"{
 
                 }
 
-                knowledgeBase = component "Knowledge Base" "Centralized repository of information and best practices that the team can refer to for guidance, problem-solving, and knowledge sharing." "Google Drive, Confluence, Javadoc"{
+                knowledgeBase = component "Knowledge Base" "Centralized repository of information and best practices that the team can refer to for guidance, problem-solving, and knowledge sharing" "Google Drive, Confluence, Javadoc"{
 
                 }
 

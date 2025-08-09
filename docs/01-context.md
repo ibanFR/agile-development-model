@@ -21,9 +21,8 @@ delivered efficiently, meeting evolving user needs and market demands.
 
 Individual Components help the Team work in small steps to achieve their high level goals.
 
-Continuous Integration and
-Continuous Delivery (CI/CD) practices ensure that new features are regularly integrated into the Product, allowing for
-swift feedback and adaptation.
+Continuous Integration and Continuous Delivery (CI/CD) practices ensure that new features are regularly integrated into
+the Product, allowing for swift feedback and adaptation.
 
 Through frequent retrospectives, teams reflect on their process, identifying areas for improvement
 and adjusting their approach accordingly.

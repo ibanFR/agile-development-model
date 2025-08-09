@@ -51,4 +51,10 @@ testing and leverage feedback to adjust the product.
 3. End Game refines the product in preparation for release. Continuously assess release readiness based on your release
 level product goals.
 
+### Product Backlog
+
+The product backlog is a prioritized list of user stories that need to be completed to deliver a product or feature.
+
+They typically follow the template: As a [user type/role], I want [a capability] so that [benefit or goal].
+
 

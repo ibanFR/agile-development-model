@@ -1,5 +1,11 @@
 ## Agile Product Management
 
+Agile Product Management outlines key practices that enable teams to deliver value efficiently while maintaining
+adaptability.
+
+It emphasizes short iterations—time-boxed cycles that produce tested product increments and encourage continuous
+improvement.
+
 
 ![](embed:AgileProductManagement)
 
@@ -37,3 +43,10 @@ When documentation is co-located with the codebase and updated in sync with code
 and immediately useful.
 
 ### Customer Support
+
+Customer support is the process of providing timely, effective assistance to the end users of a product, ensuring their
+needs are met and their issues are resolved. It encompasses answering questions, troubleshooting problems, and guiding
+users through features or workflows so they can get the most value from the product.
+
+Customer interactions also serve as a valuable feedback channel, offering insights into how the product is used in
+real-world scenarios.

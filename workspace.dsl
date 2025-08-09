@@ -154,6 +154,7 @@ workspace "Software Development Model for Product feature delivery"{
         }
         systemContext process "Context" "The system context diagram for the Software Development Process" {
             include *
+            autoLayout tb
         }
 
         container process "Containers" {

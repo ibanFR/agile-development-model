@@ -17,6 +17,14 @@ their approach accordingly.
 
 ### Information Radiators
 
+Information radiators are highly visible displays that present key project information in an easily accessible and
+understandable way, ensuring that everyone—from team members to stakeholders—can quickly grasp the current state of
+work.
+
+These visual tools can take many forms, including Scrum or Kanban boards that show work items moving through stages,
+burndown or burnup charts that track progress toward goals, and metric dashboards that highlight quality, performance,
+or delivery trends.
+
 
 ### Knowledge Base
 

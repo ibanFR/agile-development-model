@@ -29,7 +29,7 @@ support a common goal.
 
 The product backlog is a prioritized list of user stories that need to be completed to deliver a product or feature.
 
-They typically follow the template: As a **[user type/role]**, I want **[a capability]** so that **[benefit or goal]**.
+They typically follow the template: As a **user type/role**, I want **a capability** so that **benefit or goal**.
 
 User stories are not detailed specifications, but rather a placeholder for conversations about the Product to build.
 They tell stories about **What** a software system does without revealing details on **How** it does it.

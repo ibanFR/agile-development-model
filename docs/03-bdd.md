@@ -28,9 +28,14 @@ Once we have identified our rules and examples, we can now formulate each exampl
 
 Examples of system behavior are documented using business terminology and grouped together into Features.
 
-A feature is a concrete software solution to a business problem that delivers a capability, helping users or other
+A Feature is a concrete software solution to a business problem that delivers a capability, helping users or other
 stakeholders achieve some business goal.
 
 ### Automated Acceptance Tests
 
 Executable specifications that verify the behavior of a system against its requirements.
+
+Acceptance Tests guide code implementation until the specification is met and are produced as part of the non-regression
+activities.
+
+The automated scenarios can be used as living documentation for the marketing, product, and development team.

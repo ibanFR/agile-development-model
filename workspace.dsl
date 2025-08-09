@@ -28,7 +28,7 @@ workspace "Software Development Model for Product feature delivery"{
                 }
             }
 
-            bdd = container "Behavior Driven Development" "Define and understand the desired system behavior before writting any code. It encourages collaboration and a shared understanding of the project's objectives" "BDD"{
+            bdd = container "Behavior-Driven Development" "Define and understand the desired system behavior before writting any code. It encourages collaboration and a shared understanding of the project's objectives" "BDD"{
                 discovery = component "Specification Workshop" "Concrete rules and examples help us explore the problem domain to clarify and confirm the acceptance criteria" "Example Mapping"{
                     tags "product"
                 }
@@ -40,7 +40,7 @@ workspace "Software Development Model for Product feature delivery"{
                 }
             }
 
-            ddd = container "Strategic Architecture and Domain Driven Design" "Explore models in a creative collaboration of domain experts and software engineers." "DDD"{
+            ddd = container "Strategic Architecture and Domain-Driven Design" "Explore models in a creative collaboration of domain experts and software engineers." "DDD"{
 
                 strategize = component "Strategic Architecture" "Decompose a large problem domain into cohesive modules, so that we can identify stragically significant key focus areas" "Core Domain Charts"{
                     tags "product"
@@ -89,7 +89,7 @@ workspace "Software Development Model for Product feature delivery"{
 
                 }
 
-                tdd = component "Test Driven Development" "Lower-level examples of the behavior of internal system components" "JUnit, etc"{
+                tdd = component "Test-Driven Development" "Lower-level examples of the behavior of internal system components" "JUnit, etc"{
 
                 }
 

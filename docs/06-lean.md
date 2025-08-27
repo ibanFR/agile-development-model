@@ -1,6 +1,6 @@
-## Agile Product Management
+## Lean Product Management
 
-Agile Product Management outlines key practices that enable teams to deliver value efficiently while maintaining
+Lean Product Management outlines key practices that enable teams to deliver value efficiently while maintaining
 adaptability.
 
 It emphasizes short iterations—time-boxed cycles that produce potentially shippable product increments and encourage

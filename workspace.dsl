@@ -75,7 +75,7 @@ workspace "Software Development Model for Product feature delivery"{
                 }
             }
 
-            agile = container "Lean Product Management" "Agile projects are broken down into two-week iterations which result in a potentially shippable product increment" "Agile"{
+            agile = container "Lean Product Management" "Projects are broken down into two-week iterations which result in a potentially shippable product increment" "Agile"{
 
                 tags "product"
 
@@ -84,7 +84,7 @@ workspace "Software Development Model for Product feature delivery"{
 
                 }
 
-                ceremonies = component "Agile Iterations" "Agile iterations and feedback loops to help the team make informed decisions" "two to four week development cycles"{
+                ceremonies = component "Short Iterations" "Short iterations and feedback loops to help the team make informed decisions" "two to four week development cycles"{
                     tags "product"
 
                 }

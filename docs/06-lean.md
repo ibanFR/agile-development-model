@@ -9,9 +9,9 @@ continuous improvement.
 
 ![](embed:AgileProductManagement)
 
-### Agile Iterations
+### Short Iterations
 
-Agile iterations are short, time-boxed cycles—commonly lasting between two and four weeks—designed to deliver
+Short, time-boxed cycles—commonly lasting between two and four weeks—designed to deliver
 incremental value while enabling continuous learning.
 
 Each iteration includes a clear set of goals, defined by the team in collaboration with stakeholders, and culminates in

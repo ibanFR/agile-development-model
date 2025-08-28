@@ -93,7 +93,7 @@ workspace "Software Development Model for Product feature delivery"{
 
                 }
 
-                customerSupport = component "Customer Support" "The process of providing assistance to the end users of the product" "Jira"{
+                customerSupport = component "Customer Feedback" "Continuously collect customer feedback and use it to refine and enhance the design of products and features" "customer satisfaction surveys, gather customer insights, etc"{
                     tags "product"
                 }
             }

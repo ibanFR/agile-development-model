@@ -13,15 +13,6 @@ We decompose a large problem domain into sub-domains for a few key reasons:
 Time and resources are limited, so understanding which parts of the domain to focus on is critical to delivering optimal
 business impact.
 
-By analysing what your core domains are, you will have a better idea of how much quality and rigour is required to build
-each part of your system, and you'll be able to make highly-educated build vs buy vs outsource decisions.
-
-It is imperative to not only decompose a large domain into parts but to also carefully design the interactions between
-those parts to minimise unwanted coupling and complexity.
-
-Achieving high cohesion within the services and loose coupling between them is crucial to keep the application scalable
-and maintainable.
-
 ![](embed:DomainDrivenDesign)
 
 ### Strategic Architecture
@@ -56,7 +47,12 @@ In an ideal world we want to align Subdomains and Bounded Contexts.
 It is imperative to not only decompose a large domain into parts but to also carefully design the interactions between
 those parts to minimise unwanted coupling and complexity.
 
-Connect the sub-domains into a loosely-coupled architecture which fulfills end-to-end business use-cases. It is
+Connect the sub-domains into a loosely-coupled architecture which fulfills end-to-end business use-cases. 
+
+Achieving high cohesion within the services and loose coupling between them is crucial to keep the application scalable
+and maintainable.
+
+It is
 necessary to challenge the initial design by applying concrete use-cases to uncover hidden complexity.
 
 Code the Domain Model applying Tactical Patterns - A set of building blocks to structure the implementation of a model

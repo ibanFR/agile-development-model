@@ -33,14 +33,10 @@ software architecture aligned to a part of the domain).
 Bounded Context is one of the central and essential patterns to rescue architecture from the Big Ball Of Mud by
 segregating the whole application domain into multiple semantically-consistent parts.
 
-The Bounded Context Canvas is a collaborative tool for designing and documenting the design of a single bounded context.
-
-The canvas guides you through the process of designing a Bounded Context by requiring you to consider and make choices
+The Bounded Context Canvas guides you through the process of designing a Bounded Context by requiring you to consider and make choices
 about the key elements of its design, from naming to responsibilities, to its public interface and dependencies.
 
 Name each Bounded Context, and make the names part of the ubiquitous language.
-
-In an ideal world we want to align Subdomains and Bounded Contexts.
 
 ### Software Design
 

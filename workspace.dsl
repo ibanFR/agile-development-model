@@ -119,8 +119,8 @@ workspace "Software Development Model for Product feature delivery"{
         //bdd
         product -> discovery "presents rules and examples"
         developer -> discovery "identifies functional gaps or inconsistencies"
-        discovery -> formulation "formulate features"
-        formulation -> automation "automate acceptance tests"
+        discovery -> formulation "formulate"
+        formulation -> automation "automate"
         automation -> pairProgramming "guides code implementation"
 
         //ddd

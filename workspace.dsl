@@ -44,7 +44,7 @@ workspace "Software Development Model for Product feature delivery"{
                 }
             }
 
-            ddd = container "Strategic Architecture and Domain-Driven Design" "Explore models in a creative collaboration of domain experts and software engineers" "DDD"{
+            ddd = container "Domain-Driven Design" "Explore models in a creative collaboration of domain experts and software engineers" "DDD"{
 
                 strategize = component "Strategic Architecture" "Decompose a large problem domain into cohesive modules, so that we can identify stragically significant key focus areas" "Core Domain Charts"{
                     tags "product"

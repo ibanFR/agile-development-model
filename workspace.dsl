@@ -39,7 +39,7 @@ workspace "Software Development Model for Product feature delivery"{
                 formulation = component "Features" "Group of related scenarios that demostrates how a feature works" "Gherkin"{
 
                 }
-                automation = component "Acceptance Tests" "Executable specifications of the system behavior" "Cucumber"{
+                automation = component "Acceptance Tests" "Executable specifications that verify the behavior of the system against its requirements" "Cucumber"{
 
                 }
             }

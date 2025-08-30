@@ -93,7 +93,7 @@ workspace "Software Development Model for Product feature delivery"{
 
                 }
 
-                customerSupport = component "Customer Feedback" "Continuously collect customer feedback and use it to refine and enhance the design of products and features" "customer satisfaction surveys, gather customer insights, etc"{
+                customerFeedback = component "Customer Feedback" "Continuously collect customer feedback and use it to refine and enhance the design of products and features" "customer satisfaction surveys, gather customer insights, etc"{
                     tags "product"
                 }
             }
@@ -143,7 +143,7 @@ workspace "Software Development Model for Product feature delivery"{
         product -> ceremonies "validates product increments"
         developer -> ceremonies "continuously improves"
         ceremonies -> informationRadiators "visualize progress on"
-        knowledgeBase -> customerSupport "is referenced by"
+        knowledgeBase -> customerFeedback "is referenced by"
 
 
     }
@@ -170,7 +170,7 @@ workspace "Software Development Model for Product feature delivery"{
             include product developer productBrief storyMap discovery formulation automation
             include strategize define design
             include pairProgramming tdd continuousIntegration
-            include backlog ceremonies informationRadiators customerSupport knowledgeBase
+            include backlog ceremonies informationRadiators customerFeedback knowledgeBase
             exclude product->discovery product->ceremonies product->strategize
             exclude developer->strategize developer->pairProgramming developer->ceremonies developer->discovery
 //            autolayout lr

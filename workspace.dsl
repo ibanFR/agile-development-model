@@ -50,7 +50,7 @@ workspace "Software Development Model for Product feature delivery"{
                     tags "product"
                 }
 
-                define = component "Bounded Contexts" "Document Bounded Contexts, from naming to responsibilities alongside its public interface and dependencies" "Bounded Context Canvas"{
+                define = component "Define roles and responsibilities" "Document Bounded Contexts, from naming to responsibilities alongside its public interface and dependencies" "Bounded Context Canvas"{
 
                 }
 

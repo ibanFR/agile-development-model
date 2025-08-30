@@ -151,6 +151,7 @@ workspace "Software Development Model for Product feature delivery"{
     views {
         properties {
             "generatr.site.exporter" "structurizr"
+            "structurizr.sort" "created"
         }
         systemContext process "Context" "The system context diagram for the Software Development Process" {
             include *
@@ -165,16 +166,6 @@ workspace "Software Development Model for Product feature delivery"{
             exclude developer->agile developer->ddd developer->bdd developer->xp
             exclude agile->xp
         }
-
-        component allComponents "Components" "All Components and relationships" {
-            include product developer productBrief storyMap discovery formulation automation
-            include strategize define design
-            include pairProgramming tdd continuousIntegration
-            include backlog iterations informationRadiators customerFeedback knowledgeBase
-            exclude product->discovery product->iterations product->strategize
-            exclude developer->strategize developer->pairProgramming developer->iterations developer->discovery
-//            autolayout lr
-       }
 
         component alignAndUnderstand "AlignAndUnderstand" {
             include *
@@ -212,9 +203,18 @@ workspace "Software Development Model for Product feature delivery"{
         component agile "AgileProductManagement" "Agile projects are broken down into two-week iterations which result in a potentially shippable product increment" {
             include *
             exclude *->xp
-            autoLayout lr
+            autoLayout tb
         }
 
+        component allComponents "Components" "All Components and relationships" {
+            include product developer productBrief storyMap discovery formulation automation
+            include strategize define design
+            include pairProgramming tdd continuousIntegration
+            include backlog iterations informationRadiators customerFeedback knowledgeBase
+            exclude product->discovery product->iterations product->strategize
+            exclude developer->strategize developer->pairProgramming developer->iterations developer->discovery
+            //            autolayout lr
+        }
 
 
         theme default

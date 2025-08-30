@@ -25,7 +25,7 @@ potential for business differentiation or strategic significance.
 By analysing what your core domains are, you will have a better idea of how much quality and rigour is required to build
 each part of your system, and you'll be able to make highly-educated build vs buy vs outsource decisions.
 
-### Bounded Contexts
+### Define roles and responsibilities
 
 Identify each model in play on the project and define its Bounded Context (A Bounded Context is a sub-system in a
 software architecture aligned to a part of the domain).

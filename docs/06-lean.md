@@ -42,11 +42,13 @@ An important aspect of a robust knowledge base is living documentation—documen
 When documentation is co-located with the codebase and updated in sync with code changes, it remains accurate, relevant,
 and immediately useful.
 
-### Customer Support
+### Customer Feedback
 
-Customer support is the process of providing timely, effective assistance to the end users of a product, ensuring their
-needs are met and their issues are resolved. It encompasses answering questions, troubleshooting problems, and guiding
-users through features or workflows so they can get the most value from the product.
+One of the core principles of Agile development is engaging customers early and often throughout the development
+process. By seeking input from customers at every stage development teams gain valuable insights that help shape the
+direction of the product.
 
-Customer interactions also serve as a valuable feedback channel, offering insights into how the product is used in
-real-world scenarios.
+Collecting customer feedback can take many forms: tracking satisfaction metrics, gathering feedback on the quality 
+and usefulness of features, and incorporating these insights directly into product and feature design.
+
+

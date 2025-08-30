@@ -7,7 +7,7 @@ It emphasizes short iterations—time-boxed cycles that produce potentially ship
 continuous improvement.
 
 
-![](embed:AgileProductManagement)
+![](embed:LeanProductManagement)
 
 ### Short Iterations
 

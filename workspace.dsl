@@ -84,7 +84,7 @@ workspace "Software Development Model for Product feature delivery"{
 
                 }
 
-                ceremonies = component "Short Iterations" "Short iterations and feedback loops to help the team make informed decisions" "two to four week development cycles"{
+                iterations = component "Short Iterations" "Short iterations and feedback loops to help the team make informed decisions" "two to four week development cycles"{
                     tags "product"
 
                 }
@@ -136,13 +136,13 @@ workspace "Software Development Model for Product feature delivery"{
         developer -> pairProgramming "implements high-quality software"
         pairProgramming -> tdd "write just enough code"
         tdd -> continuousIntegration "push code to version control"
-        continuousIntegration -> ceremonies "deliver product increment"
+        continuousIntegration -> iterations "deliver product increment"
         continuousIntegration -> knowledgeBase "updates living documentation"
 
         //agile
-        product -> ceremonies "validates product increments"
-        developer -> ceremonies "continuously improves"
-        ceremonies -> informationRadiators "visualize progress on"
+        product -> iterations "validates product increments"
+        developer -> iterations "continuously improves"
+        iterations -> informationRadiators "visualize progress on"
         knowledgeBase -> customerFeedback "is referenced by"
 
 
@@ -170,9 +170,9 @@ workspace "Software Development Model for Product feature delivery"{
             include product developer productBrief storyMap discovery formulation automation
             include strategize define design
             include pairProgramming tdd continuousIntegration
-            include backlog ceremonies informationRadiators customerFeedback knowledgeBase
-            exclude product->discovery product->ceremonies product->strategize
-            exclude developer->strategize developer->pairProgramming developer->ceremonies developer->discovery
+            include backlog iterations informationRadiators customerFeedback knowledgeBase
+            exclude product->discovery product->iterations product->strategize
+            exclude developer->strategize developer->pairProgramming developer->iterations developer->discovery
 //            autolayout lr
        }
 

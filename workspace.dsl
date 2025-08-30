@@ -137,13 +137,13 @@ workspace "Software Development Model for Product feature delivery"{
         pairProgramming -> tdd "write just enough code"
         tdd -> continuousIntegration "push code to version control"
         continuousIntegration -> iterations "deliver product increment"
-        continuousIntegration -> knowledgeBase "updates living documentation"
 
         //agile
         product -> iterations "validates product increments"
         developer -> iterations "continuously improves"
         iterations -> informationRadiators "visualize progress on"
-        knowledgeBase -> customerFeedback "is referenced by"
+        iterations -> knowledgeBase "updates"
+        iterations -> customerFeedback "gathers"
 
 
     }

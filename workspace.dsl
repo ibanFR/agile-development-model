@@ -75,7 +75,7 @@ workspace "Software Development Model for Product feature delivery"{
                 }
             }
 
-            agile = container "Lean Product Management" "Projects are broken down into two-week iterations which result in a potentially shippable product increment" "Agile"{
+            lean = container "Lean Product Management" "Projects are broken down into two-week iterations which result in a potentially shippable product increment" "Lean"{
 
                 tags "product"
 
@@ -107,8 +107,8 @@ workspace "Software Development Model for Product feature delivery"{
 
         // container relationships
         alignAndUnderstand -> ddd "collaborative domain modelling"
-        bdd -> agile "creates shared understanding"
-        ddd -> agile "enhances agility"
+        bdd -> lean "creates shared understanding"
+        ddd -> lean "enhances agility"
 
         //align and understand
         productBrief -> storyMap "spread domain knowledge"
@@ -138,9 +138,9 @@ workspace "Software Development Model for Product feature delivery"{
         tdd -> continuousIntegration "push code to version control"
         continuousIntegration -> iterations "deliver product increment"
 
-        //agile
-        product -> iterations "validates product increments"
+        //lean
         developer -> iterations "works in small steps"
+        product -> iterations "validates product increments"
         iterations -> informationRadiators "visualize progress on"
         iterations -> knowledgeBase "updates"
         iterations -> customerFeedback "gathers"
@@ -162,9 +162,9 @@ workspace "Software Development Model for Product feature delivery"{
             include *
             autoLayout tb
             exclude allComponents
-            exclude product->ddd product->agile product->bdd
-            exclude developer->agile developer->ddd developer->bdd developer->xp
-            exclude agile->xp
+            exclude product->ddd product->lean product->bdd
+            exclude developer->lean developer->ddd developer->bdd developer->xp
+            exclude lean->xp
         }
 
         component alignAndUnderstand "AlignAndUnderstand" {
@@ -178,29 +178,29 @@ workspace "Software Development Model for Product feature delivery"{
             include *
             exclude *->alignAndUnderstand
             exclude developer->xp
-            exclude product->agile
-            exclude developer->agile
+            exclude product->lean
+            exclude developer->lean
             autoLayout lr
         }
 
         component ddd "DomainDrivenDesign" "" {
             include *
             exclude *->alignAndUnderstand
-            exclude product->agile
-            exclude developer->agile developer->xp
+            exclude product->lean
+            exclude developer->lean developer->xp
             exclude xp->*
             autolayout lr
         }
 
         component xp "TestDrivenDevelopment" {
             include *
-            exclude developer->agile bdd->agile ddd->agile
+            exclude developer->lean bdd->lean ddd->lean
             exclude *->bdd
             exclude *->ddd
             autoLayout lr
         }
 
-        component agile "AgileProductManagement" "Agile projects are broken down into two-week iterations which result in a potentially shippable product increment" {
+        component lean "LeanProductManagement" "Projects are broken down into two-week iterations which result in a potentially shippable product increment" {
             include *
             exclude *->xp
             autoLayout tb

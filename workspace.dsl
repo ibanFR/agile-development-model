@@ -144,6 +144,7 @@ workspace "Software Development Model for Product feature delivery"{
         iterations -> informationRadiators "visualize progress on"
         iterations -> knowledgeBase "updates"
         iterations -> customerFeedback "gathers"
+        customerFeedback -> backlog "improves the design of products"
 
 
     }
@@ -163,7 +164,7 @@ workspace "Software Development Model for Product feature delivery"{
             exclude allComponents
             exclude product->ddd product->agile product->bdd
             exclude developer->agile developer->ddd developer->bdd developer->xp
-            exclude agile->xp
+            exclude agile->alignAndUnderstand
         }
 
         component allComponents "Components" "All Components and relationships" {
@@ -173,6 +174,7 @@ workspace "Software Development Model for Product feature delivery"{
             include backlog iterations informationRadiators customerFeedback knowledgeBase
             exclude product->discovery product->iterations product->strategize
             exclude developer->strategize developer->pairProgramming developer->iterations developer->discovery
+            exclude customerFeedback->backlog
 //            autolayout lr
        }
 
@@ -212,6 +214,7 @@ workspace "Software Development Model for Product feature delivery"{
         component agile "AgileProductManagement" "Agile projects are broken down into two-week iterations which result in a potentially shippable product increment" {
             include *
             exclude *->xp
+            exclude product->alignAndUnderstand developer->alignAndUnderstand
             autoLayout lr
         }
 

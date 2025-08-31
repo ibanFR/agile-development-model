@@ -75,7 +75,7 @@ workspace "Software Development Model for Product feature delivery"{
                 }
             }
 
-            lean = container "Lean Product Management" "Projects are broken down into two-week iterations which result in a potentially shippable product increment" "Lean"{
+            lean = container "Lean Product Development" "Projects are broken down into two-week iterations which result in a potentially shippable product increment" "Lean"{
 
                 tags "product"
 
@@ -200,7 +200,7 @@ workspace "Software Development Model for Product feature delivery"{
             autoLayout lr
         }
 
-        component lean "LeanProductManagement" "Projects are broken down into two-week iterations which result in a potentially shippable product increment" {
+        component lean "LeanProductDevelopment" "Projects are broken down into two-week iterations which result in a potentially shippable product increment" {
             include *
             exclude *->xp
             autoLayout tb

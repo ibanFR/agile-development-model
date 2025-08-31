@@ -85,6 +85,7 @@ workspace "Software Development Model for Product feature delivery"{
                 }
 
                 iterations = component "Short Iterations" "Short development cycles deliver incremental value and enable continuous learning about the product" "two to four week development cycles"{
+                    tags "product"
 
                 }
 

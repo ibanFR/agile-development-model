@@ -4,6 +4,8 @@ This repository serves as a blueprint for an Agile Software Development Model, f
 feature delivery. The model is built around key building blocks that enable rapid, iterative, and high-quality software
 development.
 
+![Agile Development Model Containers](docs/images/agile-containers.png)
+
 The [C4 model](https://c4model.com/) is used in this repository to visualize the architecture of the Agile Software Development Model at
 different levels of abstraction:
 

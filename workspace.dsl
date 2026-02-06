@@ -80,7 +80,7 @@ workspace "Software Development Model for Product feature delivery"{
                 tags "product"
 
 
-                informationRadiators = component "Information Radiators" "Project progress and potential issues are visible to all team members with information radiators" "Scrum and Kanban boards, Metric Dashboards etc"{
+                informationRadiators = component "Informative Workspaces" "Project progress and potential issues are visible to all team members with informative workspaces" "Scrum and Kanban boards, Metric Dashboards etc"{
 
                 }
 

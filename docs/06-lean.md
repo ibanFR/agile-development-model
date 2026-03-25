@@ -21,7 +21,7 @@ Through frequent retrospectives, the team reflect on their process, identifying 
 their approach accordingly.
 
 
-### Information Radiators
+### Informative Workspaces
 
 Information radiators are highly visible displays that present key project information in an easily accessible and
 understandable way, ensuring that everyone—from team members to stakeholders—can quickly grasp the current state of

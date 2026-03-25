@@ -46,15 +46,15 @@ workspace "Software Development Model for Product feature delivery"{
 
             ddd = container "Software Architecture and Domain-Driven Design" "Explore models in a creative collaboration of domain experts and software engineers" "DDD"{
 
-                strategize = component "Strategic Architecture" "Decompose a large problem domain into cohesive modules, so that we can identify stragically significant key focus areas" "Core Domain Charts"{
+                strategize = component "Strategic Architecture" "Decompose a large problem domain into cohesive modules, so that we can identify stragically significant key focus areas" "Core Domain Charts, Context Maps, etc"{
                     tags "product"
                 }
 
-                define = component "Define roles and responsibilities" "Document Bounded Contexts, from naming to responsibilities alongside its public interface and dependencies" "Bounded Context Canvas"{
+                design = component "Software Design" "Document Bounded Contexts, from naming to responsibilities alongside its public interface and dependencies" "Bounded Context Canvas, Aggregate Design Canvas, C4 model, etc"{
 
                 }
 
-                design = component "Software Design" "Create models using a common set of abstractions to describe the static structure of a software system" "C4 model, UML, etc"{
+                code = component "Code the Domain Model" "Code the Domain Model applying Tactical Patterns - A set of building blocks to structure the implementation of the model" "Services, Repositories, Events, etc"{
 
                 }
 
@@ -124,13 +124,13 @@ workspace "Software Development Model for Product feature delivery"{
         automation -> pairProgramming "guides code implementation"
 
         //ddd
-        strategize -> define "collaborative modelling"
-        define -> design "visualize software architecture"
+        strategize -> design "collaborative modelling"
+        design -> code "apply tactical patterns"
 //        The relationship below is inferred in continuousIntegration -> knowledgeBase
 //        design -> knowledgeBase "document the software design" "Google Drive"
         developer -> strategize "identifies strategic focus areas"
         product -> strategize "validates and categorizes subdomains"
-        design -> pairProgramming "guides code implementation"
+        code -> pairProgramming "guides code implementation"
 
         //xp
         developer -> pairProgramming "implements high-quality software"
@@ -208,12 +208,12 @@ workspace "Software Development Model for Product feature delivery"{
 
         component allComponents "Components" "All Components and relationships" {
             include product developer productBrief storyMap discovery formulation automation
-            include strategize define design
+            include strategize design code
             include pairProgramming tdd continuousIntegration
             include backlog iterations informationRadiators customerFeedback knowledgeBase
             exclude product->discovery product->iterations product->strategize
             exclude developer->strategize developer->pairProgramming developer->iterations developer->discovery
-            //            autolayout lr
+            autolayout lr
         }
 
 

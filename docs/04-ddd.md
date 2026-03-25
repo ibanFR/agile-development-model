@@ -17,6 +17,8 @@ business impact.
 
 ### Strategic Architecture
 
+#### Decompose
+
 Decompose a large problem domain into sub-domains so that we can reason about parts of the domain independently.
 
 Strategically map out your sub-domains to identify core domains: the parts of the domain which have the greatest
@@ -25,7 +27,21 @@ potential for business differentiation or strategic significance.
 By analysing what your core domains are, you will have a better idea of how much quality and rigour is required to build
 each part of your system, and you'll be able to make highly-educated build vs buy vs outsource decisions.
 
-### Define roles and responsibilities
+#### Connect
+
+It is imperative to not only decompose a large domain into parts but to also carefully design the interactions between
+those parts to minimise unwanted coupling and complexity.
+
+Connect the sub-domains into a loosely-coupled architecture which fulfills end-to-end business use-cases.
+
+### Software Design
+
+By collaboratively modelling the problem space with experts, the developers have a chance to learn about the domain and
+minimise misunderstandings.
+
+It is necessary to challenge the initial design by applying concrete use-cases to uncover hidden complexity.
+
+#### Bounded Contexts
 
 Identify each model in play on the project and define its Bounded Context (A Bounded Context is a sub-system in a
 software architecture aligned to a part of the domain).
@@ -38,20 +54,22 @@ about the key elements of its design, from naming to responsibilities, to its pu
 
 Name each Bounded Context, and make the names part of the ubiquitous language.
 
-### Software Design
+Create models using a common set of abstractions to describe the static structure of a software system
 
-It is imperative to not only decompose a large domain into parts but to also carefully design the interactions between
-those parts to minimise unwanted coupling and complexity.
+#### Aggregate Design
 
-Connect the sub-domains into a loosely-coupled architecture which fulfills end-to-end business use-cases. 
+Design Aggregates to enforce consistency rules and invariants within the domain model. 
 
-Achieving high cohesion within the services and loose coupling between them is crucial to keep the application scalable
-and maintainable.
+The Aggregate Design Canvas is a collaborative modelling tool that guides teams through the key design decisions of an
+Aggregate, including defining its lifecycle, and listing its business invariants — the non-negotiable rules that must
+always hold true within the domain.
 
-It is
-necessary to challenge the initial design by applying concrete use-cases to uncover hidden complexity.
+Explicitly identifying and documenting these invariants ensures a shared understanding among the team and clearly
+defines the Aggregate's responsibilities.
+
+### Code the Domain Model
 
 Code the Domain Model applying Tactical Patterns - A set of building blocks to structure the implementation of a model
-according to best practices: Entity, Aggregate, Value Object, Service, Domain Event, Repository, Factory, Module.
+according to best practices: Module, Aggregate, Value Object, Service, Domain Event, Repository, Factory, etc.
 
 Aligning the code to the domain makes it easier to change the code when the domain changes.

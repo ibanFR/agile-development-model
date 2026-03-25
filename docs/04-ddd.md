@@ -54,7 +54,13 @@ about the key elements of its design, from naming to responsibilities, to its pu
 
 Name each Bounded Context, and make the names part of the ubiquitous language.
 
-Create models using a common set of abstractions to describe the static structure of a software system
+#### C4 Model
+
+Visualise the software architecture using the C4 Model, a hierarchical set of diagrams that describe the static
+structure of a software system at different levels of abstraction:
+
+* A set of hierarchical abstractions - software systems, containers, components, and code.
+* An additional set of supporting diagrams - system landscape, dynamic, and deployment.
 
 #### Aggregate Design
 

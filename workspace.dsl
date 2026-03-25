@@ -54,7 +54,7 @@ workspace "Software Development Model for Product feature delivery"{
 
                 }
 
-                code = component "Code the Domain Model" "Code the Domain Model applying Tactical Patterns - A set of building blocks to structure the implementation of the model" "Services, Repositories, Events, etc"{
+                code = component "Code the Domain Model" "Code the Domain Model applying Tactical Patterns - a set of building blocks to structure the implementation of the model" "Services, Repositories, Events, etc"{
 
                 }
 

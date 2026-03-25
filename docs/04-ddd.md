@@ -41,7 +41,7 @@ minimise misunderstandings.
 
 It is necessary to challenge the initial design by applying concrete use-cases to uncover hidden complexity.
 
-#### Bounded Contexts
+#### Define Bounded Contexts
 
 Identify each model in play on the project and define its Bounded Context (A Bounded Context is a sub-system in a
 software architecture aligned to a part of the domain).
@@ -54,7 +54,7 @@ about the key elements of its design, from naming to responsibilities, to its pu
 
 Name each Bounded Context, and make the names part of the ubiquitous language.
 
-#### C4 Model
+#### Visualise Software Architecture with the C4 Model
 
 Visualise the software architecture using the C4 Model, a hierarchical set of diagrams that describe the static
 structure of a software system at different levels of abstraction:
@@ -62,7 +62,7 @@ structure of a software system at different levels of abstraction:
 * A set of hierarchical abstractions - software systems, containers, components, and code.
 * An additional set of supporting diagrams - system landscape, dynamic, and deployment.
 
-#### Aggregate Design
+#### Design Aggregates
 
 Design Aggregates to enforce consistency rules and invariants within the domain model. 
 

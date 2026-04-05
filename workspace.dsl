@@ -80,11 +80,11 @@ workspace "Software Development Model for Product feature delivery"{
                 tags "product"
 
 
-                informationRadiators = component "Informative Workspaces" "Project progress and potential issues are visible to all team members with informative workspaces" "Scrum and Kanban boards, Metric Dashboards etc"{
+                informationRadiators = component "Informative Workspaces" "Project progress and potential issues are visible to all team members with informative workspaces" "Scrum and Kanban boards, DORA/SAFE metrics etc"{
 
                 }
 
-                iterations = component "Short Iterations" "Short development cycles deliver incremental value and enable continuous learning about the product" "two to four week development cycles"{
+                iterations = component "Short Iterations" "Short development cycles deliver incremental value and enable continuous learning about the product" "one to two week development cycles"{
                     tags "product"
 
                 }

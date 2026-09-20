@@ -2,3 +2,4 @@
 /.structurizr/
 /build/
 /workspace.json
+.DS_Store

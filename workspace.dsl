@@ -1,6 +1,6 @@
 workspace "Software Development Model for Product feature delivery"{
 
-    !docs docs
+    !docs site
 
     model {
 

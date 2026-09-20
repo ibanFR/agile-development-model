@@ -15,9 +15,12 @@ product feature delivery that the whole workspace describes.
 **Focus area** — one of the five top-level units the model is divided into: Align and
 Understand, BDD, DDD, XP, and Lean Product Development. A focus area groups the components
 that belong to it, and is modelled as exactly one container. This is the canonical term for
-the top-level units: prose calls them focus areas, not "building blocks". Within the DDD
-focus area, a strategically significant part of a problem domain is a **subdomain**, never a
-focus area.
+the top-level units: prose calls them focus areas, not "building blocks".
+
+**Subdomain** — a strategically significant part of a problem domain, identified by the
+Strategic Architecture component. This is a different concept one level down, and it is the
+term to use when writing new text. The Strategic Architecture descriptions in the model still
+say "key focus areas" for it; read those as subdomains.
 
 **Component** — a single activity, artefact or ceremony within a focus area, such as a
 Product Brief, Pair Programming or a Product Backlog. Components are what a team actually

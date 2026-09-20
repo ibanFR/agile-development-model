@@ -17,11 +17,11 @@ workspace "Software Development Model for Product feature delivery"{
             // container, so this empty container exists purely to carry the cross-container
             // "Components" overview view defined below. Tagged "notation" so it is styled
             // and read as part of the diagram notation rather than part of the model.
-            allComponents = container "All Components" "Notation, not a focus area: the scope that carries the all-up Components view" "" {
+            allComponents = container "All Components" "All Components and relationships" "All Components"{
                 tags "notation"
             }
 
-            alignAndUnderstand = container "Align and Understand Product Requirements" "Focus area that aligns our focus with the organisation's business model, the needs of its users, and its short, medium, and long-term goals" "Align & Understand"{
+            alignAndUnderstand = container "Align and Understand Product Requirements" "Align our focus with the organisation's business model, the needs of its users, and its short, medium, and long-term goals" "Align & Understand"{
                 tags "product"
                 productBrief = component "Product Brief" "Short product or feature brief to frame and constrain the project" "Opportunity Canvas, Slideck, etc"{
                     tags "product"
@@ -36,7 +36,7 @@ workspace "Software Development Model for Product feature delivery"{
                 }
             }
 
-            bdd = container "Behavior-Driven Development" "Focus area that defines and builds a shared understanding of the desired system behavior before any code is written. It encourages collaboration and a shared understanding of the project's objectives" "BDD"{
+            bdd = container "Behavior-Driven Development" "Define and understand the desired system behavior before writting any code. It encourages collaboration and a shared understanding of the project's objectives" "BDD"{
                 discovery = component "Specification Workshop" "Concrete rules and examples help us explore the problem domain to clarify and confirm the acceptance criteria" "Example Mapping"{
                     tags "product"
                 }
@@ -48,9 +48,9 @@ workspace "Software Development Model for Product feature delivery"{
                 }
             }
 
-            ddd = container "Software Architecture and Domain-Driven Design" "Focus area that explores models in a creative collaboration of domain experts and software engineers" "DDD"{
+            ddd = container "Software Architecture and Domain-Driven Design" "Explore models in a creative collaboration of domain experts and software engineers" "DDD"{
 
-                strategize = component "Strategic Architecture" "Decompose a large problem domain into cohesive modules, so that we can identify strategically significant subdomains" "Core Domain Charts, Context Maps, etc"{
+                strategize = component "Strategic Architecture" "Decompose a large problem domain into cohesive modules, so that we can identify stragically significant key focus areas" "Core Domain Charts, Context Maps, etc"{
                     tags "product"
                 }
 
@@ -64,7 +64,7 @@ workspace "Software Development Model for Product feature delivery"{
 
             }
 
-            xp = container "Extreme Programming " "Focus area in which developers work together in pairs and as a group, improving the design continually to keep it always just right for the current needs" "XP"{
+            xp = container "Extreme Programming " "Developers work together in pairs and as a group, improving the design continually to keep it always just right for the current needs" "XP"{
 
                 pairProgramming = component "Pair Programming" "Developers work together in pairs and as a group, reviewing the code in real-time and improving the design continuously" "Ensemble, Mob Programming"{
 
@@ -79,7 +79,7 @@ workspace "Software Development Model for Product feature delivery"{
                 }
             }
 
-            lean = container "Lean Product Development" "Focus area that breaks projects down into two-week iterations, each of which results in a potentially shippable Product Increment" "Lean"{
+            lean = container "Lean Product Development" "Projects are broken down into two-week iterations which result in a potentially shippable product increment" "Lean"{
 
                 tags "product"
 
@@ -132,7 +132,7 @@ workspace "Software Development Model for Product feature delivery"{
         design -> code "apply tactical patterns"
 //        The relationship below is inferred in continuousIntegration -> knowledgeBase
 //        design -> knowledgeBase "document the software design" "Google Drive"
-        developer -> strategize "identifies strategically significant subdomains"
+        developer -> strategize "identifies strategic focus areas"
         product -> strategize "validates and categorizes subdomains"
         code -> pairProgramming "guides code implementation"
 
@@ -204,13 +204,13 @@ workspace "Software Development Model for Product feature delivery"{
             autoLayout lr
         }
 
-        component lean "LeanProductDevelopment" "Focus area that breaks projects down into two-week iterations, each of which results in a potentially shippable Product Increment" {
+        component lean "LeanProductDevelopment" "Projects are broken down into two-week iterations which result in a potentially shippable product increment" {
             include *
             exclude *->xp
             autoLayout tb
         }
 
-        component allComponents "Components" "All Components and relationships across the five focus areas" {
+        component allComponents "Components" "All Components and relationships" {
             include product developer productBrief storyMap discovery formulation automation
             include strategize design code
             include pairProgramming tdd continuousIntegration

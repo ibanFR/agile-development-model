@@ -24,8 +24,8 @@ working, and C4 describes how that way of working is drawn. Container is the rig
 the drawing and the wrong word for the thing — it is a notation noun, and it collides with
 Docker containers, which the README also mentions.
 
-"Focus area" carried its own overload. The Strategic Architecture component and its incoming
-relationship used it for strategically significant parts of a problem domain, which is a
+"Focus area" carries its own overload. The Strategic Architecture component and its incoming
+relationship use it for strategically significant parts of a problem domain, which is a
 different concept one level down.
 
 There is also an element that is not one of the units at all. A component view must be scoped
@@ -39,14 +39,21 @@ has no way to know that from the model alone.
 The vocabulary is split by layer rather than collapsed into one word.
 
 **Focus area** is the domain term for the five top-level units: Align and Understand, BDD,
-DDD, XP, and Lean Product Development. Prose in the README, the documentation chapters, and
-the model's container descriptions says focus area. **Container** stays the notation term,
-used when talking about C4 and the diagrams, with each focus area modelled as exactly one
-container. `CONTEXT.md` states the mapping and separates the two sets of terms under Model
-and Notation headings.
+DDD, XP, and Lean Product Development. Prose in the README and the documentation chapters
+says focus area. **Container** stays the notation term, used when talking about C4 and the
+diagrams, with each focus area modelled as exactly one container. `CONTEXT.md` states the
+mapping and separates the two sets of terms under Model and Notation headings.
 
-"Building block" is left to mean only what Evans meant by it. The strategic-DDD descriptions
-that said "focus areas" now say subdomains, so focus area has one meaning repo-wide.
+"Building block" is left to mean only what Evans meant by it.
+
+The model's own element descriptions are left as they are. Vocabulary is carried by the
+prose and by the glossary, and `workspace.dsl` changes only where the model is factually
+wrong about itself — which here is the scope anchor, and nothing else. That keeps the DSL
+diff small and reviewable, and it keeps a vocabulary decision from rewriting the model.
+
+The cost is that the Strategic Architecture descriptions still say "key focus areas" where
+they mean subdomains. `CONTEXT.md` defines **subdomain**, names that wording, and says which
+term new text should use.
 
 Names are not changed. Element names, DSL variable names, and chapter filenames stay as they
 are: renaming chapters would break published URLs, and renaming elements would churn the
@@ -62,8 +69,12 @@ whichever tools render the model, so that it survives the next change of tooling
 
 ## Consequences
 
-A reader meets one word per concept per layer, and knows which layer they are in. "Building
-block" points at exactly one thing, and so does focus area.
+A reader meets one word per concept per layer, and knows which layer they are in, and
+"building block" points at exactly one thing.
+
+Focus area does not yet: it still carries the strategic-DDD sense inside two Strategic
+Architecture descriptions. The glossary flags that rather than hiding it, and reworking those
+descriptions stays available as a separate change.
 
 The cost of the split is that both words stay in circulation, and a contributor has to know
 which one the sentence calls for. The mapping is one to one, so the rule is short: the thing

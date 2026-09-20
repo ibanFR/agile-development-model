@@ -6,7 +6,8 @@ tooling provides, it is defined by what that surface is for, not by what current
 
 The vocabulary is split by layer. The **Model** terms below name what is being described;
 the **Notation** terms name how it is drawn. Prose uses the model terms; the notation terms
-are for talking about the diagrams.
+are for talking about the diagrams. One word for both layers was considered and rejected:
+container is the notation's word, not the thing's.
 
 ## Model
 

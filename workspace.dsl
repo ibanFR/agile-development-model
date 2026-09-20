@@ -13,6 +13,9 @@ workspace "Software Development Model for Product feature delivery"{
 
             !adrs adrs
 
+            // A view scope, not a real container. Structurizr scopes a component view to a
+            // single container, so this empty container exists purely to carry the
+            // cross-container "Components" overview view defined below.
             allComponents = container "All Components" "All Components and relationships" "All Components"{
 
             }
@@ -213,7 +216,10 @@ workspace "Software Development Model for Product feature delivery"{
             include backlog iterations informationRadiators customerFeedback knowledgeBase
             exclude product->discovery product->iterations product->strategize
             exclude developer->strategize developer->pairProgramming developer->iterations developer->discovery
-            autolayout lr
+            // No autoLayout on purpose. Omitting it makes the PlantUML exporter used by
+            // structurizr-site-generatr emit "top to bottom direction", while Structurizr
+            // Lite falls back to the manual layout saved in workspace.json.
+            // See adrs/0003-omit-autolayout-on-the-components-view.md.
         }
 
 

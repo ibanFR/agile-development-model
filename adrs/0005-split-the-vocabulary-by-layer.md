@@ -67,8 +67,10 @@ is drawn it reads as notation rather than as a sixth focus area. It stays exclud
 Containers view, which is the diagram readers meet first and which should show exactly the
 five focus areas.
 
-`CONTEXT.md` at the repository root is the glossary of record. It leaves out the names of
-whichever tools render the model, so that it survives the next change of tooling.
+`CONTEXT.md` at the repository root is the glossary of record. It names no product: where a
+term names a surface the tooling provides — the local viewer, the generated site — it is
+defined by what that surface is for, so the definition survives the next change of tooling
+while staying an anchor for the terms ADR-0003 and ADR-0004 already use.
 
 ## Consequences
 

@@ -1,7 +1,8 @@
 # Context
 
-Glossary for this repository. Terms only — no implementation detail, and no names that
-belong to the tooling, so that this glossary survives the next change of tooling.
+Glossary for this repository. Terms only — no implementation detail, and no product names,
+so that this glossary survives the next change of tooling. Where a term names a surface the
+tooling provides, it is defined by what that surface is for, not by what currently runs it.
 
 The vocabulary is split by layer. The **Model** terms below name what is being described;
 the **Notation** terms name how it is drawn. Prose uses the model terms; the notation terms
@@ -50,6 +51,14 @@ the focus areas, the components of one focus area, or the components of all of t
 
 **All Components** — notation, not a focus area. It exists only to scope the all-up view of
 every component, and nothing in the modelled domain corresponds to it.
+
+**Local viewer** — the local authoring surface, used to write and check the model while
+editing it. What it shows is not published, and it lays views out independently of the
+generated site.
+
+**Generated site** — the published documentation, built from the model and served to
+readers. This is the artefact an audience sees, and it lays views out independently of the
+local viewer.
 
 **ADR** — a record of a decision that is hard to reverse, surprising without its reasoning,
 and the result of a real trade-off.

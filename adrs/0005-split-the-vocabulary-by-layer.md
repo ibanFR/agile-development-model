@@ -53,9 +53,10 @@ presents itself as a unit of the model when it is notation. And the Strategic Ar
 descriptions, which said "key focus areas" for what Evans calls subdomains — the second sense
 of the term this decision exists to remove, sitting inside the model itself.
 
-Those descriptions now say **subdomain**, both on the component and on the relationship that
-reaches it, so focus area has one meaning repo-wide. `CONTEXT.md` defines subdomain alongside
-it. No other description is touched.
+Those descriptions now say "strategically significant parts of the domain", both on the
+component and on the relationship that reaches it, so focus area has one meaning repo-wide.
+`CONTEXT.md` defines **subdomain** as the short name for the same concept, which the sibling
+relationship on Strategic Architecture already used. No other description is touched.
 
 Names are not changed. Element names, DSL variable names, and chapter filenames stay as they
 are: renaming chapters would break published URLs, and renaming elements would churn the

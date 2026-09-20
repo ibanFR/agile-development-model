@@ -1,0 +1,11 @@
+services:
+  structurizr:
+    image: structurizr/structurizr:2026.09.19
+    command: local
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/usr/local/structurizr
+    environment:
+      # Reload diagrams while the model is edited, without a manual refresh.
+      STRUCTURIZR_AUTOREFRESHINTERVAL: 2000

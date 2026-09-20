@@ -217,8 +217,8 @@ workspace "Software Development Model for Product feature delivery"{
             exclude product->discovery product->iterations product->strategize
             exclude developer->strategize developer->pairProgramming developer->iterations developer->discovery
             // No autoLayout on purpose. Omitting it makes the PlantUML exporter used by
-            // structurizr-site-generatr emit "top to bottom direction", while Structurizr
-            // Lite falls back to the manual layout saved in workspace.json.
+            // structurizr-site-generatr emit "top to bottom direction", while the local
+            // viewer falls back to the manual layout saved in workspace.json.
             // See adrs/0003-omit-autolayout-on-the-components-view.md.
         }
 

@@ -28,8 +28,8 @@ development lifecycle.
 
 ## Tools and Technologies
 This repository leverages the following tools and technologies:
- - Docker: Used to run Structurizr Lite in a containerized environment.
- - Structurizr Lite: A lightweight tool for creating system architecture diagrams using the [Structurizr DSL](https://docs.structurizr.com/dsl).
+ - Docker: Used to run the local Structurizr viewer in a containerized environment.
+ - [Structurizr](https://docs.structurizr.com/local): The consolidated Structurizr tooling. Its `local` command serves the model for authoring and review, using the [Structurizr DSL](https://docs.structurizr.com/dsl).
  - [Structurizr Site Generatr](https://github.com/avisi-cloud/structurizr-site-generatr): A tool for generating a HTML microsite with diagrams, documentation, and a UI to explore the model.
  - Github Actions: Used to automate the generation of the HTML microsite and deploy it to Github Pages.
 
@@ -37,8 +37,9 @@ This repository leverages the following tools and technologies:
 ## Folder structure
 
 ```
+├── compose.yaml           # Docker Compose file that starts the local Structurizr viewer
 ├── workspace.dsl          # Primary Structurizr DSL script defining the system architecture
-├── site/                  # Structurizr documentation (Markdown/AsciiDoc rendered by Structurizr Lite)
+├── site/                  # Structurizr documentation (Markdown/AsciiDoc rendered by the local viewer)
 ├── docs/                  # Agent-authored documentation (see docs/agents/)
 ├── adrs/                  # Directory to store Markdown/AsciiDoc Architecture Decision Records (ADRs)
 ├── README.md              # Project documentation
@@ -49,20 +50,17 @@ This repository leverages the following tools and technologies:
 Install Docker:
 - See [Get Docker](https://docs.docker.com/get-docker/) for installation instructions.
 
-Pull the Structurizr Lite Docker image:
+Start the local Structurizr viewer:
+
 ```shell
-docker pull structurizr/lite
+docker compose up
 ```
 
-See [Structurizr Lite - Quickstart](https://docs.structurizr.com/lite/quickstart/) for more information.
+This serves the model at http://localhost:8080. Diagrams refresh on their own while you edit
+`workspace.dsl`, so there is no need to reload the page. Stop the viewer with `docker compose down`.
 
-To start structurizr-lite run the following command:
-
-```shell 
-
-docker run -it --rm -p 8080:8080 -v $(pwd):/usr/local/structurizr structurizr/lite
-```
-Access the Structurizr Lite web application at http://localhost:8080
+The image version and the auto-refresh interval live in `compose.yaml`. See
+[Structurizr - local](https://docs.structurizr.com/local) for the full set of options.
 
 To generate the HTML microsite, run the following command:
 

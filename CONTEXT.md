@@ -20,12 +20,12 @@ does; focus areas are how those practices are grouped.
 **View** — one named diagram of the model, at a chosen level of detail: the system context,
 the focus areas, the components of one focus area, or the components of all of them.
 
-**Structurizr Lite** — the local authoring surface, used to write and check the model while
+**Local viewer** — the local authoring surface, used to write and check the model while
 editing it. What it shows is not published, and it lays views out independently of the
 generated site.
 
 **Generated site** — the published documentation, built from the model. This is the artefact
-readers see, and it lays views out independently of Structurizr Lite.
+readers see, and it lays views out independently of the local viewer.
 
 **ADR** — a record of a decision that is hard to reverse, surprising without its reasoning,
 and the result of a real trade-off.

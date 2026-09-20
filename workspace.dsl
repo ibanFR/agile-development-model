@@ -50,7 +50,7 @@ workspace "Software Development Model for Product feature delivery"{
 
             ddd = container "Software Architecture and Domain-Driven Design" "Explore models in a creative collaboration of domain experts and software engineers" "DDD"{
 
-                strategize = component "Strategic Architecture" "Decompose a large problem domain into cohesive modules, so that we can identify stragically significant key focus areas" "Core Domain Charts, Context Maps, etc"{
+                strategize = component "Strategic Architecture" "Decompose a large problem domain into cohesive modules, so that we can identify strategically significant subdomains" "Core Domain Charts, Context Maps, etc"{
                     tags "product"
                 }
 
@@ -132,7 +132,7 @@ workspace "Software Development Model for Product feature delivery"{
         design -> code "apply tactical patterns"
 //        The relationship below is inferred in continuousIntegration -> knowledgeBase
 //        design -> knowledgeBase "document the software design" "Google Drive"
-        developer -> strategize "identifies strategic focus areas"
+        developer -> strategize "identifies strategically significant subdomains"
         product -> strategize "validates and categorizes subdomains"
         code -> pairProgramming "guides code implementation"
 

@@ -18,9 +18,8 @@ that belong to it, and is modelled as exactly one container. This is the canonic
 the top-level units: prose calls them focus areas, not "building blocks".
 
 **Subdomain** — a strategically significant part of a problem domain, identified by the
-Strategic Architecture component. This is a different concept one level down, and it is the
-term to use when writing new text. The Strategic Architecture descriptions in the model still
-say "key focus areas" for it; read those as subdomains.
+Strategic Architecture component. This is a different concept one level down from a focus
+area, and it has its own word so that focus area keeps one meaning.
 
 **Component** — a single activity, artefact or ceremony within a focus area, such as a
 Product Brief, Pair Programming or a Product Backlog. Components are what a team actually

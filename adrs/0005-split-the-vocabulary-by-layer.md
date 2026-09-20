@@ -47,17 +47,19 @@ mapping and separates the two sets of terms under Model and Notation headings.
 "Building block" is left to mean only what Evans meant by it.
 
 The model's own element descriptions are left as they are. Vocabulary is carried by the
-prose and by the glossary, and `workspace.dsl` changes only where the model is factually
-wrong about itself — which here is the scope anchor, and nothing else. That keeps the DSL
-diff small and reviewable, and it keeps a vocabulary decision from rewriting the model.
+prose and by the glossary, and `workspace.dsl` changes only where the model is wrong about
+itself rather than merely worded differently. Two places qualify. The scope anchor, which
+presents itself as a unit of the model when it is notation. And the Strategic Architecture
+descriptions, which said "key focus areas" for what Evans calls subdomains — the second sense
+of the term this decision exists to remove, sitting inside the model itself.
 
-The cost is that the Strategic Architecture descriptions still say "key focus areas" where
-they mean subdomains. `CONTEXT.md` defines **subdomain**, names that wording, and says which
-term new text should use.
+Those descriptions now say **subdomain**, both on the component and on the relationship that
+reaches it, so focus area has one meaning repo-wide. `CONTEXT.md` defines subdomain alongside
+it. No other description is touched.
 
 Names are not changed. Element names, DSL variable names, and chapter filenames stay as they
 are: renaming chapters would break published URLs, and renaming elements would churn the
-model for no vocabulary gain. The vocabulary lives in prose and in descriptions.
+model for no vocabulary gain.
 
 The scope anchor is tagged `notation` and styled washed out and dashed, so that wherever it
 is drawn it reads as notation rather than as a sixth focus area. It stays excluded from the
@@ -69,12 +71,8 @@ whichever tools render the model, so that it survives the next change of tooling
 
 ## Consequences
 
-A reader meets one word per concept per layer, and knows which layer they are in, and
-"building block" points at exactly one thing.
-
-Focus area does not yet: it still carries the strategic-DDD sense inside two Strategic
-Architecture descriptions. The glossary flags that rather than hiding it, and reworking those
-descriptions stays available as a separate change.
+A reader meets one word per concept per layer, and knows which layer they are in. "Building
+block" points at exactly one thing, and so does focus area.
 
 The cost of the split is that both words stay in circulation, and a contributor has to know
 which one the sentence calls for. The mapping is one to one, so the rule is short: the thing

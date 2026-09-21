@@ -13,11 +13,12 @@ workspace "Software Development Model for Product feature delivery"{
 
             !adrs adrs
 
-            // A view scope, not a real container. Structurizr scopes a component view to a
-            // single container, so this empty container exists purely to carry the
-            // cross-container "Components" overview view defined below.
+            // Notation, not a focus area. Structurizr scopes a component view to a single
+            // container, so this empty container exists purely to carry the cross-container
+            // "Components" overview view defined below. Tagged "notation" so it is styled
+            // and read as part of the diagram notation rather than part of the model.
             allComponents = container "All Components" "All Components and relationships" "All Components"{
-
+                tags "notation"
             }
 
             alignAndUnderstand = container "Align and Understand Product Requirements" "Align our focus with the organisation's business model, the needs of its users, and its short, medium, and long-term goals" "Align & Understand"{
@@ -49,7 +50,7 @@ workspace "Software Development Model for Product feature delivery"{
 
             ddd = container "Software Architecture and Domain-Driven Design" "Explore models in a creative collaboration of domain experts and software engineers" "DDD"{
 
-                strategize = component "Strategic Architecture" "Decompose a large problem domain into cohesive modules, so that we can identify stragically significant key focus areas" "Core Domain Charts, Context Maps, etc"{
+                strategize = component "Strategic Architecture" "Decompose a large problem domain into cohesive modules, so that we can identify strategically significant parts of the domain" "Core Domain Charts, Context Maps, etc"{
                     tags "product"
                 }
 
@@ -131,7 +132,7 @@ workspace "Software Development Model for Product feature delivery"{
         design -> code "apply tactical patterns"
 //        The relationship below is inferred in continuousIntegration -> knowledgeBase
 //        design -> knowledgeBase "document the software design" "Google Drive"
-        developer -> strategize "identifies strategic focus areas"
+        developer -> strategize "identifies strategically significant parts of the domain"
         product -> strategize "validates and categorizes subdomains"
         code -> pairProgramming "guides code implementation"
 
@@ -231,6 +232,15 @@ workspace "Software Development Model for Product feature delivery"{
             element "product" {
                 background grey
                 color #ffffff
+            }
+
+            // Notation, not a focus area: drawn washed out and dashed so it never reads as
+            // part of the modelled domain. See CONTEXT.md.
+            element "notation" {
+                background #ffffff
+                color #808080
+                stroke #808080
+                border dashed
             }
 
 

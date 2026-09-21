@@ -1,8 +1,9 @@
 # Software Development Model for efficient Product Feature Delivery
 
 This repository serves as a blueprint for an Agile Software Development Model, focused on efficient and scalable product
-feature delivery. The model is built around key building blocks that enable rapid, iterative, and high-quality software
-development.
+feature delivery. The model is built around five key focus areas — Align and Understand, BDD, DDD, XP, and Lean
+Product Development — that together enable rapid, iterative, and high-quality software development.
+See [CONTEXT.md](CONTEXT.md) for the vocabulary this repository uses.
 
 ![Agile Development Model Containers](site/images/agile-containers.png)
 
@@ -11,10 +12,10 @@ different levels of abstraction:
 
 - **System Context Diagram**: Provides a high-level overview of the model, highlighting the main stakeholders and their
   interactions between them.
-- **Container Diagram**: The Container Diagram dives deeper, illustrating the major containers that compose the model
-  and how they communicate with each other.
-- **Component Diagram**: Further decomposes the containers into individual components, each representing specific task
-  or process within the container, and illustrates how these components are structured and interact internally.
+- **Container Diagram**: The Container Diagram dives deeper, illustrating the five focus areas that compose the model
+  and how they communicate with each other. Each focus area is modelled as one C4 container.
+- **Component Diagram**: Further decomposes each focus area into individual components, each representing a specific
+  task or process within it, and illustrates how these components are structured and interact internally.
 
 This repository also advocates for adopting a "diagrams and documentation as code" approach to software architecture and
 design. This practice involves managing and versioning system diagrams and documentation in the same way as code. By
@@ -40,6 +41,7 @@ This repository leverages the following tools and technologies:
 ├── compose.yaml           # Docker Compose file that starts the local Structurizr viewer
 ├── workspace.dsl          # Primary Structurizr DSL script defining the system architecture
 ├── site/                  # Structurizr documentation (Markdown/AsciiDoc rendered by the local viewer)
+├── CONTEXT.md             # Glossary of this repository (focus area, container, ...)
 ├── docs/                  # Agent-authored documentation (see docs/agents/)
 ├── adrs/                  # Directory to store Markdown/AsciiDoc Architecture Decision Records (ADRs)
 ├── README.md              # Project documentation

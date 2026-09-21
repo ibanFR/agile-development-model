@@ -7,10 +7,10 @@ cycles, typically lasting 2-4 weeks.
 ![](embed:Context)
 
 
-### Containers
+### Focus areas
 
-Domain experts and Software Engineers work closely together around 5 key focus areas to deliver incremental value with
-each iteration.
+Domain Experts and Software Engineers work closely together around 5 key focus areas to deliver incremental value with
+each iteration. Each focus area is modelled as one C4 container.
 
 This iterative cycle fosters a responsive and customer-centric development environment, where product features are
 delivered efficiently, meeting evolving user needs and market demands.
@@ -19,7 +19,7 @@ delivered efficiently, meeting evolving user needs and market demands.
 
 ### Components
 
-Individual Components help the Team work in small steps to achieve their high level goals.
+Individual Components within each focus area help the Team work in small steps to achieve their high level goals.
 
 Continuous Integration and Continuous Delivery (CI/CD) practices ensure that new features are regularly integrated into
 the Product, allowing for swift feedback and adaptation.

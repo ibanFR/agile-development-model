@@ -51,5 +51,6 @@ positions.
 The site loses the `ranksep` and `nodesep` values that an explicit `autoLayout` would have
 supplied, so PlantUML's own spacing defaults apply to this one diagram.
 
-Reverting is a one-line change: adding `autolayout tb` or `autolayout lr` back makes both
-surfaces agree again, in whichever direction is chosen.
+Reverting is a one-line change: adding `autoLayout tb 300 300` or `autoLayout lr 300 300`
+back makes both surfaces agree again, in whichever direction is chosen. The explicit spacing
+matches the other views; see the comment above them in `workspace.dsl`.

@@ -64,6 +64,9 @@ decision; it is tolerated only until
 [#12](https://github.com/ibanFR/agile-development-model/issues/12) adopts 1.6.0 and brings both
 parsers back to the same major version.
 
+Update: #12 adopted the site generator 1.6.0, with the layout re-tuned, so the skew is back to
+the two patch releases this decision accepted.
+
 The pull request check is what keeps the skew visible. Every pull request validates the
 workspace with the consolidated tooling, pinned in `compose.yaml`, and then builds the site
 with the pinned Site Generatr, so a change only one parser accepts fails before it reaches

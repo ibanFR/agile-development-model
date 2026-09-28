@@ -156,15 +156,21 @@ workspace "Software Development Model for Product feature delivery"{
         properties {
             "generatr.site.exporter" "structurizr"
             "structurizr.sort" "created"
+            // Wraps relationship labels on the generated site, which otherwise run on one line
+            // at the 24px font the site generator 1.6.0 renders. The local viewer ignores it.
+            "plantuml.skinparams" "maxMessageSize=200"
         }
+        // Every autoLayout spells out 300 300. The DSL's defaults (100 50) are tighter, and the
+        // PlantUML exporter scales them down to a spacing where labels collide on the generated
+        // site. The local viewer uses the same values, so it lays views out more loosely too.
         systemContext process "Context" "The system context diagram for the Software Development Process" {
             include *
-            autoLayout tb
+            autoLayout tb 300 300
         }
 
         container process "Containers" {
             include *
-            autoLayout tb
+            autoLayout tb 300 300
             exclude allComponents
             exclude product->ddd product->lean product->bdd
             exclude developer->lean developer->ddd developer->bdd developer->xp
@@ -175,7 +181,7 @@ workspace "Software Development Model for Product feature delivery"{
             include *
             exclude product->bdd developer->bdd
             exclude product->ddd developer->ddd
-            autoLayout lr
+            autoLayout lr 300 300
         }
 
         component bdd "BehaviorDrivenDevelopment" {
@@ -184,7 +190,7 @@ workspace "Software Development Model for Product feature delivery"{
             exclude developer->xp
             exclude product->lean
             exclude developer->lean
-            autoLayout lr
+            autoLayout lr 300 300
         }
 
         component ddd "DomainDrivenDesign" "" {
@@ -193,7 +199,7 @@ workspace "Software Development Model for Product feature delivery"{
             exclude product->lean
             exclude developer->lean developer->xp
             exclude xp->*
-            autolayout lr
+            autoLayout lr 300 300
         }
 
         component xp "TestDrivenDevelopment" {
@@ -201,13 +207,13 @@ workspace "Software Development Model for Product feature delivery"{
             exclude developer->lean bdd->lean ddd->lean
             exclude *->bdd
             exclude *->ddd
-            autoLayout lr
+            autoLayout lr 300 300
         }
 
         component lean "LeanProductDevelopment" "Projects are broken down into two-week iterations which result in a potentially shippable product increment" {
             include *
             exclude *->xp
-            autoLayout tb
+            autoLayout tb 300 300
         }
 
         component allComponents "Components" "All Components and relationships" {

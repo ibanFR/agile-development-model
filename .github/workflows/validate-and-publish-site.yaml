@@ -34,15 +34,18 @@ jobs:
     needs: validate
     runs-on: ubuntu-latest
     container:
-      image: ghcr.io/avisi-cloud/structurizr-site-generatr:1.5.2
+      image: ghcr.io/avisi-cloud/structurizr-site-generatr:1.6.0
       options: --user root
+      env:
+        # PlantUML crops PNGs at 4096px by default, and the Components view is taller than
+        # that at the font sizes the site generator 1.6.0 renders. The SVG is unaffected.
+        PLANTUML_LIMIT_SIZE: 8192
     steps:
       - name: Checkout
         uses: actions/checkout@v7
       - name: Create site
         run: |
           /opt/structurizr-site-generatr/bin/structurizr-site-generatr generate-site -w workspace.dsl 2>&1 | tee generate.log
-      # Generatr 1.5.2 does not emit this warning; the check is for the generatr version #12 adopts.
       - name: Check for cloud-service end-of-life warnings
         run: .github/scripts/assert-no-eol-warning.sh generate.log
       - name: Check documentation is present

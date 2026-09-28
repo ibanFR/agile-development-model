@@ -12,7 +12,8 @@ The local viewer used to author the model was Structurizr Lite. Lite reached end
 its repository was archived on 2026-02-04, and it receives no further features, bug fixes or
 security updates. The vendor replaced it with the `local` command of the consolidated
 `structurizr/structurizr` image, which serves on the same port and reads the same mount point
-as Lite. See https://docs.structurizr.com/eol and https://docs.structurizr.com/local.
+as Lite. See the [end-of-life notices](https://docs.structurizr.com/eol) and the
+[documentation for `local`](https://docs.structurizr.com/local).
 
 The generated site is built by a third-party tool, Structurizr Site Generatr, which carries
 its own copy of the Structurizr DSL parser. Moving local authoring to the consolidated tooling
@@ -37,7 +38,7 @@ actual workspace, not read from documentation:
 
 The local viewer moves to the `local` command of the consolidated tooling, started from
 `compose.yaml` with the image pinned. The zsh start script that ran Lite is removed. The
-change landed in e044b6a.
+change landed in [e044b6a](https://github.com/ibanFR/agile-development-model/commit/e044b6a).
 
 Structurizr Site Generatr stays and keeps building the generated site in CI, pinned to an
 explicit version. It is kept because it is the only option tried that publishes both the
@@ -56,10 +57,12 @@ decided: two patch releases, 6.2.3 in the consolidated image against 6.2.1 in th
 generator 1.6.0.
 
 At the time of writing the gap is a major version instead. The site generator 1.6.0 changed
-the geometry of every diagram, so CI was pinned back to 1.5.2 (#11), which bundles DSL parser
+the geometry of every diagram, so CI was pinned back to 1.5.2
+([#11](https://github.com/ibanFR/agile-development-model/pull/11)), which bundles DSL parser
 4.1.0 — DSL the local viewer accepts may not parse in CI at all. That gap is not part of this
-decision; it is tolerated only until #12 adopts 1.6.0 and brings both parsers back to the same
-major version.
+decision; it is tolerated only until
+[#12](https://github.com/ibanFR/agile-development-model/issues/12) adopts 1.6.0 and brings both
+parsers back to the same major version.
 
 The pull request check is what keeps the skew visible. Every pull request validates the
 workspace with the consolidated tooling, pinned in `compose.yaml`, and then builds the site

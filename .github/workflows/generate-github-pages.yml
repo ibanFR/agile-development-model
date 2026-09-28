@@ -27,11 +27,7 @@ jobs:
         run: |
           docker compose run --rm -T structurizr validate -w workspace.dsl 2>&1 | tee validate.log
       - name: Check for cloud-service end-of-life warnings
-        run: |
-          if grep -F "End of Life" validate.log; then
-            echo "::error file=workspace.dsl::The workspace depends on the Structurizr cloud service, which reaches end of life on 30 September 2026"
-            exit 1
-          fi
+        run: .github/scripts/assert-no-eol-warning.sh validate.log
   build:
     needs: validate
     runs-on: ubuntu-latest
@@ -44,12 +40,9 @@ jobs:
       - name: Create site
         run: |
           /opt/structurizr-site-generatr/bin/structurizr-site-generatr generate-site -w workspace.dsl 2>&1 | tee generate.log
+      # Generatr 1.5.2 does not emit this warning; the check is for the generatr version #12 adopts.
       - name: Check for cloud-service end-of-life warnings
-        run: |
-          if grep -F "End of Life" generate.log; then
-            echo "::error file=workspace.dsl::The workspace depends on the Structurizr cloud service, which reaches end of life on 30 September 2026"
-            exit 1
-          fi
+        run: .github/scripts/assert-no-eol-warning.sh generate.log
       - name: Check documentation is present
         run: .github/scripts/assert-site-content.sh build/site
       - uses: actions/upload-artifact@v4

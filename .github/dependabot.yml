@@ -1,0 +1,14 @@
+# Version bumps for the pinned tooling arrive as pull requests, where the
+# "Validate and publish" workflow checks the model against both parsers before merge.
+version: 2
+updates:
+  # The Structurizr image pinned in compose.yaml, used for local authoring and the validate job.
+  - package-ecosystem: "docker-compose"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+  # Every `uses:` reference in .github/workflows.
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"

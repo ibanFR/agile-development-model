@@ -61,7 +61,8 @@ docker compose up
 This serves the model at http://localhost:8080. Diagrams refresh on their own while you edit
 `workspace.dsl`, so there is no need to reload the page. Stop the viewer with `docker compose down`.
 
-The image version and the auto-refresh interval live in `compose.yaml`. See
+The image version and the auto-refresh interval live in `compose.yaml`. Dependabot proposes a
+new image version, and new versions of the workflow Actions, as a monthly pull request. See
 [Structurizr - local](https://docs.structurizr.com/local) for the full set of options.
 
 To generate the HTML microsite, run the following command:

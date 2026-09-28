@@ -1,0 +1,17 @@
+# Version bumps for the pinned tooling arrive as pull requests, where the pull request check
+# validates the model against both parsers before merge.
+#
+# The site generator image is a job container in the workflow, not a `uses:` reference, so no
+# ecosystem here watches it; its version is bumped by hand.
+version: 2
+updates:
+  # The Structurizr image pinned in compose.yaml, used for local authoring and the validate job.
+  - package-ecosystem: docker-compose
+    directory: /
+    schedule:
+      interval: monthly
+  # Every `uses:` reference in .github/workflows.
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly

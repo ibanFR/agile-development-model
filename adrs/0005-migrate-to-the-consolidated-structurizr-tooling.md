@@ -8,7 +8,7 @@ Accepted
 
 ## Context
 
-The model was authored and viewed locally with Structurizr Lite. Lite reached end of life:
+The local viewer used to author the model was Structurizr Lite. Lite reached end of life:
 its repository was archived on 2026-02-04, and it receives no further features, bug fixes or
 security updates. The vendor replaced it with the `local` command of the consolidated
 `structurizr/structurizr` image, which serves on the same port and reads the same mount point
@@ -35,23 +35,31 @@ actual workspace, not read from documentation:
 
 ## Decision
 
-Local authoring moves to the `local` command of the consolidated tooling, started from
-`compose.yaml` with the image pinned. The zsh start script that ran Lite is removed.
+The local viewer moves to the `local` command of the consolidated tooling, started from
+`compose.yaml` with the image pinned. The zsh start script that ran Lite is removed. The
+change landed in e044b6a.
 
 Structurizr Site Generatr stays and keeps building the generated site in CI, pinned to an
-explicit version.
+explicit version. It is kept because it is the only option tried that publishes both the
+diagrams and the documentation: the consolidated tooling cannot build that site on its own,
+and cannot hand the site generator a parsed workspace to render instead.
 
 ## Consequences
 
 The local viewer runs on a tool that still receives security updates, and starts with
 `docker compose up`.
 
-Two DSL parsers live in one repository: the consolidated tooling's, used locally, and the one
-bundled in the site generator, used for the published site. DSL that one accepts may be
-rejected by the other. When this was decided the gap was two patch releases — 6.2.3 in the
-consolidated image, 6.2.1 in Site Generatr 1.6.0. It is currently wider: 1.6.0 changed the
-geometry of every diagram, so CI is pinned back to 1.5.2 (#11), which bundles DSL parser
-4.1.0. Adopting 1.6.0 and closing the gap again is tracked in #12.
+Two DSL parsers live in one repository: the consolidated tooling's, used by the local viewer,
+and the one bundled in the site generator, used for the generated site. DSL that one accepts
+may be rejected by the other. The skew accepted here is the one measured when this was
+decided: two patch releases, 6.2.3 in the consolidated image against 6.2.1 in the site
+generator 1.6.0.
+
+At the time of writing the gap is a major version instead. The site generator 1.6.0 changed
+the geometry of every diagram, so CI was pinned back to 1.5.2 (#11), which bundles DSL parser
+4.1.0 — DSL the local viewer accepts may not parse in CI at all. That gap is not part of this
+decision; it is tolerated only until #12 adopts 1.6.0 and brings both parsers back to the same
+major version.
 
 The pull request check is what keeps the skew visible. Every pull request validates the
 workspace with the consolidated tooling, pinned in `compose.yaml`, and then builds the site
@@ -60,7 +68,9 @@ with the pinned Site Generatr, so a change only one parser accepts fails before 
 ADR, guarding against a future pipeline change that drops documentation the way the static
 export did.
 
-Both pins are kept current by Dependabot, so the skew changes only through a reviewed commit.
+Either pin changes only through a reviewed pull request, so the skew never moves unseen.
+Dependabot proposes new versions of the consolidated image; the site generator runs as a
+workflow job container, which Dependabot does not watch, so its version is bumped by hand.
 
 The site generator going unmaintained — no longer tracking the upstream Structurizr parser —
 is the trigger to revisit this decision. At that point the consolidated tooling's static

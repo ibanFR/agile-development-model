@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
       # Runs the consolidated tooling at the version pinned in compose.yaml, the same one used
       # for local authoring, so the pin lives in one place.
       - name: Validate workspace
@@ -38,7 +38,7 @@ jobs:
       options: --user root
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
       - name: Create site
         run: |
           /opt/structurizr-site-generatr/bin/structurizr-site-generatr generate-site -w workspace.dsl 2>&1 | tee generate.log

@@ -1,4 +1,4 @@
-name: Deploy static content to Github Pages
+name: Validate and publish
 
 # Pull requests run validate and build, so DSL that only one of the two Structurizr parsers
 # accepts fails the check before it reaches main. Only a push to main deploys.
@@ -17,6 +17,7 @@ defaults:
 
 jobs:
   validate:
+    name: Validate model (local viewer)
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -29,6 +30,7 @@ jobs:
       - name: Check for cloud-service end-of-life warnings
         run: .github/scripts/assert-no-eol-warning.sh validate.log
   build:
+    name: Build generated site
     needs: validate
     runs-on: ubuntu-latest
     container:
@@ -50,6 +52,7 @@ jobs:
           name: website
           path: build/site
   deploy:
+    name: Deploy to GitHub Pages
     needs: build
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     permissions:

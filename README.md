@@ -32,7 +32,7 @@ This repository leverages the following tools and technologies:
  - Docker: Used to run the local Structurizr viewer in a containerized environment.
  - [Structurizr](https://docs.structurizr.com/local): The consolidated Structurizr tooling. Its `local` command serves the model for authoring and review, using the [Structurizr DSL](https://docs.structurizr.com/dsl).
  - [Structurizr Site Generatr](https://github.com/avisi-cloud/structurizr-site-generatr): A tool for generating a HTML microsite with diagrams, documentation, and a UI to explore the model.
- - Github Actions: Used to automate the generation of the HTML microsite and deploy it to Github Pages.
+ - Github Actions: Used to validate the model and generate the HTML microsite on every pull request, and to deploy it to Github Pages from `main`.
 
 
 ## Folder structure
@@ -77,3 +77,12 @@ structurizr-site-generatr serve -w workspace.dsl -p 8081
 ## Contributing
 We welcome contributions from the community. If you have suggestions or improvements, please open an issue or submit a
 pull request. Ensure that your changes align with the overall vision and structure of the repository.
+
+Every pull request is checked by both Structurizr DSL parsers in use: the consolidated tooling validates the workspace,
+then Structurizr Site Generatr builds the site. The check fails if either parser rejects the workspace, if the site is
+missing a documentation chapter or an ADR page, or if the build warns about the end of life of the Structurizr cloud
+service. You can run the validation locally with:
+
+```shell
+docker compose run --rm structurizr validate -w workspace.dsl
+```

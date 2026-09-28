@@ -1,0 +1,81 @@
+name: Validate and publish
+
+# Pull requests run validate and build, so DSL that only one of the two Structurizr parsers
+# accepts fails the check before it reaches main. Only a push to main deploys.
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+
+permissions:
+  contents: read
+
+# Explicit bash runs with pipefail, so piping a tool's output through tee keeps its exit code.
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  validate:
+    name: Validate model (local viewer)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      # Runs the consolidated tooling at the version pinned in compose.yaml, the same one used
+      # for local authoring, so the pin lives in one place.
+      - name: Validate workspace
+        run: |
+          docker compose run --rm -T structurizr validate -w workspace.dsl 2>&1 | tee validate.log
+      - name: Check for cloud-service end-of-life warnings
+        run: .github/scripts/assert-no-eol-warning.sh validate.log
+  build:
+    name: Build generated site
+    needs: validate
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/avisi-cloud/structurizr-site-generatr:1.5.2
+      options: --user root
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Create site
+        run: |
+          /opt/structurizr-site-generatr/bin/structurizr-site-generatr generate-site -w workspace.dsl 2>&1 | tee generate.log
+      # Generatr 1.5.2 does not emit this warning; the check is for the generatr version #12 adopts.
+      - name: Check for cloud-service end-of-life warnings
+        run: .github/scripts/assert-no-eol-warning.sh generate.log
+      - name: Check documentation is present
+        run: .github/scripts/assert-site-content.sh build/site
+      - uses: actions/upload-artifact@v4
+        with:
+          name: website
+          path: build/site
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    permissions:
+      pages: write
+      id-token: write
+    concurrency:
+      group: "pages"
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: website
+          path: build/site
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3.0.1
+        with:
+          path: "build/site"
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4.0.5

@@ -228,7 +228,7 @@ workspace "Software Development Model for Product feature delivery"{
 
         // Vendored copy of the Structurizr default theme. The cloud-hosted original is no
         // longer fetchable (cloud service EOL 2026-09-30), which fails the site build.
-        //theme theme.json
+        theme theme.json
 
         styles {
             element "product" {

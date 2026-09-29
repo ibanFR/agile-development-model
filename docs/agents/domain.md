@@ -28,6 +28,17 @@ When your output names a domain concept (in an issue title, a refactor proposal,
 
 If the concept you need isn't in the glossary yet, that's a signal — either you're inventing language the project doesn't use (reconsider) or there's a real gap (note it for `/domain-modeling`).
 
+## Accepted ADRs are immutable
+
+ADRs follow Michael Nygard's style (ADR-0001): an accepted ADR is _immutable_, a record of what was decided at the time, however stale it reads now.
+
+When a decision changes, write a new ADR, then link the pair in their Status sections — the only lines an accepted ADR ever gains:
+
+- **Replaces** the old decision: the old ADR gets `Superseded by [ADR-NNNN](...)`, the new one `Supersedes [ADR-NNNN](...)`.
+- **Changes part of** a decision that still stands: the old ADR gets `Amended by [ADR-NNNN](...)`, the new one `Amends [ADR-NNNN](...)`.
+
+ADR-0005's Status, for example, reads `Accepted`, then `Amended by [ADR-0006](0006-render-the-generated-site-with-the-c4-plantuml-exporter.md)`.
+
 ## Flag ADR conflicts
 
 If your output contradicts an existing ADR, surface it explicitly rather than silently overriding:

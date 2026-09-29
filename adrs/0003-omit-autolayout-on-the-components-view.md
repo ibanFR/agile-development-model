@@ -6,6 +6,8 @@ Date: 2026-09-20
 
 Accepted
 
+Amended by [ADR-0006](0006-render-the-generated-site-with-the-c4-plantuml-exporter.md)
+
 ## Context
 
 The Components view shows 18 elements on the site home page. Left-to-right ranking makes
@@ -49,9 +51,7 @@ The generated site is unaffected, because the PlantUML export path never reads e
 positions.
 
 The site loses the `ranksep` and `nodesep` values that an explicit `autoLayout` would have
-supplied, so PlantUML's own spacing defaults apply to this one diagram. Since the site moved to
-the C4-PlantUML exporter (see ADR-0005), that is true of every view: the C4 exporter writes a
-direction but never any spacing, so this view is no longer the exception.
+supplied, so PlantUML's own spacing defaults apply to this one diagram.
 
 Reverting is a one-line change: adding `autolayout tb` or `autolayout lr` back makes both
 surfaces agree again, in whichever direction is chosen.

@@ -110,9 +110,8 @@ workspace "Software Development Model for Product feature delivery"{
         developer -> productBrief "obtains domain knowledge"
 
         // container relationships
+        // The other relationships between focus areas are implied by component relationships.
         alignAndUnderstand -> ddd "collaborative domain modelling"
-        bdd -> lean "creates shared understanding"
-        ddd -> lean "enhances agility"
 
         //align and understand
         productBrief -> storyMap "spread domain knowledge"
@@ -165,12 +164,16 @@ workspace "Software Development Model for Product feature delivery"{
         }
 
         container process "Containers" {
-            include *
-            autoLayout tb
-            exclude allComponents
-            exclude product->ddd product->lean product->bdd
-            exclude developer->lean developer->ddd developer->bdd developer->xp
-            exclude lean->xp
+            include product developer
+            include alignAndUnderstand bdd ddd xp lean
+            // People enter the model through Align and Understand. Their relationships into
+            // the other focus areas are implied by component relationships, and are shown on
+            // the component views instead.
+            exclude product->* developer->*
+            include product->alignAndUnderstand developer->alignAndUnderstand
+            // No autoLayout on purpose, as on the Components view: the generated site still
+            // renders top to bottom, and the local viewer uses the layout saved locally.
+            // See adrs/0003-omit-autolayout-on-the-components-view.md.
         }
 
         component alignAndUnderstand "AlignAndUnderstand" {
@@ -200,7 +203,7 @@ workspace "Software Development Model for Product feature delivery"{
 
         component xp "TestDrivenDevelopment" {
             include *
-            exclude developer->lean bdd->lean ddd->lean
+            exclude developer->lean
             exclude *->bdd
             exclude *->ddd
             autoLayout lr

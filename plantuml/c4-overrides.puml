@@ -1,0 +1,10 @@
+' Overrides for the C4-PlantUML library, included after it through plantuml.includes.
+
+' This empty SHOW_LEGEND replaces the library's own. The C4 exporter always writes a SHOW_LEGEND call, and c4plantuml.legend false does not
+' remove it: C4-PlantUML reads that argument as hideStereotype, not as whether to draw.
+!unquoted procedure SHOW_LEGEND($hideStereotype="true", $details="")
+!endprocedure
+
+' Draws people as a person outline, the shape the Structurizr exporter drew under 1.5.2,
+' rather than C4-PlantUML's default box with a person icon.
+SHOW_PERSON_OUTLINE()

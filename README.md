@@ -44,7 +44,7 @@ This repository leverages the following tools and technologies:
 ├── CONTEXT.md             # Glossary of this repository (focus area, container, ...)
 ├── docs/                  # Agent-authored documentation (see docs/agents/)
 ├── adrs/                  # Directory to store Markdown/AsciiDoc Architecture Decision Records (ADRs)
-├── plantuml/              # PlantUML includes used only by the generated site (see hide-legend.puml)
+├── plantuml/              # PlantUML includes used only by the generated site (see c4-overrides.puml)
 ├── README.md              # Project documentation
 ├── .gitignore             # Git ignore file
 └── ...

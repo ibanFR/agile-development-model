@@ -165,8 +165,8 @@ workspace "Software Development Model for Product feature delivery"{
         }
 
         container process "Containers" {
-            include product developer
-            include alignAndUnderstand bdd ddd xp lean
+            include *
+            exclude allComponents
             // People enter the model through Align and Understand. Their relationships into
             // the other focus areas are implied by component relationships, and are shown on
             // the component views instead.

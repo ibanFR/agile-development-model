@@ -112,6 +112,7 @@ workspace "Software Development Model for Product feature delivery"{
         // container relationships
         // The other relationships between focus areas are implied by component relationships.
         alignAndUnderstand -> ddd "collaborative domain modelling"
+        bdd -> xp "creates shared understanding"
 
         //align and understand
         productBrief -> storyMap "spread domain knowledge"

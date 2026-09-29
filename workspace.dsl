@@ -154,23 +154,19 @@ workspace "Software Development Model for Product feature delivery"{
 
     views {
         properties {
-            "generatr.site.exporter" "structurizr"
+            "generatr.site.exporter" "c4"
+            "c4plantuml.tags" "true"
+            "plantuml.includes" "plantuml/hide-legend.puml"
             "structurizr.sort" "created"
-            // Wraps relationship labels on the generated site, which otherwise run on one line
-            // at the 24px font the site generator 1.6.0 renders. The local viewer ignores it.
-            "plantuml.skinparams" "maxMessageSize=200"
         }
-        // Every autoLayout spells out 300 300. The DSL's defaults (100 50) are tighter, and the
-        // PlantUML exporter scales them down to a spacing where labels collide on the generated
-        // site. The local viewer uses the same values, so it lays views out more loosely too.
         systemContext process "Context" "The system context diagram for the Software Development Process" {
             include *
-            autoLayout tb 300 300
+            autoLayout tb
         }
 
         container process "Containers" {
             include *
-            autoLayout tb 300 300
+            autoLayout tb
             exclude allComponents
             exclude product->ddd product->lean product->bdd
             exclude developer->lean developer->ddd developer->bdd developer->xp
@@ -181,7 +177,7 @@ workspace "Software Development Model for Product feature delivery"{
             include *
             exclude product->bdd developer->bdd
             exclude product->ddd developer->ddd
-            autoLayout lr 300 300
+            autoLayout lr
         }
 
         component bdd "BehaviorDrivenDevelopment" {
@@ -190,7 +186,7 @@ workspace "Software Development Model for Product feature delivery"{
             exclude developer->xp
             exclude product->lean
             exclude developer->lean
-            autoLayout lr 300 300
+            autoLayout lr
         }
 
         component ddd "DomainDrivenDesign" "" {
@@ -199,7 +195,7 @@ workspace "Software Development Model for Product feature delivery"{
             exclude product->lean
             exclude developer->lean developer->xp
             exclude xp->*
-            autoLayout lr 300 300
+            autolayout lr
         }
 
         component xp "TestDrivenDevelopment" {
@@ -207,13 +203,13 @@ workspace "Software Development Model for Product feature delivery"{
             exclude developer->lean bdd->lean ddd->lean
             exclude *->bdd
             exclude *->ddd
-            autoLayout lr 300 300
+            autoLayout lr
         }
 
         component lean "LeanProductDevelopment" "Projects are broken down into two-week iterations which result in a potentially shippable product increment" {
             include *
             exclude *->xp
-            autoLayout tb 300 300
+            autoLayout tb
         }
 
         component allComponents "Components" "All Components and relationships" {
@@ -232,7 +228,7 @@ workspace "Software Development Model for Product feature delivery"{
 
         // Vendored copy of the Structurizr default theme. The cloud-hosted original is no
         // longer fetchable (cloud service EOL 2026-09-30), which fails the site build.
-        theme theme.json
+        //theme theme.json
 
         styles {
             element "product" {

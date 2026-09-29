@@ -44,6 +44,7 @@ This repository leverages the following tools and technologies:
 ├── CONTEXT.md             # Glossary of this repository (focus area, container, ...)
 ├── docs/                  # Agent-authored documentation (see docs/agents/)
 ├── adrs/                  # Directory to store Markdown/AsciiDoc Architecture Decision Records (ADRs)
+├── plantuml/              # PlantUML includes used only by the generated site (see hide-legend.puml)
 ├── README.md              # Project documentation
 ├── .gitignore             # Git ignore file
 └── ...
@@ -65,16 +66,22 @@ The image version and the auto-refresh interval live in `compose.yaml`. Dependab
 new image version, and new versions of the workflow Actions, as a monthly pull request. See
 [Structurizr - local](https://docs.structurizr.com/local) for the full set of options.
 
-To generate the HTML microsite, run the following command:
+To generate the HTML microsite into `build/site`, run Structurizr Site Generatr from the same image
+CI uses, so the local site matches the published one:
 
 ```shell
-structurizr-site-generatr generate-site -w workspace.dsl
+docker run --rm -v "$PWD":/var/model -w /var/model \
+  ghcr.io/avisi-cloud/structurizr-site-generatr:1.6.0 generate-site -w workspace.dsl
 ```
-Start a development web server around the generated website:
+Start a development web server around the generated website, at http://localhost:8081:
 
-```shell 
-structurizr-site-generatr serve -w workspace.dsl -p 8081
+```shell
+docker run --rm -p 8081:8080 -v "$PWD":/var/model -w /var/model \
+  ghcr.io/avisi-cloud/structurizr-site-generatr:1.6.0 serve -w workspace.dsl -p 8080
 ```
+
+The site generator's version is pinned in `.github/workflows/validate-and-publish-site.yaml`.
+Dependabot does not watch it, so it is bumped by hand; keep the tag here in step with it.
 ## Contributing
 We welcome contributions from the community. If you have suggestions or improvements, please open an issue or submit a
 pull request. Ensure that your changes align with the overall vision and structure of the repository.

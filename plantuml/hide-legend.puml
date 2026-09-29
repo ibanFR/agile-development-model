@@ -1,0 +1,5 @@
+' Included after the C4-PlantUML library, so this empty SHOW_LEGEND replaces the library's
+' own. The C4 exporter always writes a SHOW_LEGEND call, and c4plantuml.legend false does not
+' remove it: C4-PlantUML reads that argument as hideStereotype, not as whether to draw.
+!unquoted procedure SHOW_LEGEND($hideStereotype="true", $details="")
+!endprocedure

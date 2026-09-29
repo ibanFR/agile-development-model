@@ -64,8 +64,14 @@ decision; it is tolerated only until
 [#12](https://github.com/ibanFR/agile-development-model/issues/12) adopts 1.6.0 and brings both
 parsers back to the same major version.
 
-Update: #12 adopted the site generator 1.6.0, with the layout re-tuned, so the skew is back to
-the two patch releases this decision accepted.
+Update: #12 adopted the site generator 1.6.0, so the skew is back to the two patch releases
+this decision accepted. With 1.6.0 the site renders through the C4-PlantUML exporter rather
+than the Structurizr PlantUML exporter. The Structurizr exporter turns the new DSL's tighter
+default `autoLayout` spacing into PlantUML spacing where labels collide, and does not wrap
+relationship labels; the C4 exporter writes no spacing and wraps labels, so the diagrams keep
+their 1.5.2 proportions without per-view tuning. `c4plantuml.tags` carries the workspace's
+styles into the diagrams, and `plantuml/hide-legend.puml` removes the legend that exporter
+always draws.
 
 The pull request check is what keeps the skew visible. Every pull request validates the
 workspace with the consolidated tooling, pinned in `compose.yaml`, and then builds the site

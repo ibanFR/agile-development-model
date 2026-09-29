@@ -36,10 +36,6 @@ jobs:
     container:
       image: ghcr.io/avisi-cloud/structurizr-site-generatr:1.6.0
       options: --user root
-      env:
-        # PlantUML crops PNGs at 4096px by default, and the Components view is taller than
-        # that at the font sizes the site generator 1.6.0 renders. The SVG is unaffected.
-        PLANTUML_LIMIT_SIZE: 8192
     steps:
       - name: Checkout
         uses: actions/checkout@v7

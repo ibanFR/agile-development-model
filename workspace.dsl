@@ -154,7 +154,9 @@ workspace "Software Development Model for Product feature delivery"{
 
     views {
         properties {
-            "generatr.site.exporter" "structurizr"
+            "generatr.site.exporter" "c4"
+            "c4plantuml.tags" "true"
+            "plantuml.includes" "plantuml/c4-overrides.puml"
             "structurizr.sort" "created"
         }
         systemContext process "Context" "The system context diagram for the Software Development Process" {

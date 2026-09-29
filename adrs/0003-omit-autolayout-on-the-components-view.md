@@ -6,6 +6,8 @@ Date: 2026-09-20
 
 Accepted
 
+Amended by [ADR-0006](0006-render-the-generated-site-with-the-c4-plantuml-exporter.md)
+
 ## Context
 
 The Components view shows 18 elements on the site home page. Left-to-right ranking makes

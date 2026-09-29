@@ -34,7 +34,7 @@ jobs:
     needs: validate
     runs-on: ubuntu-latest
     container:
-      image: ghcr.io/avisi-cloud/structurizr-site-generatr:1.5.2
+      image: ghcr.io/avisi-cloud/structurizr-site-generatr:1.6.0
       options: --user root
     steps:
       - name: Checkout
@@ -42,7 +42,6 @@ jobs:
       - name: Create site
         run: |
           /opt/structurizr-site-generatr/bin/structurizr-site-generatr generate-site -w workspace.dsl 2>&1 | tee generate.log
-      # Generatr 1.5.2 does not emit this warning; the check is for the generatr version #12 adopts.
       - name: Check for cloud-service end-of-life warnings
         run: .github/scripts/assert-no-eol-warning.sh generate.log
       - name: Check documentation is present

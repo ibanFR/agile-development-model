@@ -6,6 +6,8 @@ Date: 2026-09-28
 
 Accepted
 
+Amended by [ADR-0006](0006-render-the-generated-site-with-the-c4-plantuml-exporter.md)
+
 ## Context
 
 The local viewer used to author the model was Structurizr Lite. Lite reached end of life:

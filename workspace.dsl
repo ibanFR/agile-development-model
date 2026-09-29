@@ -172,9 +172,7 @@ workspace "Software Development Model for Product feature delivery"{
             // the component views instead.
             exclude product->* developer->*
             include product->alignAndUnderstand developer->alignAndUnderstand
-            // No autoLayout on purpose, as on the Components view: the generated site still
-            // renders top to bottom, and the local viewer uses the layout saved locally.
-            // See adrs/0003-omit-autolayout-on-the-components-view.md.
+            autoLayout tb
         }
 
         component alignAndUnderstand "AlignAndUnderstand" {

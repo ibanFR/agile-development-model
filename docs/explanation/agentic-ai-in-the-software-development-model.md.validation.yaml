@@ -1,0 +1,77 @@
+documentation_review:
+  document: docs/explanation/agentic-ai-in-the-software-development-model.md
+  classification:
+    type: explanation
+    confidence: high
+    signals:
+      - "Answers 'why' and 'what changes / what stays', not 'how'"
+      - "Discursive prose with trade-offs (speed vs shared understanding), context and alternatives (spec-driven development vs BDD)"
+      - "Sourced fact explicitly separated from interpretation"
+      - "No numbered steps, no commands, no parameter tables as backbone"
+      - "One small summary table (what stays / what changes) supports the prose; it is not the backbone"
+  validation:
+    passed: true
+    checklist_results:
+      - {item: "Addresses why, not what", passed: true, note: "Each focus area section gives reasoning and evidence for the role split"}
+      - {item: "Provides context and reasoning", passed: true, note: "Model relationship labels tie claims to the model"}
+      - {item: "Discusses alternatives", passed: true, note: "Spec-driven development versus BDD; draft-first versus model-first in DDD; conflicting evidence on context files"}
+      - {item: "No task steps", passed: true, note: "No instructions; only a note that agent set-up is out of scope"}
+      - {item: "Builds conceptual model", passed: true, note: "Decision versus transformation relationships; collaborative brake and automated harness"}
+      - {item: "Vision papers framed as positions", passed: true, note: "Diaz, Hoda, Evans and Plöd presented as positions or open questions"}
+      - {item: "Population limit stated", passed: true, note: "DDD section says students and university participants, not professional Domain Experts"}
+      - {item: "N16 numbers not relied on", passed: true, note: "States the benchmark is known only from its abstract; no figures quoted"}
+      - {item: "No proposed changes to the model", passed: true, note: "Missing Customer Feedback link stated as an observation only; limits section says so"}
+      - {item: "Glossary terms used exactly", passed: true, note: "focus area, component, Domain Expert, Software Engineer, Product Increment; building block not used for focus areas; container and view not used in prose"}
+      - {item: "Relative links resolve", passed: true, note: "../../CONTEXT.md, ../research/agentic-ai-...-explanation-doc.md and ../research/xp/agentic-development-in-xp-comprehensive-research.md all exist (checked with Glob)"}
+  collapse_detection:
+    clean: true
+    violations:
+      - type: "possible reference narrative (minor)"
+        location: "Section 'What stays and what changes' table"
+        severity: low
+        fix: "Table is five rows and restates the prose; acceptable as a summary. Remove it if it starts to grow into a lookup matrix."
+    notes: "Explanation content estimated at 95%+. No tutorial steps, how-to tasks or reference listings. No hybrid content."
+  quality_assessment:
+    accuracy: "high - claims trace to the approved research; relationship labels quoted exactly from workspace.dsl. Not independently re-verified against the external URLs."
+    completeness: "high - five focus areas in flow order, cross-cutting tensions, limits of evidence, further reading"
+    clarity: "good - short sentences (average 12.1 words), plain words; measured Flesch 55 (62 with glossary terms counted as one syllable), below the 70-80 gate. Terms such as 'Gherkin', 'bounded context' and 'ubiquitous language' pull it down; see measured."
+    consistency: "high - British spelling, model terms in prose, uniform heading and citation style; estimated 95%+"
+    correctness: "high - manual proofread, no known spelling errors; no automated spell checker run"
+    usability: "good - serves the 'understand the rationale' job; cross-links to research and glossary only, as no tutorials or how-tos exist yet"
+    overall: pass
+  gates_not_fully_met:
+    - "Flesch 70-80 not met: measured 55 with an approximate syllable-count script (62 with glossary terms as one syllable); the gap comes mostly from glossary terms that must be used exactly."
+    - "Spelling check is a manual proofread, not an automated run."
+    - "External source URLs were not fetched; they are copied from the approved research."
+  recommendations:
+    - priority: medium
+      action: "Run a calibrated readability tool and an automated spelling check (for example Vale) to confirm the script's score of 55, then decide whether to accept the readability gap caused by glossary terms."
+      rationale: "Readability was measured with an approximate script and spelling was checked by hand."
+    - priority: low
+      action: "When tutorials or how-tos exist, add forward links (for example 'Get hands-on at ...') in Further reading."
+      rationale: "DIVIO cross-reference guidance; no such documents exist yet."
+    - priority: low
+      action: "Add a link to the diagram site once a stable URL exists."
+      rationale: "Helps readers see the relationships quoted in the text."
+  verdict: approved
+measured:
+  date: 2026-09-30
+  words: 2433
+  flesch_reading_ease: 55.0
+  average_sentence_length: 12.1
+  flesch_with_glossary_terms_as_one_syllable: 62.0
+  note: "Approximate syllable-count script, not a calibrated tool. Sentences are already short; the gap to 70 comes mostly from the glossary's multi-word terms, which must be used exactly."
+peer_review:
+  reviewer: nw-documentarist-reviewer
+  date: 2026-09-30
+  verdict: APPROVED
+  iterations: 1
+  gates:
+    type_purity: {result: pass, value: "95-98% explanation"}
+    flesch_70_80: {result: fail, value: "55 measured (reviewer estimate 55-65)"}
+    spelling: {result: pass, value: "no errors found in manual review; no automated checker run"}
+    links: {result: pass, value: "3 relative links resolve"}
+    style_consistency: {result: pass, value: "95%+"}
+  recommendations:
+    - {priority: medium, location: "Why the agent is not a third person, Fowler and Joshi sentence", fix: "Split into two sentences"}
+    - {priority: medium, location: "DDD section, the two experiments paragraph", fix: "Give each experiment its own shorter sentence"}

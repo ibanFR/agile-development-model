@@ -2,13 +2,13 @@
 # Fails when the generated site has lost documentation the workspace declares.
 #
 # Expectations are derived from the sources, not hardcoded: every documentation chapter
-# in site/ must have a page titled with its heading, and every ADR in adrs/ must have its
-# own numbered decision page carrying its heading. Guards the regression that ruled out
-# the consolidated tooling's static export, which dropped all documentation and exited 0.
+# in site/ must have a page titled with its heading that also carries the opening of its
+# text, and every ADR in adrs/ must have its own numbered decision page carrying its
+# heading. Guards the regression that ruled out the consolidated tooling's static export,
+# which dropped all documentation and exited 0.
 #
-# Known gap: the first chapter's heading is also the software system's name, so its title
-# check is satisfied by the software system page too. The other chapters still catch a
-# pipeline that drops documentation wholesale.
+# The title alone is not enough: the first chapter's heading is also the software system's
+# name, so the software system page carries the same title without the chapter's text.
 #
 # Usage: assert-site-content.sh [site-dir]   (default: build/site)
 set -euo pipefail
@@ -22,6 +22,22 @@ heading() {
   { grep -m1 '^#' "$1" || true; } | sed -E 's/^#+[[:space:]]*//; s/[[:space:]]+$//'
 }
 
+# First line of the text after the heading, cut before any Markdown markup or character
+# the page may render differently, so it can be matched verbatim in the generated HTML.
+opening() {
+  { sed -n '2,$p' "$1" | grep -m1 -vE '^[[:space:]]*($|[#!<>|`*-])' || true; } |
+    sed -E 's/^[[:space:]]+//; s/[^A-Za-z0-9 ,.:;()-].*//; s/[[:space:]]+$//'
+}
+
+# Whether any page titled with the heading, standalone or before the site name, has the text.
+has_page() {
+  local page
+  while read -r page; do
+    if grep -qF "$2" "$page"; then return 0; fi
+  done < <(grep -rlF --include=index.html -e "<title>$1 |" -e "<title>$1</title>" "$site" || true)
+  return 1
+}
+
 fail() {
   echo "::error file=$1::$2"
   missing=$((missing + 1))
@@ -30,9 +46,12 @@ fail() {
 for chapter in site/*.md; do
   chapters=$((chapters + 1))
   title="$(heading "$chapter")"
+  text="$(opening "$chapter")"
   if [ -z "$title" ]; then
     fail "$chapter" "Documentation chapter has no heading to look for"
-  elif ! grep -rqF --include=index.html -e "<title>${title} |" -e "<title>${title}</title>" "$site"; then
+  elif [ -z "$text" ]; then
+    fail "$chapter" "Documentation chapter has no opening text to look for"
+  elif ! has_page "$title" "$text"; then
     fail "$chapter" "No page in the generated site for documentation chapter \"${title}\""
   fi
 done

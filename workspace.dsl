@@ -15,8 +15,9 @@ workspace "Software Development Model for Product feature delivery"{
 
             // Notation, not a focus area. Structurizr scopes a component view to a single
             // container, so this empty container exists purely to carry the cross-container
-            // "Components" overview view defined below. Tagged "notation" so it is styled
-            // and read as part of the diagram notation rather than part of the model.
+            // "Components" overview view defined below. Tagged "notation" to tell readers
+            // of the DSL it is part of the diagram notation rather than part of the model.
+            // No view draws it, so it carries no style. See CONTEXT.md.
             allComponents = container "All Components" "All Components and relationships" "All Components"{
                 tags "notation"
             }
@@ -214,7 +215,9 @@ workspace "Software Development Model for Product feature delivery"{
             autoLayout tb
         }
 
-        component allComponents "Components" "All Components and relationships" {
+        component allComponents "Components" "Every component across all focus areas" {
+            // An explicit title, so the default one does not name the scoping container.
+            title "All components and relationships"
             include product developer productBrief storyMap discovery formulation automation
             include strategize design code
             include pairProgramming tdd continuousIntegration
@@ -237,16 +240,6 @@ workspace "Software Development Model for Product feature delivery"{
                 background grey
                 color #ffffff
             }
-
-            // Notation, not a focus area: drawn washed out and dashed so it never reads as
-            // part of the modelled domain. See CONTEXT.md.
-            element "notation" {
-                background #ffffff
-                color #808080
-                stroke #808080
-                border dashed
-            }
-
 
             //            element <tag> {
 //                shape <Box|RoundedBox|Circle|Ellipse|Hexagon|Cylinder|Pipe|Person|Robot|Folder|WebBrowser|MobileDevicePortrait|MobileDeviceLandscape|Component>

@@ -9,6 +9,9 @@
 #
 # The title alone is not enough: the first chapter's heading is also the software system's
 # name, so the software system page carries the same title without the chapter's text.
+# A chapter also fails when its opening has fewer than four plain words, since a few words
+# could appear on any page and reopen that gap. The opening is the first line of text after
+# the heading, cut at the first character other than a letter, digit or plain punctuation.
 #
 # Usage: assert-site-content.sh [site-dir]   (default: build/site)
 set -euo pipefail
@@ -53,7 +56,7 @@ for chapter in site/*.md; do
   elif [ "$(echo "$text" | wc -w)" -lt 4 ]; then
     fail "$chapter" "Documentation chapter's opening line has too few plain words to look for: \"${text}\""
   elif ! has_page "$title" "$text"; then
-    fail "$chapter" "No page in the generated site for documentation chapter \"${title}\""
+    fail "$chapter" "No page in the generated site titled \"${title}\" carries the opening of this documentation chapter"
   fi
 done
 

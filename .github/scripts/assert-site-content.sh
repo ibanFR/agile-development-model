@@ -25,16 +25,16 @@ heading() {
 # First line of the text after the heading, cut before any Markdown markup or character
 # the page may render differently, so it can be matched verbatim in the generated HTML.
 opening() {
-  { sed -n '2,$p' "$1" | grep -m1 -vE '^[[:space:]]*($|[#!<>|`*-])' || true; } |
+  { sed -n '2,$p' "$1" | grep -m1 -vE '^[[:space:]]*($|[#!<>|`*+-]|[0-9]+\.[[:space:]])' || true; } |
     sed -E 's/^[[:space:]]+//; s/[^A-Za-z0-9 ,.:;()-].*//; s/[[:space:]]+$//'
 }
 
 # Whether any page titled with the heading, standalone or before the site name, has the text.
 has_page() {
-  local page
-  while read -r page; do
-    if grep -qF "$2" "$page"; then return 0; fi
-  done < <(grep -rlF --include=index.html -e "<title>$1 |" -e "<title>$1</title>" "$site" || true)
+  local title="$1" text="$2" page
+  while IFS= read -r page; do
+    if grep -qF "$text" "$page"; then return 0; fi
+  done < <(grep -rlF --include=index.html -e "<title>${title} |" -e "<title>${title}</title>" "$site")
   return 1
 }
 
@@ -49,8 +49,9 @@ for chapter in site/*.md; do
   text="$(opening "$chapter")"
   if [ -z "$title" ]; then
     fail "$chapter" "Documentation chapter has no heading to look for"
-  elif [ -z "$text" ]; then
-    fail "$chapter" "Documentation chapter has no opening text to look for"
+  # A few words could appear on any page, such as the software system's, and reopen the gap.
+  elif [ "$(echo "$text" | wc -w)" -lt 4 ]; then
+    fail "$chapter" "Documentation chapter's opening line has too few plain words to look for: \"${text}\""
   elif ! has_page "$title" "$text"; then
     fail "$chapter" "No page in the generated site for documentation chapter \"${title}\""
   fi

@@ -28,11 +28,11 @@ The model flows from Align and Understand, through BDD and DDD, into XP, and on 
 
 The Domain Expert "presents Product Feature" to the Product Brief. Domain Discovery "creates" the Product Backlog.
 
-Agents can draft user stories quickly. Two offline studies found that the stories read well, but they were less diverse and less independent than stories written by people. They also met acceptance criteria less often ([Quattrocchi and others](https://arxiv.org/abs/2507.15157); [Sakib and others](https://arxiv.org/html/2603.28163)).
+Agents can draft user stories quickly. Two offline studies found that the stories read well, but each found a different weakness. In one, the stories were less diverse than stories written by people and met acceptance criteria less often ([Quattrocchi and others](https://arxiv.org/abs/2507.15157)). In the other, they were less independent and less unique ([Sakib and others](https://arxiv.org/html/2603.28163)).
 
 Independence matters here. A Product Backlog is useful because its items are small and can be ordered on their own. The research suggests that agents speed up the writing of items but not the judgement that makes them good. That reading is interpretation. The studies did not involve a live team.
 
-A second effect follows from cheap building. Marty Cagan writes that AI prototyping makes it easy to build many prototypes a week, and that "product sense" is now the hard part ([Build to Learn vs Build to Earn](https://www.svpg.com/build-to-learn-vs-build-to-earn/)). Practitioners at QCon London 2026 reported teams running short of well-qualified work. Both are practitioner accounts, not controlled studies.
+A second effect follows from cheap building. Marty Cagan writes that AI prototyping makes it easy to build many prototypes a week, and that "product sense" is now the hard part ([Build to Learn vs Build to Earn](https://www.svpg.com/build-to-learn-vs-build-to-earn/)). Practitioners at QCon London 2026 reported teams running short of well-qualified work ([InfoQ report](https://www.infoq.com/news/2026/03/qcon-london-foxwell-dev-teams/)). Both are practitioner accounts, not controlled studies.
 
 The model does not say how a Domain Expert should use agents. The research suggests a useful distinction. An agent can build a throw-away prototype to learn during Domain Discovery. Production work still goes through the rest of the model. The Product Brief matters more, because it frames and constrains what anyone, human or agent, is asked to build.
 
@@ -42,7 +42,7 @@ A conversation is also not a document. The "spread domain knowledge" edge descri
 
 The Domain Expert "presents rules and examples" in the Specification Workshop. The workshop leads to Features ("formulate"). Features lead to Acceptance Tests ("automate"), which "guides code implementation" in Pair Programming.
 
-The formulation and automation steps suit agents. In three separate studies, generated Gherkin was mostly relevant and clear. It also contained omissions and hallucinations, and the authors called it draft material that needs human review ([Hassani and others](https://arxiv.org/html/2508.20744v2); [Ferreira and others](https://arxiv.org/abs/2504.07244)). In one industrial case, only 60% of generated test cases were usable as they came.
+The formulation and automation steps suit agents. In three separate studies, generated Gherkin was mostly relevant and clear. It also contained omissions and hallucinations, and the authors called it draft material that needs human review ([Siddeeq and others](https://arxiv.org/abs/2607.01980v1); [Hassani and others](https://arxiv.org/html/2508.20744v2); [Ferreira and others](https://arxiv.org/abs/2504.07244)). In one industrial case, only 60% of generated test cases were usable as they came.
 
 Nobody measured the discovery conversation itself. No study was found of Example Mapping with an LLM in the room. This is a real gap.
 
@@ -58,7 +58,7 @@ Spec-driven development is a nearby idea. Thoughtworks places it in "Assess" and
 
 The Domain Expert "validates and categorizes subdomains". The Software Engineer "identifies strategically significant parts of the domain". Strategic Architecture leads by "collaborative modelling" to Software Design, then by "apply tactical patterns" to Code the Domain Model.
 
-In an industrial case study, an LLM did well on the first three steps of DDD: ubiquitous language, a simulated Event Storming and bounded contexts. The errors then built up, and the later artefacts for aggregates and architecture were impractical. The authors describe the LLM as a sparring partner ([Eisenreich and others](https://arxiv.org/abs/2603.26244)). A benchmark of domain modelling found that relationships were the weakest part, with much left out. That benchmark is known only from its abstract, so this page does not rely on its numbers.
+In an industrial case study, an LLM did well on the first three steps of DDD: ubiquitous language, a simulated Event Storming and bounded contexts. The errors then built up, and the later artefacts for aggregates and architecture were impractical. The authors describe the LLM as a sparring partner ([Eisenreich and others](https://arxiv.org/abs/2603.26244)). A benchmark of domain modelling found that relationships were the weakest part, with much left out ([Chen and others](https://ieeexplore.ieee.org/document/10344012/)). That benchmark is known only from its abstract, so this page does not rely on its numbers.
 
 Two experiments shed light on the people side. One found that domain knowledge matters more than modelling skill when refining an LLM's model ([Silva Mercado and others](https://link.springer.com/article/10.1007/s10270-026-01414-5)). The other found that novices adopted about two-thirds of the incorrect classes in an LLM's first draft ([Bragilovski and others](https://link.springer.com/article/10.1007/s10664-026-10831-5)).
 
@@ -84,19 +84,19 @@ There is an open question too. No controlled study of a whole XP team using agen
 
 Short Iterations "visualize progress on" Informative Workspaces, "updates" the Knowledge Base and "gathers" Customer Feedback. The Domain Expert "validates product increments".
 
-**Flow.** In a field study of an enterprise mandate to double output, merged pull requests per person more than doubled. Review load per reviewer roughly doubled as well, and automated review overtook human review. The limiting factor moved from writing code to reviewing it and to supplying well-formed work. The research suggests that short iterations and small Product Increments matter more, not less. That argument is interpretation. No study examined iteration length with agents.
+**Flow.** In a field study of an enterprise mandate to double output, merged pull requests per person more than doubled. Review load per reviewer roughly doubled as well, and automated review overtook human review ([He and others](https://arxiv.org/abs/2607.01904)). The limiting factor moved from writing code to reviewing it and to supplying well-formed work. The research suggests that short iterations and small Product Increments matter more, not less. That argument is interpretation. No study examined iteration length with agents.
 
 **Visibility.** A controlled trial found experienced developers 19% slower with AI while they believed they were about 20% faster ([METR](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/)). If perceived speed is unreliable, the choice of what an Informative Workspace shows becomes important. A board that shows only throughput can look healthy while stability and complexity get worse.
 
 **Knowledge.** Agent instruction files are a new kind of team knowledge. A large empirical study found that they change like configuration code, through frequent small additions ([Chatlatanagulchai and others](https://arxiv.org/abs/2511.12884)). Another found that they do not generally raise task success, though agents follow them. They help most for team-specific practices, not for overviews of the repository ([Gloaguen and others](https://arxiv.org/abs/2602.11988)). That matches the purpose of a Knowledge Base, which holds what only the team knows.
 
-**Feedback.** Agents can sort and summarise Customer Feedback at moderate accuracy. Interpreting it is still a person's work. The workspace file draws no link from Customer Feedback back to Align and Understand. This is an observation about the diagram and not a suggestion. The research notes only that a faster feedback loop stays fast if a person closes it.
+**Feedback.** Agents can sort and summarise Customer Feedback at moderate accuracy ([Mallya and others](https://arxiv.org/abs/2510.23055)). Interpreting it is still a person's work. The workspace file draws no link from Customer Feedback back to Align and Understand. This is an observation about the diagram and not a suggestion. The research notes only that a faster feedback loop stays fast if a person closes it.
 
 ## Tensions that run across the model
 
 ### Speed against shared understanding
 
-This is the central tension. Thoughtworks calls the growing gap between a system and the team's understanding of it "cognitive debt" ([Technology Radar](https://www.thoughtworks.com/radar/techniques/codebase-cognitive-debt)). Studies of skill formation find that delegating work to AI reduces understanding of the result. Agents make the gap open faster.
+This is the central tension. Thoughtworks calls the growing gap between a system and the team's understanding of it "cognitive debt" ([Technology Radar](https://www.thoughtworks.com/radar/techniques/codebase-cognitive-debt)). Studies of skill formation find that delegating work to AI reduces understanding of the result ([Shen and Tamkin](https://arxiv.org/abs/2601.20245); [Balepur and others](https://arxiv.org/abs/2607.26375)). Agents make the gap open faster.
 
 The model offers two kinds of component in response. The collaborative ones are Domain Discovery, the Specification Workshop, collaborative modelling and Pair Programming. They are where shared understanding is made. The automated ones are Acceptance Tests, Test-Driven Development and Continuous Integration. They keep output honest.
 
@@ -108,7 +108,7 @@ Prompts are not reproducible. Fowler describes an LLM as a non-deterministic abs
 
 Roles shift and do not disappear. The Domain Expert gains leverage, because building is cheap and product judgement steers it. The Domain Expert also gains load. Validation and well-formed work become the bottleneck. The practitioner evidence for the load is consistent, but no study measured it.
 
-The Software Engineer moves toward specifying and verifying. Dave Farley has said the role shifts toward defining the problem in greater detail, and that verification becomes the bottleneck. Two vision papers take related positions: specifications as the contract between humans and agents ([Diaz and others](https://arxiv.org/abs/2609.00252)), and a "whole of process" view of agentic software engineering ([Hoda](https://arxiv.org/abs/2510.19692)). These are positions and open questions. The first calls itself a first step, not a validated theory.
+The Software Engineer moves toward specifying and verifying. Dave Farley has said the role shifts toward defining the problem in greater detail, and that verification becomes the bottleneck ([Aviator podcast](https://www.aviator.co/podcast/engineering-discipline-dave-farley)). Two vision papers take related positions: specifications as the contract between humans and agents ([Diaz and others](https://arxiv.org/abs/2609.00252)), and a "whole of process" view of agentic software engineering ([Hoda](https://arxiv.org/abs/2510.19692)). These are positions and open questions. The first calls itself a first step, not a validated theory.
 
 ### What stays and what changes
 

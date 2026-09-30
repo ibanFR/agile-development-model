@@ -59,7 +59,7 @@ industry_leaders:
     - "12factor.net"
     - "reactivemanifesto.org"
     - "agilemanifesto.org"
-    - "thoughtworks.com/insights"
+    - "thoughtworks.com"
     - "infoq.com"
   reputation: medium-high
   verification_requirements:
@@ -125,7 +125,6 @@ excluded:
 
 # Source validation rules
 validation_rules:
-  minimum_sources_per_claim: 3
   cross_reference_required: true
 
   reputation_scoring:

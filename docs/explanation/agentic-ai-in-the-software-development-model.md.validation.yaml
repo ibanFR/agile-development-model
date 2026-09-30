@@ -17,7 +17,7 @@ documentation_review:
       - {item: "Discusses alternatives", passed: true, note: "Spec-driven development versus BDD; draft-first versus model-first in DDD; conflicting evidence on context files"}
       - {item: "No task steps", passed: true, note: "No instructions; only a note that agent set-up is out of scope"}
       - {item: "Builds conceptual model", passed: true, note: "Decision versus transformation relationships; collaborative brake and automated harness"}
-      - {item: "Vision papers framed as positions", passed: true, note: "Diaz, Hoda, Evans and Plod presented as positions or open questions"}
+      - {item: "Vision papers framed as positions", passed: true, note: "Diaz, Hoda, Evans and Plöd presented as positions or open questions"}
       - {item: "Population limit stated", passed: true, note: "DDD section says students and university participants, not professional Domain Experts"}
       - {item: "N16 numbers not relied on", passed: true, note: "States the benchmark is known only from its abstract; no figures quoted"}
       - {item: "No proposed changes to the model", passed: true, note: "Missing Customer Feedback link stated as an observation only; limits section says so"}
@@ -34,19 +34,19 @@ documentation_review:
   quality_assessment:
     accuracy: "high - claims trace to the approved research; relationship labels quoted exactly from workspace.dsl. Not independently re-verified against the external URLs."
     completeness: "high - five focus areas in flow order, cross-cutting tensions, limits of evidence, further reading"
-    clarity: "good - short sentences, plain words; estimated Flesch about 62-72 (manual estimate, no tool run). Terms such as 'Gherkin', 'bounded context' and 'ubiquitous language' pull it down and may fall just under 70."
+    clarity: "good - short sentences (average 12.1 words), plain words; measured Flesch 55 (62 with glossary terms counted as one syllable), below the 70-80 gate. Terms such as 'Gherkin', 'bounded context' and 'ubiquitous language' pull it down; see measured."
     consistency: "high - British spelling, model terms in prose, uniform heading and citation style; estimated 95%+"
     correctness: "high - manual proofread, no known spelling errors; no automated spell checker run"
     usability: "good - serves the 'understand the rationale' job; cross-links to research and glossary only, as no tutorials or how-tos exist yet"
     overall: pass
   gates_not_fully_met:
-    - "Flesch 70-80 is a manual estimate, not a tool measurement; domain vocabulary may put the score slightly below 70."
+    - "Flesch 70-80 not met: measured 55 with an approximate syllable-count script (62 with glossary terms as one syllable); the gap comes mostly from glossary terms that must be used exactly."
     - "Spelling check is a manual proofread, not an automated run."
     - "External source URLs were not fetched; they are copied from the approved research."
   recommendations:
     - priority: medium
-      action: "Run an automated readability and spelling check (for example Vale or a Flesch script) and shorten the longest sentences in the DDD and Lean sections if the score is below 70."
-      rationale: "The readability and spelling gates were assessed by hand."
+      action: "Run a calibrated readability tool and an automated spelling check (for example Vale) to confirm the script's score of 55, then decide whether to accept the readability gap caused by glossary terms."
+      rationale: "Readability was measured with an approximate script and spelling was checked by hand."
     - priority: low
       action: "When tutorials or how-tos exist, add forward links (for example 'Get hands-on at ...') in Further reading."
       rationale: "DIVIO cross-reference guidance; no such documents exist yet."

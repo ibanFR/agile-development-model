@@ -22,7 +22,7 @@ That fits the model. The Software Engineer "obtains domain knowledge" from the P
 
 ## The five focus areas, in the model's flow
 
-The model flows from Align and Understand, through BDD and DDD, into XP, and on to Lean Product Development. The same pattern shows up in each.
+The model flows from Align and Understand into two separate paths, BDD and DDD. Each path feeds XP: BDD through Acceptance Tests and DDD through the domain model. XP then leads on to Lean Product Development. The same pattern shows up in each focus area.
 
 ### Align and Understand
 
@@ -42,7 +42,7 @@ A conversation is also not a document. The "spread domain knowledge" edge descri
 
 The Domain Expert "presents rules and examples" in the Specification Workshop. The workshop leads to Features ("formulate"). Features lead to Acceptance Tests ("automate"), which "guides code implementation" in Pair Programming.
 
-The formulation and automation steps suit agents. In three separate studies, generated Gherkin was mostly relevant and clear. It also contained omissions and hallucinations, and the authors called it draft material that needs human review ([Siddeeq and others](https://arxiv.org/abs/2607.01980v1); [Hassani and others](https://arxiv.org/html/2508.20744v2); [Ferreira and others](https://arxiv.org/abs/2504.07244)). In one industrial case, only 60% of generated test cases were usable as they came.
+The formulation and automation steps suit agents, with review. Three studies looked at generated Gherkin, and each found something different. In one, evaluators rated it mostly relevant and clear, but it also contained omissions and hallucinations, and the authors called it draft material that needs human review ([Hassani and others](https://arxiv.org/html/2508.20744v2)). In another, organising generation by epic gave better expert ratings than a plain prompt ([Siddeeq and others](https://arxiv.org/abs/2607.01980v1)). In an industrial case, most scenarios were found helpful, but only 60% of generated test cases were usable as they came ([Ferreira and others](https://arxiv.org/abs/2504.07244)).
 
 Nobody measured the discovery conversation itself. No study was found of Example Mapping with an LLM in the room. This is a real gap.
 
@@ -76,7 +76,7 @@ The chain runs from Pair Programming, through "write just enough code" to Test-D
 
 This is the focus area where agents write the most code, and it is also the control loop that keeps the output shippable. The [XP research](../research/xp/agentic-development-in-xp-comprehensive-research.md) covers it in depth. Its direction is that agents fit inside XP's feedback loops and do not replace them. Humans own the failing test. Continuous Integration, not the agent's own report, says whether the build is green. A pair or ensemble working with an agent keeps the knowledge sharing that an agent alone does not.
 
-The DORA research associates AI adoption with more throughput and also with less stable delivery. Small batches are named as an amplifier of the benefit. This is why the model's habit of small steps matters more with agents, not less.
+The DORA research associates AI adoption with more throughput and also with less stable delivery ([2025 DORA report](https://cloud.google.com/blog/products/ai-machine-learning/announcing-the-2025-dora-report)). Working in small batches is named as an amplifier of the benefit ([DORA AI Capabilities Model](https://cloud.google.com/blog/products/ai-machine-learning/introducing-doras-inaugural-ai-capabilities-model)). This is why the model's habit of small steps matters more with agents, not less.
 
 There is an open question too. No controlled study of a whole XP team using agents exists.
 
@@ -98,7 +98,7 @@ Short Iterations "visualize progress on" Informative Workspaces, "updates" the K
 
 This is the central tension. Thoughtworks calls the growing gap between a system and the team's understanding of it "cognitive debt" ([Technology Radar](https://www.thoughtworks.com/radar/techniques/codebase-cognitive-debt)). Studies of skill formation find that delegating work to AI reduces understanding of the result ([Shen and Tamkin](https://arxiv.org/abs/2601.20245); [Balepur and others](https://arxiv.org/abs/2607.26375)). Agents make the gap open faster.
 
-The model offers two kinds of component in response. The collaborative ones are Domain Discovery, the Specification Workshop, collaborative modelling and Pair Programming. They are where shared understanding is made. The automated ones are Acceptance Tests, Test-Driven Development and Continuous Integration. They keep output honest.
+The model offers two kinds of component in response. The collaborative ones are Domain Discovery, the Specification Workshop, Strategic Architecture and Pair Programming. They are where shared understanding is made. The automated ones are Acceptance Tests, Test-Driven Development and Continuous Integration. They keep output honest.
 
 The research suggests a reading of this. The collaborative components act as a brake that keeps agent speed in line with what the team understands. The automated components act as a harness. This reading is interpretation.
 

@@ -350,7 +350,7 @@ research_review:
   scores: {source_bias: 0.85, evidence_quality: 0.85, replicability: 0.90, completeness: 0.90, overall: 0.875}
   issues:
     - {severity: medium, location: DDD1 (N16), problem: "Verified from search abstract only; IEEE page inaccessible", fix: "Do not quote its numbers in the explanation doc; re-verify when the full paper is available"}
-    - {severity: medium, location: DDD findings (N2, N3, N18, N19), problem: "Studies use students or university researchers, not professional Domain Experts", fix: "State the population limit in the explanation doc"}
+    - {severity: medium, location: BDD1 (N2, N3) and DDD findings (N18, N19), problem: "Studies use students or university researchers, not professional Domain Experts", fix: "State the population limit in the explanation doc"}
     - {severity: low, location: N5, problem: "Radar volume and date metadata inconsistent", fix: "Verify with Thoughtworks"}
     - {severity: low, location: AU1, problem: "Böckeler source on requirement over-production is indirect evidence", fix: "No change; N7 and N8 measure LLM output directly"}
     - {severity: low, location: N24, N25, problem: "Vision papers self-described as unvalidated", fix: "Present as positions or open questions, not findings"}
